@@ -5,10 +5,16 @@
  */
 package com.br.cargafacil.bean;
 
+import com.br.cargafacil.objetos.Cargas;
+
 /**
  *
  * @author pepag
  */
 public class CargasBean {
+    
+    Cargas c = new Cargas();
+    
+    
     
 }

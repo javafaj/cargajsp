@@ -9,11 +9,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title></title>
+        <title>Carga Facil</title>
     </head>
     <body>
-  
         
-        <input type="text" name="teste" value="0" size="150" /> 
+            
+
     </body>
 </html>
