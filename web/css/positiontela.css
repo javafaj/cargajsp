@@ -21,11 +21,11 @@ body{
 }
 /*define a  pagina tamanho , cor , largura e posição*/
 #tudo {
-width: 788px;
+width: auto;/*788px;*/
 }
 /*define o topo da pagina tamanho , cor , largura e posição*/
 #topo {
-width: 1789px;
+width: auto;/*1789px;*/
 height: 300px;
 background-color: #006400;
 }
@@ -46,7 +46,7 @@ background: aqua;
 }
 /*define o conteudo da pagina tamanho , cor , largura e posição*/
 #conteudo {
-width: 1525px;
+width: auto;/*1525px;*/
 height:  600px;
 position: relative; top: 45px; left: 265px;
 background-color: #FF0000;
