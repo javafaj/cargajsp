@@ -1,0 +1,139 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05/09/2015, 15:07:35
+    Author     : Pedro Pagotto
+*/
+/*importa um tipo de fonte diferente */
+/*@import url(http://fonts.googleapis.com/css?family=Raleway);*/
+/*zera as configurações do menu*/
+body{
+    margin: 0px;
+    margin: 0;
+    padding:0;
+    background-color: #ffffff;
+    background-size: auto;
+    text-align: center;    
+}
+/*define a div css cssmenu*/
+#cssmenu,
+/*define a div css cssmenu para tag ul*/
+#cssmenu ul,
+/*define a div css cssmenu para tag ul e li*/
+#cssmenu ul li,
+/*define a div css cssmenu para tag ul , li e a , zerando todas a cofigs*/
+#cssmenu ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*criando animação para quando passar o mouse em cima */
+/*#cssmenu:after,*/
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/*borda inferior do menu que fica uma fita bem fina da cor que altera os botões apos selecionado */
+#cssmenu {
+  width: auto;
+  border-bottom: 3px solid #0000FF;
+  font-family: Raleway, sans-serif;
+  line-height: 1;
+}
+/*fundo do menu quando nao esta selecionado*/
+#cssmenu ul {
+  background: #ffffff;
+}
+/*alinhando o menu a esquerda*/
+#cssmenu > ul > li {
+  float: left;
+}
+/*alinhando texto do menu ao centro*/
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+/*dividindo os itens do menu e alinhando os mesmos a esquerda de maneira igual */
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+/*alinhando a direita as tags ul e li*/
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+
+/*definindo margem para as tags do menu ul e li*/
+#cssmenu.align-right > ul > li > a {
+  margin-right: 0;
+  margin-left: -4px;
+}
+/*definição do fundo do menu , com o tamanho , largura das opçãoes e exibição
+juntamente com as escritas de todas as opçoes do menu*/
+#cssmenu > ul > li > a {
+  z-index: 2;
+  padding-top: 30px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 12px;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #444444;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  margin-right: -4px;
+}
+/*identificando a opção que esta selecionada se nao estiver ele deixa na cor branca*/
+#cssmenu > ul > li.active > a,
+#cssmenu > ul > li:hover > a,
+/*caso  tenha seleçao , sera exibido a letra selecionada branco no menu */
+#cssmenu > ul > li > a:hover {
+  color: #ffffff;
+}
+/*definindo os tamanhos de botão , animaçoes e borda de seleção*/
+#cssmenu > ul > li > a:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 120%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  content: "";
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform: perspective(5px) rotateX(2deg);
+  -webkit-transform-origin: bottom;
+  -moz-transform: perspective(5px) rotateX(2deg);
+  -moz-transform-origin: bottom;
+  transform: perspective(5px) rotateX(2deg);
+  transform-origin: bottom;
+}
+/*definição de classe para depois q o botao for selecionado torca a cor do mesmo*/
+#cssmenu > ul > li.active > a:after,
+#cssmenu > ul > li:hover > a:after,
+/*cor de botao selecinado */
+#cssmenu > ul > li > a:hover:after {
+    background: #0000FF;
+}

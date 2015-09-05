@@ -8,66 +8,14 @@ and open the template in the editor.
     Author     : pedropagotto
 */
 
-/*
-//zera a pagina para a construção do css de uma forma melhor.
-body{
-    margin: 0px;
-    margin: 0;
-    padding:0;
-    background-color: #cccccc;
-    background-size: auto;
-    text-align: center;    
-}
-//define  o tamanho da pagina como um todo 
-#tudo {
- width: 788px;
-}
-//define o topo da pagina tamanho , cor , largura
-#topo {
-width: 1789px;
-height: 300px;
-background-color: #006400;
-}
-//define o login da pagina tamanho , cor , largura e posição
-#login{
-float: left;
-width: 250px;
-height: 600px;
-position: relative;top: 15px;
-background-color: #0000FF;
-}
-//define o menu da pagina tamanho , cor , largura e posição
-#menu {
-width: 1789px;
-height: 55px;
-background: aqua;
-}
 
-//define o conteudo da pagina tamanho , cor , largura e posição
-#conteudo {
-width: 1530px;
-height:  600px;
-position: relative; top: 15px; left: 265px;
-background-color: #FF0000;
-}
-
-//define o rodapé da pagina tamanho , cor , largura e posição
-#rodape {
-clear: both;
-float: right;
-height: 50px;
-width: 1789px;
-position: relative; top: 150px;
-background-color: #FFFF00;
-}
-*/
 
 /*redefine a pagina , todas as dimenções e cor*/
 body{
     margin: 0px;
     margin: 0;
     padding:0;
-    background-color: #cccccc;
+    background-color: #ffffff;
     background-size: auto;
     text-align: center;    
 }
@@ -86,11 +34,12 @@ background-color: #006400;
 float: left;
 width: 250px;
 height: 600px;
-position: relative;top: 15px;
+position: relative;top: 45px;
 background-color: #0000FF;
 }
 /*define o menu da pagina tamanho , cor , largura e posição*/
 #menu {
+position: relative;top: 235px;
 width: 1789px;
 height: 55px;
 background: aqua;
@@ -99,7 +48,7 @@ background: aqua;
 #conteudo {
 width: 1525px;
 height:  600px;
-position: relative; top: 15px; left: 265px;
+position: relative; top: 45px; left: 265px;
 background-color: #FF0000;
 }
 /*define o rodapé da pagina tamanho , cor , largura e posição*/

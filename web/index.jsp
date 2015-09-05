@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="css/positiontela.css"/>        
+        <link rel="stylesheet" type="text/css" href="css/positiontela.css"/>
         <title>Carga Facil</title>
     </head>
     <body>
@@ -18,11 +18,10 @@
         
             <div id ="topo">
                 cabeçalho
-            </div>
-            
             <div id="menu">
-                menu
+                <jsp:include page="menuinicial.jsp"/>
             </div>
+            </div>         
             
             <div id ="login">
                 login
