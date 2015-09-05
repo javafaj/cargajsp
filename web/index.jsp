@@ -29,7 +29,12 @@
             
             <div id="conteudo">
                 slide
-            </div>   
+            </div>
+            
+            <div id="complemento">
+                    propagandas
+            </div>
+           
         
             <div id="rodape">
                 rodapé

@@ -40,22 +40,29 @@ background-color: #0000FF;
 /*define o menu da pagina tamanho , cor , largura e posição*/
 #menu {
 position: relative;top: 235px;
-width: 1789px;
+width: auto;/*1789px;*/
 height: 55px;
 background: aqua;
 }
 /*define o conteudo da pagina tamanho , cor , largura e posição*/
 #conteudo {
-width: auto;/*1525px;*/
-height:  600px;
+width: 1300px;/*1525px;*/
+height: 600px;
 position: relative; top: 45px; left: 265px;
 background-color: #FF0000;
+}
+/*complemento localizado ao lado direito da tela utilizado para propagandas ou logo de transportadoras cadastradas*/
+#complemento {
+width: 235px;/*1525px;*/
+height: 600px;
+position: relative; top: -555px; left: 1570px;
+background-color: #00cccc;
 }
 /*define o rodapé da pagina tamanho , cor , largura e posição*/
 #rodape {
 clear: both;
-height: 50px;
-width: 1800px;
+height: 55px;
+width: auto;
 position: relative; top: 150px;
 background-color: #FFFF00;
 }
