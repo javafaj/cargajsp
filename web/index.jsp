@@ -27,9 +27,7 @@
                 login
             </div>
             
-            <div id="conteudo">
-                slide
-            </div>
+           
             
             <div id="complemento">
                     propagandas
