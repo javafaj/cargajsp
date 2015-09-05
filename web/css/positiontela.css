@@ -32,9 +32,9 @@ background-color: #006400;
 /*define o login da pagina tamanho , cor , largura e posição*/
 #login{
 float: left;
-width: 250px;
+width: 245px;
 height: 600px;
-position: relative;top: 45px;
+position: relative;top: 1px;
 background-color: #0000FF;
 }
 /*define o menu da pagina tamanho , cor , largura e posição*/
@@ -46,17 +46,17 @@ background: aqua;
 }
 /*define o conteudo da pagina tamanho , cor , largura e posição*/
 #conteudo {
-width: 1300px;/*1525px;*/
-height: 600px;
-position: relative; top: 45px; left: 265px;
+width: auto;
+height: 800px;
+position: relative; top: 25px;
 background-color: #FF0000;
 }
 /*complemento localizado ao lado direito da tela utilizado para propagandas ou logo de transportadoras cadastradas*/
-#complemento {
-width: 235px;/*1525px;*/
+#slide {
+width: 1540px;
 height: 600px;
-position: relative; top: -555px; left: 1570px;
-background-color: #00cccc;
+position: relative;  top: 1px; left: 255px;
+background-color: #ffcc00;
 }
 /*define o rodapé da pagina tamanho , cor , largura e posição*/
 #rodape {

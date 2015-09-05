@@ -23,17 +23,19 @@
             </div>
             </div>         
             
-            <div id ="login">
-                login
+            <div id ="conteudo">
+                
+                <div id="login">
+                 login
+                </div>
+                
+                <div id="slide">
+                        propagandas
+                </div>
             </div>
             
-            <div id="conteudo">
-                slide
-            </div>
             
-            <div id="complemento">
-                    propagandas
-            </div>
+           
            
         
             <div id="rodape">
