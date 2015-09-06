@@ -8,7 +8,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="css/menucss.css"/> 
+        <link rel="stylesheet" type="text/css" href="css/menucss.css"/>
+        <link rel="stylesheet" type="text/css" href="css/icones/iconesmenu.css"/> 
     </head>
     
     <!--Desenvolvimento do primeiro menu .
@@ -17,10 +18,10 @@
     <body>
         <div id="cssmenu">
            <ul>
-           <li><a href="index.jsp">Inicio</a></li>
-           <li><a href="index.jsp">Verificar Cargas</a></li>
-           <li><a href="index.jsp">Cadastre-se</a></li>
-           <li><a href="index.jsp">Quem Somos</a></li>   
+           <li><a href="index.jsp"><img src="css/icones/cagashome.png" class="icones-32">Inicio</a></li>
+           <li><a href="index.jsp"><img src="css/icones/Cargas-32.png" class="icones-32">Verificar Cargas</a></li>
+           <li><a href="index.jsp"><img src="css/icones/Keyboard-32.png" class="icones-32">Cadastre-se</a></li>
+           <li><a href="index.jsp"><img src="css/icones/Info-32.png" class="icones-32">Quem Somos</a></li>   
            </ul>    
         </div>
         

@@ -30,12 +30,10 @@
                 </div>
                 
                 <div id="slide">
-                        propagandas
+                        slide
                 </div>
             </div>
-            
-            
-           
+                       
            
         
             <div id="rodape">
