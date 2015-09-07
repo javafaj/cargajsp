@@ -1,21 +1,23 @@
 <%-- 
-    Document   : menuinicial
-    Created on : 05/09/2015, 14:45:30
-    Author     : Pedro Pagotto
+    Document   : Logo
+    Created on : 07/09/2015, 14:21:34
+    Author     : pepag
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/positiontela.css"/>
         <link rel="stylesheet" type="text/css" href="css/menucss.css"/>
         <link rel="stylesheet" type="text/css" href="css/icones/iconesmenu.css"/> 
     </head>
-    
-    <!--Desenvolvimento do primeiro menu .
-    menu de visualização de pessoas que nao estao logados dentro do sistema
-    Pedro Pagotto!-->
     <body>
+        
+        <div id="topo">
+            logo carga facil            
+        </div>
         <div id="cssmenu">
            <ul>
            <li><a href="index.jsp"><img src="css/icones/cagashome.png" class="icones-32">Inicio</a></li>
@@ -24,6 +26,7 @@
            <li><a href="index.jsp"><img src="css/icones/Info-32.png" class="icones-32">Quem Somos</a></li>   
            </ul>    
         </div>
+        
         
     </body>
 </html>
