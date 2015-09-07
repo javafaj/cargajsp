@@ -16,7 +16,7 @@
     <body>
         
         <div id="topo">
-            logo carga facil            
+           <!-- <img src="css/icones/logo.png"/>!-->      
         </div>
         <div id="menu">
         <div id="cssmenu">

@@ -15,26 +15,27 @@ body{
     margin: 0px;
     margin: 0;
     padding:0;
-    background-color: #ffffff;
+    background-color: #cccccc;
     background-size: auto;
     text-align: center;    
 }
 /*define a  pagina tamanho , cor , largura e posição*/
 #tudo {
 width: auto;
+
 }
 /*define o topo da pagina tamanho , cor , largura e posição*/
 #topo {
-width: auto;/*1789px;*/
-height: 300px;
+width: auto;
+height: 230px;
 background-color: #006400;
 }
 /*define o login da pagina tamanho , cor , largura e posição*/
 #login{
 float: left;
-width: 245px;
-height: 600px;
-position: relative;top: 1px; left: 10px;
+width: 200px;
+height: 505px;
+position: relative;top: 1px; right: 145px;
 background-color: #0000FF;
 }
 /*define o menu da pagina tamanho , cor , largura e posição*/
@@ -45,18 +46,13 @@ height: 2px;
 background: aqua;
 }
 /*define o conteudo da pagina tamanho , cor , largura e posição*/
+
 #conteudo {
 width: auto;
 height: 800px;
-position: relative; top: 40px;
-background-color: #FF0000;
-}
-/*complemento localizado ao lado direito da tela utilizado para propagandas ou logo de transportadoras cadastradas*/
-#slide {
-width: 1490px;
-height: 600px;
-position: relative;  top: 1px; left: 300px;
-background-color: #ffcc00;
+position: relative; top: 15px;
+background-color: #cccccc;
+  
 }
 
 /*define o rodapé da pagina tamanho , cor , largura e posição*/
@@ -64,6 +60,6 @@ background-color: #ffcc00;
 clear: both;
 height: 55px;
 width: auto;
-position: relative; top: 150px;
+position: relative; top: 1px;
 background-color: #FFFF00;
 }

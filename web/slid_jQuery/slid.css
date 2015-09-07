@@ -16,12 +16,13 @@ and open the template in the editor.
 /* 1º aqui estou atribuindo as configurações do SLID jQuery*/
     section#galeria{
     background: #fff;
-    width: 1490px;
-    height: 600px;
+    width: 1005px;
+    height: 505px;
     display: block;
     overflow: hidden;
     box-shadow: #999 0 0 15px;
     margin: 50px auto;
+    position: relative;  top: 1px; right: 125px;
 }
 
 /* 2º Aqui estou atribuindo as configurações dos botões Next/Prev*/
@@ -54,13 +55,13 @@ and open the template in the editor.
     section#galeria ul{
         list-style: none;
         display: table;
-        position: relative;
+        position: relative;top: 1px;
           
     }
     
     section#galeria ul li{
-        width: 1490px;
-        height: 600px;
+        width: 1005px;
+        height: 505px;
         display: inline-block;
         position: relative;
     }
@@ -84,4 +85,5 @@ and open the template in the editor.
         margin: 10px;
         font: 12pt "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
         color: #fff;
+        
     }

@@ -16,15 +16,17 @@
           
                  
         <div id ="tudo">  
-            
-            <jsp:include page="topo.jsp"/>
+            <div id="topo">
+                <jsp:include page="topo.jsp"/>
+            </div>
             <div id ="conteudo">
                 <div id="login">
                  login
-                </div>
-                               
-             <jsp:include page="slid.jsp"/>
-                
+                </div>                
+                <div id ="slid">
+                    <jsp:include page="slid.jsp"/>
+                </div>                 
+             
             </div>
                        
            
