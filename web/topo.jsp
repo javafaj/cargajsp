@@ -18,6 +18,7 @@
         <div id="topo">
             logo carga facil            
         </div>
+        <div id="menu">
         <div id="cssmenu">
            <ul>
            <li><a href="index.jsp"><img src="css/icones/cagashome.png" class="icones-32">Inicio</a></li>
@@ -25,6 +26,7 @@
            <li><a href="index.jsp"><img src="css/icones/Keyboard-32.png" class="icones-32">Cadastre-se</a></li>
            <li><a href="index.jsp"><img src="css/icones/Info-32.png" class="icones-32">Quem Somos</a></li>   
            </ul>    
+        </div>
         </div>
         
         

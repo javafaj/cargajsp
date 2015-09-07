@@ -39,9 +39,9 @@ background-color: #0000FF;
 }
 /*define o menu da pagina tamanho , cor , largura e posição*/
 #menu {
-position: relative;top: 235px;
-width: auto;/*1789px;*/
-height: 55px;
+position: relative;top: 2px;
+width: auto;
+height: 2px;
 background: aqua;
 }
 /*define o conteudo da pagina tamanho , cor , largura e posição*/
