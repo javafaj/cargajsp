@@ -11,22 +11,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/positiontela.css"/>
         <link rel="stylesheet" type="text/css" href="css/menucss.css"/>
-        <link rel="stylesheet" type="text/css" href="css/icones/iconesmenu.css"/> 
+        <link rel="stylesheet" type="text/css" href="css/icones/iconesmenu.css"/>
+        <link rel="stylesheet" type="text/css" href="css/icones/logo.css"/> 
     </head>
     <body>
-        
         <div id="topo">
-           <!-- <img src="css/icones/logo.png"/>!-->      
-        </div>
-        <div id="menu">
-        <div id="cssmenu">
-           <ul>
-           <li><a href="index.jsp"><img src="css/icones/cagashome.png" class="icones-32">Inicio</a></li>
-           <li><a href="index.jsp"><img src="css/icones/Cargas-32.png" class="icones-32">Verificar Cargas</a></li>
-           <li><a href="index.jsp"><img src="css/icones/Keyboard-32.png" class="icones-32">Cadastre-se</a></li>
-           <li><a href="index.jsp"><img src="css/icones/Info-32.png" class="icones-32">Quem Somos</a></li>   
-           </ul>    
-        </div>
+            <img src="css/icones/logo.png" class="logo-marca"/>    
         </div>
         
         

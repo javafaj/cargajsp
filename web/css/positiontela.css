@@ -15,7 +15,7 @@ body{
     margin: 0px;
     margin: 0;
     padding:0;
-    background-color: #cccccc;
+   /* background-color: #cccccc;*/
     background-size: auto;
     text-align: center;    
 }
@@ -47,19 +47,35 @@ background: aqua;
 }
 /*define o conteudo da pagina tamanho , cor , largura e posição*/
 
-#conteudo {
+/*utilizado para quando tiver somente menu e inputs na tela */
+#conteudo-include{
 width: auto;
 height: 800px;
-position: relative; top: 15px;
-background-color: #cccccc;
-  
+position: relative; top: 44px;
+background-color: #cccccc; 
 }
+/*utilizado para quando tiver somente menu e inputs na tela */
+
+/*utilizado somente quando houver slide na pagina */
+#conteudo-slide{
+width: auto;
+height: 800px;
+position: relative; top: 16px;
+background-color: #cccccc;
+}/*utilizado somente quando houver slide na pagina */
 
 /*define o rodapé da pagina tamanho , cor , largura e posição*/
 #rodape {
 clear: both;
 height: 55px;
 width: auto;
-position: relative; top: 1px;
+position: relative; top: 15px;
 background-color: #FFFF00;
+}
+/*define o rodapé da pagina tamanho , cor , largura e posição*/
+#escitas-informacao{
+    h1{
+        position: relative; top:155px;
+    }
+    
 }
