@@ -11,11 +11,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/positiontela.css"/>
         <link rel="stylesheet" type="text/css" href="css/menucss.css"/>
-        <link rel="stylesheet" type="text/css" href="css/icones/iconesmenu.css"/> 
+        <link rel="stylesheet" type="text/css" href="css/icones/iconesmenu.css"/>
+        <link rel="stylesheet" type="text/css" href="css/icones/logo.css"/> 
     </head>
     <body>
-        
         <div id="topo">
+
            
         </div>
         <div id="menu">
@@ -27,6 +28,9 @@
            <li><a href="index.jsp"><img src="css/icones/Info-32.png" class="icones-32">Quem Somos</a></li>   
            </ul>    
         </div>
+
+            <img src="css/icones/logo.png" class="logo-marca"/>    
+
         </div>
         
         

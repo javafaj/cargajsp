@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index.jsp
-    Created on : 04/09/2015, 19:23:03
+    Document   : informacao
+    Created on : 07/09/2015, 19:47:31
     Author     : pepag
 --%>
 
@@ -10,31 +10,28 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/positiontela.css"/>
-        <title>Carga Facil</title>
+        <title>Quem Somos</title>
     </head>
     <body>
-          
-                 
-        <div id ="tudo">  
-          
+        
+       <div id ="tudo">  
             <div id="topo">
-                
                 <jsp:include page="topo.jsp"/>
-               
+                <jsp:include page="menu.jsp"/>
             </div>
             
            
-            <div id="conteudo-slide">
-                <jsp:include page="login.jsp"/>
-                <jsp:include page="slid.jsp"/>          
+            <div id="conteudo-include">
+                <h1>
+                    
+                </h1>
             </div>         
            
-        </div>
-            
+        
             <div id="rodape">
                 rodapé
            </div>
                       
          </div>
-</body>
+    </body>
 </html>
