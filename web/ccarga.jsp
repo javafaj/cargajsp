@@ -9,12 +9,24 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/positiontela.css"/>
         <title>Cadastro de Cargas</title>
     </head>
     <body>
-        <div id="conteudo">
+         <div id ="tudo">  
+            <jsp:include page="menu.jsp"/>
             
-        </div>
+           
+            <div id="conteudo-include">
+               
+            </div>         
+           
+        
+            <div id="rodape">
+                rodapé
+           </div>
+                      
+         </div>
         
     </body>
 </html>

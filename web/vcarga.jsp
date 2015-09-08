@@ -9,9 +9,23 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/positiontela.css"/>
         <title>Cargas Disponiveis</title>
     </head>
     <body>
-        <jsp:include page="topo.jsp"/>
+         <div id="tudo">
+             <jsp:include page="menu.jsp"/>
+       
+        
+             <div id="conteudo-include">
+                 test
+             </div>
+        
+            <div id="rodape">
+
+            </div>
+
+          </div>
+        
     </body>
 </html>

@@ -15,17 +15,16 @@
     <body>
         
        <div id ="tudo">  
-            <div id="topo">
-                <jsp:include page="menu.jsp"/>
-            </div>
+            <jsp:include page="menu.jsp"/>
             
            
             <div id="conteudo-include">
+                
                 <h1>
                     Carga Fácil                   
                 </h1>
                 <h2>
-                    Somos uma empresa que visa suprir as necessidades de mercado da area de logistica <br>
+                   Somos inovadores e visamos suprir as necessidades existentes da area de logistica! <br>
                 </h2>
             </div>         
            

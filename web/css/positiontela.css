@@ -15,7 +15,7 @@ body{
     margin: 0px;
     margin: 0;
     padding:0;
-   /* background-color: #cccccc;*/
+    background:#eff0ef  url(icones/fundo-logo.png)  center; 
     background-size: auto;
     text-align: center;    
 }
@@ -39,12 +39,12 @@ background:#eff0ef  url(icones/Logo.png) no-repeat center;
 float: left;
 width: 200px;
 height: 505px;
-position: relative;top: 1px; right: 145px;
+position: relative;top: 1px; left:5px;
 background-color: #0000FF;
 }
 /*define o menu da pagina tamanho , cor , largura e posição*/
 #menu {
-position: relative;top: 0px;
+position: relative;top: 215px;
 width: auto;
 height: 5px;
 background: #66ccff;
@@ -62,8 +62,8 @@ width: auto;
 #conteudo-include{
 width: auto;
 height: 800px;
-position: relative; top: 44px;
-background-color: #cccccc; 
+position: static; top: 35px;
+background-color: #FFFF00;
 }
 /*utilizado para quando tiver somente menu e inputs na tela */
 
@@ -71,8 +71,8 @@ background-color: #cccccc;
 #conteudo-slide{
 width: auto;
 height: 800px;
-position: relative; top: 30px;
-background-color: #cccccc;
+position: relative; top: 4px; 
+/*background-color:#ff0033; */
 }/*utilizado somente quando houver slide na pagina */
 
 /*define o rodapé da pagina tamanho , cor , largura e posição*/

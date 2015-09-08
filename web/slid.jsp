@@ -8,17 +8,11 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        
-        
-        
         <link rel="stylesheet" type="text/css" href="slid_jQuery/slid.css"/>  
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script type="text/javascript" src="slid_jQuery/js/jquery.js"></script>
         <script type="text/javascript" src="slid_jQuery/js/funcoes.js"></script>
-        
-            
         </script>
-        
         <title>JSP Page</title>
     </head>
     <body>

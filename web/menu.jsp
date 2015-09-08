@@ -13,7 +13,10 @@
         <link rel="stylesheet" type="text/css" href="css/icones/iconesmenu.css"/> 
     </head>
     <body>
-        <div id="menu">
+        <div id="topo">
+        
+        
+            <div id="menu">
             <div id="menu-decorate">
             </div>
         <div id="cssmenu">
@@ -24,6 +27,8 @@
            <li><a href="informacao.jsp"><img src="css/icones/Info-32.png" class="icones-32">Quem Somos</a></li>   
            </ul>    
         </div>
+         </div>
         </div>
+       
     </body>
 </html>

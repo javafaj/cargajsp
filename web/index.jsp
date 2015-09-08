@@ -13,30 +13,18 @@
         <title>Carga Facil</title>
     </head>
     <body>
-          
                  
         <div id ="tudo">  
+          <jsp:include page="menu.jsp"/>
           
-            <div id="topo">                
-                
-               
-            </div>
-            
-            <div id="menu">
-                <jsp:include page="menu.jsp"/>
-            </div>
-           
             <div id="conteudo-slide">
                 <jsp:include page="login.jsp"/>
                 <jsp:include page="slid.jsp"/>          
             </div>         
-           
-        </div>
             
             <div id="rodape">
                 rodapé
            </div>
-                      
-         </div>
+        </div>                      
 </body>
 </html>
