@@ -16,9 +16,11 @@
           
                  
         <div id ="tudo">  
+          
             <div id="topo">
+                
                 <jsp:include page="topo.jsp"/>
-                <jsp:include page="menu.jsp"/>
+               
             </div>
             
            
@@ -27,7 +29,8 @@
                 <jsp:include page="slid.jsp"/>          
             </div>         
            
-        
+        </div>
+            
             <div id="rodape">
                 rodapé
            </div>
