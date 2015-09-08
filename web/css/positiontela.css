@@ -26,12 +26,13 @@ width: auto;
 }
 
 
-/*define o topo da pagina tamanho , cor , largura , posição e logo */
+/*define o topo da pagina tamanho , cor , largura e posição*/
+
 #topo {
 width: auto;
 height: 230px;
-background: transparent url(icones/LG.png) no-repeat center; 
-background-color: lavender;
+background:#eff0ef  url(icones/Logo.png) no-repeat center; 
+
 }
 /*define o login da pagina tamanho , cor , largura e posição*/
 #login{
