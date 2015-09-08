@@ -50,7 +50,7 @@ body{
 /*borda inferior do menu que fica uma fita bem fina da cor que altera os botões apos selecionado */
 #cssmenu {
   width:  auto;
-  border-bottom: 5px solid #66ccff;        
+  border-bottom: 5px solid #66ccff;
   font-family: Raleway, sans-serif;
   line-height: 3;
 }
@@ -85,7 +85,8 @@ body{
 /*definição do fundo do menu , com o tamanho , largura das opçãoes e exibição
 juntamente com as escritas de todas as opçoes do menu*/
 #cssmenu > ul > li > a{
-  z-index: 2;
+ /*animação das caixas*/
+    z-index: 2;
   /*tamanho vertical menu*/
   padding-top: 8px;
   padding-right: 40px;
