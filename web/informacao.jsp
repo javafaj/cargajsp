@@ -23,8 +23,11 @@
            
             <div id="conteudo-include">
                 <h1>
-                    
+                    Carga Fácil                   
                 </h1>
+                <h2>
+                    Somos uma empresa que visa suprir as necessidades de mercado da area de logistica <br>
+                </h2>
             </div>         
            
         

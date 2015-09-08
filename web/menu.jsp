@@ -14,6 +14,8 @@
     </head>
     <body>
         <div id="menu">
+            <div id="menu-decorate">
+            </div>
         <div id="cssmenu">
            <ul>
            <li><a href="index.jsp"><img src="css/icones/cagashome.png" class="icones-32">Inicio</a></li>

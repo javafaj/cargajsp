@@ -44,10 +44,17 @@ background-color: #0000FF;
 }
 /*define o menu da pagina tamanho , cor , largura e posição*/
 #menu {
+position: relative;top: 0px;
+width: auto;
+height: 5px;
+background: #66ccff;
+}
+#menu-decorate{
 position: relative;top: 2px;
 width: auto;
-height: 2px;
-background: aqua;
+ border-bottom: 5px solid #66ccff;
+  font-family: Raleway, sans-serif;
+  line-height: 3;
 }
 /*define o conteudo da pagina tamanho , cor , largura e posição*/
 
@@ -64,7 +71,7 @@ background-color: #cccccc;
 #conteudo-slide{
 width: auto;
 height: 800px;
-position: relative; top: 16px;
+position: relative; top: 30px;
 background-color: #cccccc;
 }/*utilizado somente quando houver slide na pagina */
 
