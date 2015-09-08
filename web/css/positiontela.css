@@ -24,6 +24,10 @@ body{
 width: auto;
 
 }
+#logo{
+   background: transparent url(icones/LG.png) left top no-repeat;
+}
+
 /*define o topo da pagina tamanho , cor , largura e posição*/
 #topo {
 width: auto;
