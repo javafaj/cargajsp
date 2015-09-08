@@ -16,7 +16,6 @@
         
        <div id ="tudo">  
             <div id="topo">
-                <jsp:include page="topo.jsp"/>
                 <jsp:include page="menu.jsp"/>
             </div>
             

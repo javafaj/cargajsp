@@ -12,7 +12,6 @@
         <title>Cadastre-se </title>
     </head>
     <body>
-         <jsp:include page="topo.jsp"/>
 
     </body>
 </html>

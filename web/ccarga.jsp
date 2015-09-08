@@ -12,7 +12,6 @@
         <title>Cadastro de Cargas</title>
     </head>
     <body>
-        <jsp:include page="topo.jsp"/>
         <div id="conteudo">
             
         </div>
