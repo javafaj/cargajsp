@@ -14,9 +14,27 @@
     <body>
 
         <div id="login">
-            login
+            		
+            <h1>Login</h1>
+            <li>
+                <input type="text" value="Usuario"></input><a href="#"></a>
+            </li>
+            <li>
+                <input type="password" value="senha"></input><a href="#"></a>
+            </li>
+               
+                <input type="submit" value="Cancel" name="btncancel" />
+                 <input type="submit" value="OK" name="btnok" />
+                
+           
             
+        
+        
+        
+        
         </div>
+
+
 
 
     </body>
