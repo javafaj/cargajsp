@@ -1,17 +1,17 @@
 <%-- 
-    Document   : ccarga
-    Created on : 07/09/2015, 14:04:14
+    Document   : minhascargas
+    Created on : 12/09/2015, 18:23:06
     Author     : pepag
-    Pagina para cadastro de carga
 --%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <head>
+     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/positiontela.css"/>
         <link rel="icon" href="css/icones/carro.ico" sizes="24x24"/>
-        <title>Cadastro de Cargas</title>
+        <title>Minhas Cargas</title>
     </head>
     <body>
          <div id ="tudo">  
