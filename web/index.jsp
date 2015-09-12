@@ -10,29 +10,21 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/positiontela.css"/>
-        <title>Carga Facil</title>
+        <title>Carga Fácil</title>
     </head>
     <body>
-          
                  
         <div id ="tudo">  
+          <jsp:include page="menu.jsp"/>
+          
+            <div id="conteudo-slide">
+                <jsp:include page="login.jsp"/>
+                <jsp:include page="slid.jsp"/>          
+            </div>         
             
-            <jsp:include page="topo.jsp"/>
-            <div id ="conteudo">
-                <div id="login">
-                 login
-                </div>
-                               
-             <jsp:include page="slid.jsp"/>
-                
-            </div>
-                       
-           
-        
             <div id="rodape">
                 rodapé
            </div>
-                      
-         </div>
+        </div>                      
 </body>
 </html>
