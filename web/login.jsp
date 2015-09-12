@@ -10,6 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/positiontela.css"/>
+        <link rel="icon" href="css/icones/carro.ico" sizes="24x24"/>
     </head>
     <body>
 
@@ -26,12 +27,6 @@
                 <input type="submit" value="Cancel" name="btncancel" />
                  <input type="submit" value="OK" name="btnok" />
                 
-           
-            
-        
-        
-        
-        
         </div>
 
 
