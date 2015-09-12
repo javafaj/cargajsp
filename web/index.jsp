@@ -10,7 +10,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/positiontela.css"/>
-        <title>Carga Facil</title>
+        <link rel="icon" href="css/icones/carro.ico" sizes="24x24"/>
+        <title>Carga Facil
+        </title>
+       
     </head>
     <body>
                  

@@ -83,9 +83,8 @@ position: relative; top: 15px;
 background-color: #FFFF00;
 }
 /*define o rodapé da pagina tamanho , cor , largura e posição*/
+/*define layout de escritas : */
 #escitas-informacao{
-    h1{
-        position: relative; top:155px;
-    }
+   position: relative; top:55px;
     
 }

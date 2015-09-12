@@ -12,7 +12,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script type="text/javascript" src="slid_jQuery/js/jquery.js"></script>
         <script type="text/javascript" src="slid_jQuery/js/funcoes.js"></script>
-        </script>
+        <link rel="icon" href="css/icones/carro.ico" sizes="24x24"/>
         <title>JSP Page</title>
     </head>
     <body>
