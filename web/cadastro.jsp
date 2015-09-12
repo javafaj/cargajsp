@@ -19,8 +19,12 @@
             
            
             <div id="conteudo-include">
-                <div>
-                <input type="text" name="nome" value="" size="10px" style="position: relative;top: 145px;" />
+                <div id="cadastro">
+                    <div>
+                      <label for="nome" class="label">Nome</label>
+                      <input type="text" name="nome" id="nome" class="input" value="" size="10px" style="position: relative;top: 20px;" />
+                    </div>
+                    <input type="text" name="cpf" value="" size="10px" style="position: relative;top: 20px;" />
                 </div>
             </div>         
            
