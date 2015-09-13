@@ -19,15 +19,25 @@
                  
         <div id ="tudo">  
           <jsp:include page="menu.jsp"/>
-          
+           <h5>&nbsp;</h5>
+           <h5>&nbsp;</h5>
             <div id="conteudo-slide">
                 <jsp:include page="login.jsp"/>
                 <jsp:include page="slid.jsp"/>          
             </div>         
             
-            <div id="rodape">
-                rodapé
-           </div>
-        </div>                      
+          
+           <div id="rodape">
+             <div align="center">
+            <h5>&nbsp;</h5>
+            <h5>&nbsp;</h5>
+           
+           
+             Coptyright © 2015 - Carga Fácil. Todos os direitos reservados. Design: Grupo do Arrocha! </div> <h5 align="center">&nbsp;</h5>
+            <div align="center">
+               
+           </div>     
+        </div>    
+            
 </body>
 </html>

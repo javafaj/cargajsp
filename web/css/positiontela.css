@@ -15,7 +15,7 @@ body{
     margin: 0px;
     margin: 0;
     padding:0;
-    background:#eff0ef  url(icones/fundo-logo.png)  center; 
+    background:#eff0ef  url(icones/clean-white-polygon-backgrounds-9.jpg)  center; 
     background-size: auto;
     text-align: center;    
 }
@@ -29,7 +29,7 @@ width: auto;
 
 #topo {
 width: auto;
-height: 230px;
+height: 220px;
 background:#eff0ef  url(icones/Logo.png) no-repeat center; 
 
 }
@@ -46,14 +46,17 @@ background-color: #0000FF;
 position: relative;top: 215px;
 width: auto;
 height: 5px;
-background: #66ccff;
+/*background: #66ccff;*/
 }
+
 #menu-decorate{
+    
+    /*
 position: relative;top: 2px;
 width: auto;
- border-bottom: 5px solid #66ccff;
-  font-family: Raleway, sans-serif;
-  line-height: 3;
+border-bottom: 5px solid #66ccff;
+font-family: Raleway, sans-serif;
+line-height: 3;*/
 }
 /*define o conteudo da pagina tamanho , cor , largura e posição*/
 
@@ -75,16 +78,20 @@ position: relative; top: 4px;
 }/*utilizado somente quando houver slide na pagina */
 
 /*define o rodapé da pagina tamanho , cor , largura e posição*/
+
+
 #rodape {
-clear: both;
-height: 55px;
-width: auto;
-position: relative; top: 15px;
-background-color: #FFFF00;
+    clear: both;
+    height: 65px;
+    width: auto;
+    position: relative; 
+    background:url("icones/rodapé background.png") top left repeat-x ;
 }
+
 /*define o rodapé da pagina tamanho , cor , largura e posição*/
 /*define layout de escritas : */
 #escitas-informacao{
+   
    position: relative; top:55px;
     
 }

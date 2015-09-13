@@ -49,14 +49,14 @@ body{
 }
 /*borda inferior do menu que fica uma fita bem fina da cor que altera os botões apos selecionado */
 #cssmenu {
-  width:  auto;
-  border-bottom: 5px solid #66ccff;
+  width:auto;
+  /*border-bottom: 5px solid #66ccff;*/
   font-family: Raleway, sans-serif;
   line-height: 3;
 }
 /*fundo do menu quando nao esta selecionado*/
 #cssmenu ul {
-  background: #ffffff;
+  background: url("icones/rodapé background.png")repeat-x;
 }
 /*alinhando o menu a esquerda*/
 #cssmenu > ul > li {
@@ -88,7 +88,7 @@ juntamente com as escritas de todas as opçoes do menu*/
  /*animação das caixas*/
     z-index: 2;
   /*tamanho vertical menu*/
-  padding-top: 8px;
+  padding-top:24px;
   padding-right: 40px;
   padding-left: 40px;
   padding-bottom: 15px;
@@ -138,5 +138,6 @@ juntamente com as escritas de todas as opçoes do menu*/
 #cssmenu > ul > li:hover > a:after,
 /*cor de botao selecinado */
 #cssmenu > ul > li > a:hover:after {
-    background: #66ccff;
+   
+    background: #f4d00b;
 }
