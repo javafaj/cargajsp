@@ -1,0 +1,102 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13/09/2015, 22:35:24
+    Author     : Gabriel Hofman
+*/
+
+#login h1{
+	text-align:left;
+	color: #FFF;
+	font-size:20px;
+	font-weight:500;
+	font-family: 'Open Sans', sans-serif;
+	position:relative;
+	top:1%;
+	left:5%;
+	margin:10px 0;
+}
+
+form {
+	padding:5% 10px;
+}
+
+form li{
+	border:1px solid #66CCFF;
+	list-style:none;
+	margin-bottom:16px;
+	width:100%;
+	background: #66CCFF;
+
+}
+
+.icon{
+	background:url(../css/icones/iconslogin.png)  no-repeat 0px 0px;
+	height:35px;
+	width:35px;
+	display: block;
+	float:left;
+	margin:-2px -11px 0px 0px;
+}
+
+.user{
+	background: url(../css/icones/iconslogin.png) no-repeat 7px 1px;
+	
+}
+.lock{
+	background: url(../css/icones/iconslogin.png) no-repeat -31px 2px;
+}
+
+
+input[type="text"], input[type="password"] {
+	font-family: 'Open Sans', sans-serif;
+	width:70%;
+	padding: 5px 5px 5px 5px;
+	color: #fff;
+	font-size:18px;
+	outline: none;
+	background: none;
+	border:none;
+}
+
+input[type="submit"]{
+	float: inside;
+	font-size:18px;
+	display: inline-block;
+	font-weight:600;
+	color: #615F5F;
+	transition: 0.1s all;
+	-webkit-transition: 0.1s all;
+	-moz-transition: 0.1s all;
+	-o-transition: 0.1s all;
+	cursor: pointer;
+	outline: none;
+        padding: 5px 5px;
+	margin-top:3px;
+	font-family: 'Open Sans', sans-serif;
+	background: #222;
+	width:70%;
+	border:1px solid #222;
+}
+input[type="submit"]:hover{
+	background: #66CCFF;
+	border:1px solid #66CCFF;
+}
+.loginesqueceu{
+	margin:30px 7px;
+}
+.loginesqueceu h3 a{
+	color:#fff;
+	font-size:15px;
+	font-family: 'Open Sans', sans-serif;	
+	float:right;
+	font-weight:600;
+	margin-top:19px;
+        text-decoration: none;
+}
+.loginesqueceu h3 a:hover{
+	color:#66CCFF;
+}

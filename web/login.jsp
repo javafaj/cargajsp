@@ -1,7 +1,7 @@
 <%-- 
     Document   : login
-    Created on : 07/09/2015, 20:38:21
-    Author     : pepag
+    Created on : 12/09/2015, 14:22:01
+    Author     : Gabriel Hofman
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -10,27 +10,24 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/positiontela.css"/>
-        <link rel="icon" href="css/icones/carro.ico" sizes="24x24"/>
+        <link rel="stylesheet" type="text/css" href="css/logincss.css"/>
     </head>
     <body>
 
         <div id="login">
-            		
             <h1>Login</h1>
-            <li>
-                <input type="text" value="Usuario"></input><a href="#"></a>
-            </li>
-            <li>
-                <input type="password" value="senha"></input><a href="#"></a>
-            </li>
-               
-                <input type="submit" value="Cancel" name="btncancel" />
-                 <input type="submit" value="OK" name="btnok" />
-                
-        </div>
-
-
-
-
-    </body>
-</html>
+            <form>
+                <li>
+                    <input type="text" value="Usuário" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Usuário';}" > <a href="#" class=" icon user"></a>
+                    </li>
+                <li>
+                    <input type="password" value="Senha" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Senha';}"> <a href="#" class=" icon lock"></a>
+                    </li>
+                <div class ="loginesqueceu">
+                    <input type="submit" onclick="myFunction()" value="Entrar" > </h4>
+                    <h3><a href="#">Esqueceu sua Senha?</a></h3>
+                    </div>
+                </form>
+            </div>
+        </body>
+    </html>
