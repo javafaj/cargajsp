@@ -1,0 +1,21 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17/09/2015, 21:23:02
+    Author     : pepag
+*/
+#inputmenu {
+position : relative; top : 25px;
+}
+#input {
+position : relative; top : 5px;
+}/*
+#labelescrita {
+position : relative; top : 43px; right: 135px;
+}*/
+#labelescrita_2 {
+position : relative; top : 20px; right: 135px;
+}
