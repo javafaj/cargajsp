@@ -13,7 +13,6 @@
         <link rel="icon" href="css/icones/carro.ico" sizes="24x24"/>
         <title>Carga Facil
         </title>
-       
     </head>
     <body>
                  
