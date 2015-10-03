@@ -19,48 +19,55 @@
              <div id="conteudo-include">
                 <div id="cadastro">
                     
-                                       
                          <div id="inputmenu">
                              <div id="labelescrita_2">
-                                    <label>nome:</label>
+                                 <label for="dtcarr">Situação Carga:</label>
                              </div>
-                             <input type="text" name="pesobruto"/> 
+                             <input id="dtcarr" type="text" name="dtcarr"class="input-estilo" /> 
                          
                          <div id="input">
                                 <div id="labelescrita_2">
-                                    <label>pesobruto:</label>
+                                    <label>Data Carregamento:</label>
                                 </div>
                              
-                                <input type="text" name="pesobruto"/> 
+                             <input type="text" name="dtag" class="input-estilo"/> 
                              <div id="input">
                                 <div id="labelescrita_2">
-                                    <label>bucetinha:</label>
+                                    <label>Data Agendamento:</label>
                                 </div>
                              
-                                <input type="text" name="pesobruto"/> 
+                                <input type="text" name="rsthora" class="input-estilo"/> 
                                <div id="input">
                                 <div id="labelescrita_2">
-                                    <label>cuzinho:</label>
+                                    <label>Restrição Hora:</label>
                                 </div>
                              
-                                <input type="text" name="pesobruto"/> 
+                                <input type="text" name="pesobruto" class="input-estilo"/> 
                              
                             </div>
                                  <div id="input">
                                 <div id="labelescrita_2">
-                                    <label>boquete:</label>
+                                    <label>PesoBruto:</label>
                                 </div>
                              
-                                <input type="text" name="pesobruto"/>
+                                     <input type="text" name="tipcarr" class="input-estilo"/>
                                   <div id="input">
                                 <div id="labelescrita_2">
-                                    <label>de 4 :</label>
+                                    <label> Tipo Carregamento:</label>
                                 </div>
                              
-                                <input type="text" name="pesobruto"/> 
+                                      <input type="text" name="qtd" class="input-estilo"/>
+                                <div id="input">
+                                     <div id="labelescrita_2">
+                                    <label>Qtd Produto:</label>
+                                </div>
                              
+                                    <input type="text" class="input-estilo"/>
+                                    
+                                </div>
+                             
+                        
                         </div>
-                             
                         </div>
                         </div> 
                         </div>
@@ -78,7 +85,6 @@
            
         
             <div id="rodape">
-                rodapé
            </div>
                       
          </div>

@@ -22,12 +22,19 @@
             <div id="conteudo-include">
                 <div id="escitas-informacao">
                     <h1>
+                        <br>
+                        <br>
+                        <br>
                         Carga Fácil                   
                     </h1>
                     <h2>
                         <center>
-                            Somos inovadores e visamos suprir as necessidades existentes da area de logistica! <br>
-                        
+                            <br>
+                            <br>
+                            
+                          Fundado em 2015, Carga Fácil é um site , que facilita a comunicação entre clientes <br>
+                          e transportadoras.
+                          Oferecendo a divulgação de transportes de cargas , por meio da internet.                          
                         </center>
                     </h2>
                  

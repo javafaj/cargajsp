@@ -25,7 +25,16 @@
            <li><a href="index.jsp"><img src="css/icones/cagashome.png" class="icones-32">Inicio</a></li>
            <li><a href="vcarga.jsp"><img src="css/icones/Cargas-32.png" class="icones-32">Verificar Cargas</a></li>
            <li><a href="cadastro.jsp"><img src="css/icones/Keyboard-32.png" class="icones-32">Cadastre-se</a></li>
-           <li><a href="informacao.jsp"><img src="css/icones/Info-32.png" class="icones-32">Quem Somos</a></li>   
+<%
+       boolean logado = true;
+       if(logado){
+%>       
+           <li><a href="ccarga.jsp"><img src="css/icones/Shipped-32.png" class="icones-32">Cadastre suas Cargas</a></li>
+           <li><a href="minhascargas.jsp"><img src="css/icones/Handle With Care-32.png" class="icones-32">Minhas Cargas</a></li>
+<%    
+   }
+%> 
+           <li><a href="informacao.jsp"><img src="css/icones/Info-32.png" class="icones-32">Quem Somos</a></li>
            </ul>    
         </div>
          </div>

@@ -1,6 +1,6 @@
 $(function(){
     var liWidth = $("#galeria ul li").outerWidth();
-     speed = 50000,
+     speed = 3000,
      rotate = setInterval(auto,speed);
      
    

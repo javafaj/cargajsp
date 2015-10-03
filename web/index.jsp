@@ -32,7 +32,7 @@
             <h5>&nbsp;</h5>
            
            
-             Coptyright © 2015 - Carga Fácil. Todos os direitos reservados. Design: Grupo do Arrocha! </div> <h5 align="center">&nbsp;</h5>
+             Coptyright © 2015 - Carga Fácil. Todos os direitos reservados. </div> <h5 align="center">&nbsp;</h5>
             <div align="center">
                
            </div>     

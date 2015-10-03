@@ -13,7 +13,7 @@ import com.br.cargafacil.objetos.Cargas;
  */
 public class CargasBean {
     
-    Cargas c = new Cargas();
+  
     
     
     

@@ -25,11 +25,11 @@ form {
 }
 
 form li{
-	border:1px solid #66CCFF;
+	border:1px solid #f4d00b/*#66CCFF*/;
 	list-style:none;
 	margin-bottom:16px;
 	width:100%;
-	background: #66CCFF;
+	background: #f4d00b/*66CCFF*/;
 
 }
 
@@ -67,7 +67,7 @@ input[type="submit"]{
 	font-size:18px;
 	display: inline-block;
 	font-weight:600;
-	color: #615F5F;
+	color: #f4d00b/*#615F5F*/;
 	transition: 0.1s all;
 	-webkit-transition: 0.1s all;
 	-moz-transition: 0.1s all;
@@ -82,8 +82,8 @@ input[type="submit"]{
 	border:1px solid #222;
 }
 input[type="submit"]:hover{
-	background: #66CCFF;
-	border:1px solid #66CCFF;
+	background: #222;
+	border:1px solid #FFF;
 }
 .loginesqueceu{
 	margin:30px 7px;
@@ -98,5 +98,5 @@ input[type="submit"]:hover{
         text-decoration: none;
 }
 .loginesqueceu h3 a:hover{
-	color:#66CCFF;
+	color:#f4d00b;
 }

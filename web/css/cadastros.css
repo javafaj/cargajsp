@@ -17,5 +17,17 @@ position : relative; top : 5px;
 position : relative; top : 43px; right: 135px;
 }*/
 #labelescrita_2 {
-position : relative; top : 20px; right: 135px;
+position : relative; top : 35px; right: 240px;
+color: #222;
+font-size: 25px;
 }
+.input-estilo{
+    /*definimos a largura do box*/
+     padding: 15px;
+    /* definimos a altura do box */
+    /* definimos a cor de fundo do box */
+    /* definimos o quão arredondado irá ficar nosso box */
+   border-radius: 15px;
+    padding: 10px;
+  border: #f4d00b 2px solid #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;}

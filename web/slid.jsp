@@ -34,10 +34,9 @@
                             
                             
                         <li>
-                            <span> Tô querendo corpo a corpo, quero dormir de conchinha. Tô querendo caso sério que tire dessa vida
-Na balada tá difícil, só fico com piriguete. Me usam, me jogam fora igual garrafa pet
+                            <span> Teste img 1
                             </span>  
-                            <img src="slid_jQuery/imagens/skull_manipulation_wallpaper_by_ohmybrooke-d76sgh7.png">
+                            <img src="slid_jQuery/imagens/Dark-Space-Wallpaper.jpg">
                             
                         </li>                         
                       
@@ -45,19 +44,17 @@ Na balada tá difícil, só fico com piriguete. Me usam, me jogam fora igual gar
                          <!--- 2º slid --->
                        
                         <li>
-                            <span> Tô querendo corpo a corpo, quero dormir de conchinha. Tô querendo caso sério que tire dessa vida
-Na balada tá difícil, só fico com piriguete. Me usam, me jogam fora igual garrafa pet   
+                            <span> Teste IMG 2
                             </span>                            
-                            <img src="slid_jQuery/imagens/Dark-Space-Wallpaper.jpg">
+                            <img src="slid_jQuery/imagens/skull_manipulation_wallpaper_by_ohmybrooke-d76sgh7.jpg">
                         </li>                      
                          
                           <!--- 3º slid --->
 
                         <li>
-                            <span> Tô querendo corpo a corpo, quero dormir de conchinha. Tô querendo caso sério que tire dessa vida
-Na balada tá difícil, só fico com piriguete. Me usam, me jogam fora igual garrafa pet   
+                            <span> Teste IMG3
                             </span>                            
-                            <img src="slid_jQuery/imagens/skull_manipulation_wallpaper_by_ohmybrooke-d76sgh7.png">
+                            <img src="slid_jQuery/imagens/volvo_fh_1.jpg">
                         </li> 
                         
                         
