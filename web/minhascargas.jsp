@@ -22,11 +22,16 @@
                
             </div>         
            
-        
             <div id="rodape">
-                rodapé
+            <div align="center">
+            <h5>&nbsp;</h5>         
+           
+            Coptyright © 2015 - Carga Fácil. Todos os direitos reservados. </div> 
+            <div align="center">
+               
            </div>
-                      
+           </div>
+                         
          </div>
         
     </body>

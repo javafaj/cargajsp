@@ -17,56 +17,51 @@
          <div id ="tudo">  
              <jsp:include page="menulogado.jsp"/>            
              <div id="conteudo-include">
-                <div id="cadastro">
+                <div id="cadastro"> 
                     
-                         <div id="inputmenu">
-                             <div id="labelescrita_2">
-                                 <label for="dtcarr">Situação Carga:</label>
-                             </div>
-                             <input id="dtcarr" type="text" name="dtcarr"class="input-estilo" /> 
-                         
-                         <div id="input">
-                                <div id="labelescrita_2">
-                                    <label>Data Carregamento:</label>
-                                </div>
-                             
-                             <input type="text" name="dtag" class="input-estilo"/> 
-                             <div id="input">
-                                <div id="labelescrita_2">
-                                    <label>Data Agendamento:</label>
-                                </div>
-                             
-                                <input type="text" name="rsthora" class="input-estilo"/> 
-                               <div id="input">
-                                <div id="labelescrita_2">
-                                    <label>Restrição Hora:</label>
-                                </div>
-                             
-                                <input type="text" name="pesobruto" class="input-estilo"/> 
-                             
+                     <!----- 1  -->
+                            <div id="input">
+                            <a id="labelescrita_2">Situação da Carga: </a>                           
+                            <input type="text" name="dtcarr"class="input-estilo" /> 
+                            </div>  
+                     <h5>&nbsp;</h5>  
+                     <!----- 2  -->
+                            <div id="input">
+                            <a id="labelescrita_2">Data Carregamento: </a>
+                            <input type="text" name="dtcarr"class="input-estilo" /> 
+                            </div>  
+                     <h5>&nbsp;</h5>  
+                     <!----- 3  --> 
+                            <div id="input">
+                            <a id="labelescrita_2">Data Agendamento: </a>
+                            <input type="text" name="dtcarr"class="input-estilo" /> 
+                            </div>    
+                     <h5>&nbsp;</h5>  
+                    <!----- 4  --> 
+                            <div id="input">
+                            <a id="labelescrita_2">Restrição Hora: </a>
+                            <input type="text" name="dtcarr"class="input-estilo" /> 
+                            </div>   
+                    <h5>&nbsp;</h5>  
+                    <!----- 5  --> 
+                            <div id="input">
+                                <a id="labelescrita_2">Peso Bruto: </a>
+                            <input type="text" name="dtcarr"class="input-estilo" />
+                            </div>     
+                    <h5>&nbsp;</h5>  
+                    <!----- 6  --> 
+                            <div id="input">
+                            <a id="labelescrita_2">Tipo Carregamento: </a>
+                            <input type="text" name="dtcarr"class="input-estilo" /> 
+                            </div>       
+                    <h5>&nbsp;</h5>  
+                    <!----- 7  --> 
+                            <div id="input">
+                            <a id="labelescrita_2">Qtd Produto: </a>
+                            <input type="text" name="dtcarr"class="input-estilo" /> 
                             </div>
-                                 <div id="input">
-                                <div id="labelescrita_2">
-                                    <label>PesoBruto:</label>
-                                </div>
-                             
-                                     <input type="text" name="tipcarr" class="input-estilo"/>
-                                  <div id="input">
-                                <div id="labelescrita_2">
-                                    <label> Tipo Carregamento:</label>
-                                </div>
-                             
-                                      <input type="text" name="qtd" class="input-estilo"/>
-                                <div id="input">
-                                     <div id="labelescrita_2">
-                                    <label>Qtd Produto:</label>
-                                </div>
-                             
-                                    <input type="text" class="input-estilo"/>
-                                    
-                                </div>
-                             
-                        
+                     
+                        </div>
                         </div>
                         </div>
                         </div> 
@@ -85,6 +80,13 @@
            
         
             <div id="rodape">
+            <div align="center">
+            <h5>&nbsp;</h5>         
+           
+            Coptyright © 2015 - Carga Fácil. Todos os direitos reservados. </div> 
+            <div align="center">
+               
+           </div>
            </div>
                       
          </div>

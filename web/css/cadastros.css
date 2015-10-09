@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : pepag
 */
 #inputmenu {
-position : relative; top : 25px;
+position : relative; top : -125px;
 }
 #input {
 position : relative; top : 5px;
@@ -16,11 +16,17 @@ position : relative; top : 5px;
 #labelescrita {
 position : relative; top : 43px; right: 135px;
 }*/
+
+#ajustec{
+  
+}
 #labelescrita_2 {
-position : relative; top : 35px; right: 240px;
+position : relative; top: 5px;
 color: #222;
 font-size: 25px;
 }
+
+
 .input-estilo{
     /*definimos a largura do box*/
      padding: 15px;

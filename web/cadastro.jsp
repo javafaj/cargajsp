@@ -22,52 +22,31 @@
              <div id="conteudo-include">
                 <div id="cadastro">
                     
-                         <div id="inputmenu">
-                             <div id="labelescrita_2">
-                                    <label>Nome Fantasia:</label>
-                             </div>
-                             <input type="text" name="dtcarr"class="input-estilo" /> 
-                         
-                         <div id="input">
-                                <div id="labelescrita_2">
-                                    <label>Telefone:</label>
-                                </div>
-                             
-                             <input type="text" name="dtag" class="input-estilo"/> 
-                             <div id="input">
-                                <div id="labelescrita_2">
-                                    <label>Celular:</label>
-                                </div>
-                             
-                                <input type="text" name="rsthora" class="input-estilo"/> 
-                               <div id="input">
-                                <div id="labelescrita_2">
-                                    <label>E-mail:</label>
-                                </div>
-                             
-                                <input type="text" name="pesobruto" class="input-estilo"/> 
-                             
-                            </div>
-                                 <div id="input">
-                                <div id="labelescrita_2">
-                                    <label>Razao Social:</label>
-                                </div>
-                             
-                                     <input type="text" name="tipcarr" class="input-estilo"/>
-                                  <div id="input">
-                                <div id="labelescrita_2">
-                                    <label> Tipo Carregamento:</label>
-                                </div>
-                             
-                                      <input type="text" name="qtd" class="input-estilo"/>
-                                <div id="input">
-                                     <div id="labelescrita_2">
-                                    <label>CNPJ:</label>
-                                </div>
-                             
-                                    <input type="text" class="input-estilo"/>
-                                    
-                                </div>
+                      
+                     <!----- 1  -->
+                            <div id="input">
+                            <a id="labelescrita_2">Nome Completo: </a>                           
+                            <input type="text" name="dtcarr"class="input-estilo" /> 
+                            </div>  
+                     <h5>&nbsp;</h5>  
+                     <!----- 2  -->
+                            <div id="input">
+                            <a id="labelescrita_2">CPF: </a>
+                            <input type="text" name="dtcarr"class="input-estilo" /> 
+                            </div>  
+                     <h5>&nbsp;</h5>  
+                     <!----- 3  --> 
+                            <div id="input">
+                            <a id="labelescrita_2">Data de Nascimento: </a>
+                            <input type="text" name="dtcarr"class="input-estilo" /> 
+                            </div>    
+                     <h5>&nbsp;</h5>  
+                    <!----- 4  --> 
+                            <div id="input">
+                            <a id="labelescrita_2">Razão Social: </a>
+                            <input type="text" name="dtcarr"class="input-estilo" /> 
+                            </div>   
+                    <h5>&nbsp;</h5>  
                              
                         
                         </div>
@@ -80,8 +59,17 @@
            
         
             <div id="rodape">
+            <div align="center">
+            <h5>&nbsp;</h5>         
+           
+            Coptyright © 2015 - Carga Fácil. Todos os direitos reservados. </div> 
+            <div align="center">
+               
            </div>
-                      
+           </div>
+           </div>
+                 
+            
          </div>
     </body>
 </html>
