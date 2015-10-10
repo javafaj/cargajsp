@@ -25,26 +25,34 @@
                       
                      <!----- 1  -->
                             <div id="input">
-                            <a id="labelescrita_2">Nome Completo: </a>                           
-                            <input type="text" name="dtcarr"class="input-estilo" /> 
+                            <a id="labelescrita_2">Nome Completo: </a>      
+                             <div id="divCenter">
+                            <input type="text" name="dtcarr"class="input-estilo" />
+                             </div>
                             </div>  
                      <h5>&nbsp;</h5>  
                      <!----- 2  -->
                             <div id="input">
                             <a id="labelescrita_2">CPF: </a>
+                             <div id="divCenter">
                             <input type="text" name="dtcarr"class="input-estilo" /> 
+                             </div>
                             </div>  
                      <h5>&nbsp;</h5>  
                      <!----- 3  --> 
                             <div id="input">
                             <a id="labelescrita_2">Data de Nascimento: </a>
-                            <input type="text" name="dtcarr"class="input-estilo" /> 
+                             <div id="divCenter">
+                            <input type="text" name="dtcarr"class="input-estilo" />
+                             </div>
                             </div>    
                      <h5>&nbsp;</h5>  
                     <!----- 4  --> 
                             <div id="input">
                             <a id="labelescrita_2">Razão Social: </a>
-                            <input type="text" name="dtcarr"class="input-estilo" /> 
+                             <div id="divCenter">
+                            <input type="text" name="dtcarr"class="input-estilo" />
+                             </div>
                             </div>   
                     <h5>&nbsp;</h5>  
                              

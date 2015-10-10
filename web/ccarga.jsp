@@ -18,48 +18,64 @@
              <jsp:include page="menulogado.jsp"/>            
              <div id="conteudo-include">
                 <div id="cadastro"> 
-                    
-                     <!----- 1  -->
+                     <!----- 1  --> 
+                     
                             <div id="input">
-                            <a id="labelescrita_2">Situação da Carga: </a>                           
-                            <input type="text" name="dtcarr"class="input-estilo" /> 
+                            <a id="labelescrita_2">Situação da Carga: </a> 
+                            <div id="divCenter">
+                            <input type="text" class="input-estilo"/> 
+                            </div>
                             </div>  
+                            
                      <h5>&nbsp;</h5>  
                      <!----- 2  -->
                             <div id="input">
-                            <a id="labelescrita_2">Data Carregamento: </a>
-                            <input type="text" name="dtcarr"class="input-estilo" /> 
+                            <a id="labelescrita_2">Data Carregamento:</a>
+                             <div id="divCenter">
+                            <input type="text" name="dtcarr"class="input-estilo" />
+                             </div>
                             </div>  
                      <h5>&nbsp;</h5>  
                      <!----- 3  --> 
                             <div id="input">
                             <a id="labelescrita_2">Data Agendamento: </a>
+                             <div id="divCenter">
                             <input type="text" name="dtcarr"class="input-estilo" /> 
+                             </div>
                             </div>    
                      <h5>&nbsp;</h5>  
                     <!----- 4  --> 
                             <div id="input">
                             <a id="labelescrita_2">Restrição Hora: </a>
-                            <input type="text" name="dtcarr"class="input-estilo" /> 
+                            <div id="divCenter">
+                            <input type="text" name="dtcarr"class="input-estilo" />
+                            </div>
                             </div>   
                     <h5>&nbsp;</h5>  
                     <!----- 5  --> 
                             <div id="input">
-                                <a id="labelescrita_2">Peso Bruto: </a>
+                            <a id="labelescrita_2">Peso Bruto: </a>
+                            <div id="divCenter">
                             <input type="text" name="dtcarr"class="input-estilo" />
+                            </div>
                             </div>     
                     <h5>&nbsp;</h5>  
                     <!----- 6  --> 
                             <div id="input">
                             <a id="labelescrita_2">Tipo Carregamento: </a>
+                            <div id="divCenter">
                             <input type="text" name="dtcarr"class="input-estilo" /> 
+                            </div>
                             </div>       
                     <h5>&nbsp;</h5>  
                     <!----- 7  --> 
                             <div id="input">
-                            <a id="labelescrita_2">Qtd Produto: </a>
+                            <a id="labelescrita_2">Qtd Produto:</a>
+                            <div id="divCenter">
                             <input type="text" name="dtcarr"class="input-estilo" /> 
                             </div>
+                            </div>
+                    
                      
                         </div>
                         </div>
