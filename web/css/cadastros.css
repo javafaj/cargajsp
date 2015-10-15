@@ -51,7 +51,7 @@ font-size: 25px;
   transition: box-shadow 0.3s, border 0.3s;}
 
 
-/*Posicionamento e layouts da tela de cadastro.jsp*/
+/*Posicionamento e layouts da tela de cadastro.jsp Pedro Pagotto*/
 #colunas{
     position: relative; right: 0px; top: 75px;
    /* background-color: black;*/
@@ -117,3 +117,4 @@ font-size: 25px;
     position: relative;right: 25px; top:5px;
     
 }
+/*Posicionamento e layouts da tela de cadastro.jsp Pedro Pagotto*/
