@@ -15,61 +15,100 @@
         <title>Cadastre-se </title>
     </head>
     <body>
-         
-       <div id ="tudo">  
-            <jsp:include page="menu.jsp"/>
+   <form>      
+<div id ="tudo">  
+     <jsp:include page="menu.jsp"/>
             
-             <div id="conteudo-include">
-                <div id="cadastro">
+<div id="conteudo-include">
+    
+    <div id="colunas">         
                     
-                      
-                     <!----- 1  -->
-                            <div id="input">
-                            <a id="labelescrita_2">Nome Completo: </a>                           
-                            <input type="text" name="dtcarr"class="input-estilo" /> 
-                            </div>  
-                     <h5>&nbsp;</h5>  
-                     <!----- 2  -->
-                            <div id="input">
-                            <a id="labelescrita_2">CPF: </a>
-                            <input type="text" name="dtcarr"class="input-estilo" /> 
-                            </div>  
-                     <h5>&nbsp;</h5>  
-                     <!----- 3  --> 
-                            <div id="input">
-                            <a id="labelescrita_2">Data de Nascimento: </a>
-                            <input type="text" name="dtcarr"class="input-estilo" /> 
-                            </div>    
-                     <h5>&nbsp;</h5>  
-                    <!----- 4  --> 
-                            <div id="input">
-                            <a id="labelescrita_2">Razão Social: </a>
-                            <input type="text" name="dtcarr"class="input-estilo" /> 
-                            </div>   
-                    <h5>&nbsp;</h5>  
-                             
-                        
-                        </div>
-                        </div>
-                        </div> 
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-           
-        
-            <div id="rodape">
-            <div align="center">
-            <h5>&nbsp;</h5>         
-           
-            Coptyright © 2015 - Carga Fácil. Todos os direitos reservados. </div> 
-            <div align="center">
-               
-           </div>
-           </div>
-           </div>
-                 
+        <div id="input-position_1">
             
+              <label id="labelescrita_1">Nome Fantasia:</label>
+              <input type="text" name="telefone"class="input-estilo_1" size="30"/>
+              <br>
+              <br>
+              <label id="labelescrita_1">Razao Social:</label>
+              <input type="text" name="nomef"class="input-estilo_1" size="30"/>
+              <br>
+              <br>
+              <label id="labelescrita_1">CNPJ:</label>
+              <input type="text" name="nomef"class="input-estilo_1" size="30"/>
+              <br>
+              <br>
+              <label id="labelescrita_1">CEP:</label>
+              <input type="text" name="nomef"class="input-estilo_1" size="30"/>
+              <br>
+              <br>
+              <label id="labelescrita_1">Cidade:</label>
+              <input type="text" name="nomef"class="input-estilo_1" size="30"/>
+              <br>
+              <br>
+              <label id="labelescrita_1">UF:</label>
+              <input type="text" name="nomef"class="input-estilo_1" size="30"/>
+              <br>
+              <br>
+              </div>
+
+        <div id="input-position_2">
+
+                <label id="labelescrita_1">IE:</label>
+                <input type="text" name="telefone"class="input-estilo_1" size="30"/>
+
+                  <br>
+                  <br>
+
+                <label id="labelescrita_1">Telefone:</label>
+                <input type="text" name="telefone"class="input-estilo_1" size="30"/>
+
+                  <br>
+                  <br>
+
+                <label id="labelescrita_1">Celular:</label>
+                <input type="text" name="telefone"class="input-estilo_1" size="30"/>
+
+                  <br>
+                  <br>
+
+                <label id="labelescrita_1">E-mail:</label>
+                <input type="text" name="nomef"class="input-estilo_1" size="30"/>
+
+                  <br>
+                  <br>
+
+                <label id="labelescrita_1"> Senha:</label>
+                <input type="password" name="nomef"class="input-estilo_1" size="30"/>
+
+                  <br>
+                  <br>
+
+                <label id="labelescrita_1">Confirm.senha:</label>
+                <input type="password" name="nomef"class="input-estilo_1" size="30"/>
+
+                  <br>
+                  <br>
+
+              </div>
+        
+        <div id="botoes-area">
+            <button class="botoes-estilo-cancelar">Cancelar</button>
+            <button name="cadastrar" class="botoes-estilo-ok">Cadastrar</button>
          </div>
-    </body>
+
+</div>
+</div>                          
+</div>
+                    
+<div id="rodape">
+<div align="center">
+<h5>&nbsp;</h5>         
+Coptyright © 2015 - Carga Fácil. Todos os direitos reservados. </div> 
+<div align="center">
+</div>
+</div>
+     
+     
+</form>
+</body>
 </html>

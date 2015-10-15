@@ -70,8 +70,9 @@ line-height: 3;
 /*utilizado para quando tiver somente menu e inputs na tela */
 #conteudo-include{
 width: auto;
-height: 800px;
+height: 480px;
 position: static; top: 35px;
+
 /*background-color: #FFFF00;*/
 }
 /*utilizado para quando tiver somente menu e inputs na tela */
