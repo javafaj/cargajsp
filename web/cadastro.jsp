@@ -22,9 +22,6 @@
 <div id="conteudo-include">
     
     <div id="colunas">         
-                    
-        <div id="input-position_1">
-            
               <label id="labelescrita_1">Nome Fantasia:</label>
               <input type="text" name="telefone"class="input-estilo_1" size="30"/>
               <br>
@@ -98,7 +95,6 @@
 
 </div>
 </div>                          
-</div>
                     
 <div id="rodape">
 <div align="center">

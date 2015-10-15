@@ -10,8 +10,19 @@ and open the template in the editor.
 #inputmenu {
 position : relative; top : -125px;
 }
+ #divCenter { 
+                width: 400px; 
+                height: 150px; 
+                left: 50%; 
+                margin: -22px  -10px -210px; /* Aqui arruma a line do Input*/
+                padding:10px;
+                position: absolute; 
+                top: 50%; }
+
 #input {
+    
 position : relative; top : 5px;
+ margin-left:-250px; 
 }/*
 #labelescrita {
 position : relative; top : 43px; right: 135px;
