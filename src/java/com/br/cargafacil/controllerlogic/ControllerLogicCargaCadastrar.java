@@ -3,20 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.br.cargafacil.servlet;
+package com.br.cargafacil.controllerlogic;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import com.br.cargafacil.objetos.Login;
-import javax.servlet.http.HttpSession;
+
 /**
  *
  * @author pepag
  */
-public class Slogin extends HttpServlet {
+public class ControllerLogicCargaCadastrar extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -28,39 +28,16 @@ public class Slogin extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException {
-        /*realiza a instancia de um novo objeto do tipo login*/
-        Login l = new Login();
-        /*recebe os valores do JSP e seta nos atributos do abjeto login*/
-        l.setNome(request.getParameter("usuario"));
-        l.setSenha(request.getParameter("senha"));
-        
-        /*setando o objeto inteiro em um atributo*/
-        request.setAttribute("login", l);
-        
-        /**
-         * Apos coletar os dados ele realiza o dispacher para a pagina outra pagina , index com menu logado / pagina inicial
-         * 
-         */
-        /*
-        request.getRequestDispatcher("index2.jsp").forward(request, response);*/
-        
-      
-        
-        
-        
-        
-  }      
-      
-        
-
+            throws ServletException, IOException {
+       
         
         
         
         
         
         
-    
+        
+    }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -102,14 +79,3 @@ public class Slogin extends HttpServlet {
     }// </editor-fold>
 
 }
-
-
-  
-        /*/*criando uma sessao*/
-        /*HttpSession sessao = request.getSession();
-        
-        /*setando atribuito dentro da sessao
-        
-        sessao.setAttribute("usuario", l);
-        */
-        
