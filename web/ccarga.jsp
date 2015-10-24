@@ -24,7 +24,7 @@
                             <div id="input">
                             <a id="labelescrita_2">Situação da Carga: </a> 
                             <div id="divCenter">
-                            <input type="text" class="input-estilo"/> 
+                            <input type="text" name="" class="input-estilo"/> 
                             </div>
                             </div>  
                             
