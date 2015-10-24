@@ -15,7 +15,7 @@
         <title>Cadastre-se </title>
     </head>
     <body>
-   <form>      
+<form name="formcadastro" action="/ProjectCargaFacil/Controller?page=ControllerLogicUsuarioCadastrar" method="POST">      
 <div id ="tudo">  
      <jsp:include page="menu.jsp"/>
             
@@ -26,27 +26,27 @@
         <div id="input-position_1">
             
               <label id="labelescrita_1">Nome Fantasia:</label>
-              <input type="text" name="telefone"class="input-estilo_1" size="30"/>
+              <input type="text" name="nomefantasia"class="input-estilo_1" size="30"/>
               <br>
               <br>
               <label id="labelescrita_1">Razao Social:</label>
-              <input type="text" name="nomef"class="input-estilo_1" size="30"/>
+              <input type="text" name="razaosocial"class="input-estilo_1" size="30"/>
               <br>
               <br>
               <label id="labelescrita_1">CNPJ:</label>
-              <input type="text" name="nomef"class="input-estilo_1" size="30"/>
+              <input type="text" name="cnpj"class="input-estilo_1" size="30"/>
               <br>
               <br>
               <label id="labelescrita_1">CEP:</label>
-              <input type="text" name="nomef"class="input-estilo_1" size="30"/>
+              <input type="text" name="cep"class="input-estilo_1" size="30"/>
               <br>
               <br>
               <label id="labelescrita_1">Cidade:</label>
-              <input type="text" name="nomef"class="input-estilo_1" size="30"/>
+              <input type="text" name="cidade"class="input-estilo_1" size="30"/>
               <br>
               <br>
               <label id="labelescrita_1">UF:</label>
-              <input type="text" name="nomef"class="input-estilo_1" size="30"/>
+              <input type="text" name="uf"class="input-estilo_1" size="30"/>
               <br>
               <br>
               </div>
@@ -54,7 +54,7 @@
         <div id="input-position_2">
 
                 <label id="labelescrita_1">IE:</label>
-                <input type="text" name="telefone"class="input-estilo_1" size="30"/>
+                <input type="text" name="ie"class="input-estilo_1" size="30"/>
 
                   <br>
                   <br>
@@ -66,25 +66,25 @@
                   <br>
 
                 <label id="labelescrita_1">Celular:</label>
-                <input type="text" name="telefone"class="input-estilo_1" size="30"/>
+                <input type="text" name="celular"class="input-estilo_1" size="30"/>
 
                   <br>
                   <br>
 
                 <label id="labelescrita_1">E-mail:</label>
-                <input type="text" name="nomef"class="input-estilo_1" size="30"/>
+                <input type="text" name="email"class="input-estilo_1" size="30"/>
 
                   <br>
                   <br>
 
                 <label id="labelescrita_1"> Senha:</label>
-                <input type="password" name="nomef"class="input-estilo_1" size="30"/>
+                <input type="password" name="senha"class="input-estilo_1" size="30"/>
 
                   <br>
                   <br>
 
                 <label id="labelescrita_1">Confirm.senha:</label>
-                <input type="password" name="nomef"class="input-estilo_1" size="30"/>
+                <input type="password" name="confsenha"class="input-estilo_1" size="30"/>
 
                   <br>
                   <br>
@@ -92,8 +92,7 @@
               </div>
         
         <div id="botoes-area">
-            <button class="botoes-estilo-cancelar">Cancelar</button>
-            <button name="cadastrar" class="botoes-estilo-ok">Cadastrar</button>
+            <input type="submit" value="Enviar" name="enviar" />
          </div>
 
 </div>
