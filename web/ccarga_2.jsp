@@ -27,29 +27,29 @@
               <div id="input-position_1">           
 		<ul>
                                        
-                     <li>  <label id="labelescrita_1">Nome Fantasia:</label>                            
+                     <li>  <label id="labelescrita_1">Situação da carga:</label>                            
                     <input placeholder="Exemplo: Agencia de cargas online LTDA" title="Razão Social" type="text" class="input-estilo_1"/>
                     	</li>  
                                
 			<br>
                         <br>	
                         
-                        <li>  <label id="labelescrita_1">Razão Social:</label>                            
-                    <input placeholder="Exemplo: Agencia de cargas online LTDA" title="Razão Social" type="text" class="input-estilo_1"/>
+                          <li>  <label id="labelescrita_1">Data do carregamento:</label>                            
+                              <input placeholder="Exemplo: Agencia de cargas online LTDA" title="Razão Social" type="text" class="input-estilo_1" />
                     	</li>  
         
            
                         <br>
                         <br>	
                         
-                        <li>  <label id="labelescrita_1">CNPJ:</label>                            
+                        <li>  <label id="labelescrita_1"> Data de Agendamento no cliente:</label>                            
                     <input placeholder="Exemplo: 00.000.00/0000-00" title="CNPJ" type="text" class="input-estilo_1"/>
                     	</li>  
                         
                         <br>
                         <br>	
                         
-                        <li>  <label id="labelescrita_1">CEP:</label>                            
+                        <li>  <label id="labelescrita_1">Restrição Horario de Recebimento:</label>                            
                     <input placeholder="Exemplo: 11005-204 " title="CEP" type="text" class="input-estilo_1"/>
                     	</li> 
                         
@@ -100,26 +100,22 @@
                     <input placeholder="*****" title="Senha" type="text" class="input-estilo_1"/>
                     	</li> 
                         
-                          <body>   
+                        
+                        
                    </ul>       
                         </div>  
-      
-</body>
+       
         
              
 </div>                        
 </div>               
-        <h5>&nbsp;</h5> 
-        <div align="center">                      
-        <div class="content">
-        <a href="#" class="botao01">Enviar</a>
-        </div>
-        </div>
-            
-                     
- 
-
-
+     
+     <div id="botoes-area">
+            <button class="botoes-estilo-cancelar">Cancelar</button>
+            <button name="cadastrar" class="botoes-estilo-ok">Cadastrar</button>
+         </div>
+     
+     
                     
 <div id="rodape">
 <div align="center">
