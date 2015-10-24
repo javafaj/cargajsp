@@ -89,10 +89,9 @@ color: #222;
 font-size: 25px;
 }
 .input-estilo_1{
-   padding: 15px;
-   border-radius: 15px;
+   padding: 15px;   
+   border-radius: 4px;
    padding: 10px;
-   border: #f4d00b 2px solid #dcdcdc;
    transition: box-shadow 0.3s, border 0.3s;
    position: relative;  left:65px;                   
 }

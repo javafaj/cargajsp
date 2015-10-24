@@ -4,6 +4,7 @@
     Author     : pepag
 --%>
 
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,6 +14,19 @@
         <link rel="stylesheet" type="text/css" href="css/icones/iconesmenu.css"/>
         <link rel="icon" href="css/icones/carro.ico" sizes="24x24"/>
     </head>
+    
+   <!--- ERRO TENTANDO DEIXAR O MENU SELECIONADO 
+    <script>
+        $(document).ready(function(){
+  $("#topo").find("li").click(function(){
+  $("#topo").find("li").removeClass("active");
+    $(this).addClass("active");
+  });
+});
+</script>
+                --->
+
+    
     <body>
         <div id="topo">
             <div id="menu">
@@ -27,7 +41,7 @@
            <li><a href="informacao.jsp"><img src="css/icones/Info-32.png" class="icones-32">Quem Somos</a></li>   
            </ul>    
         </div>
-         </div>
+         </div>  
         </div>
        
     </body>

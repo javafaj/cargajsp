@@ -13,88 +13,95 @@
         <link rel="icon" href="css/icones/carro.ico" sizes="24x24"/>
         <title>Cadastro de Cargas</title>
     </head>
-    <body>
+    
          <div id ="tudo">  
-             <jsp:include page="menulogado.jsp"/>            
+             
+                  <jsp:include page="menulogado.jsp"/>
+            
+             
              
              <div id="conteudo-include">
-                <div id="cadastro"> 
-                     <!----- 1  --> 
-                     
-                            <div id="input">
-                            <a id="labelescrita_2">Situação da Carga: </a> 
-                            <div id="divCenter">
-                            <input type="text" class="input-estilo"/> 
-                            </div>
-                            </div>  
-                            
-                     <h5>&nbsp;</h5>  
-                     <!----- 2  -->
-                            <div id="input">
-                            <a id="labelescrita_2">Data Carregamento:</a>
-                             <div id="divCenter">
-                            <input type="text" name="dtcarr"class="input-estilo" />
-                             </div>
-                            </div>  
-                     <h5>&nbsp;</h5>  
-                     <!----- 3  --> 
-                            <div id="input">
-                            <a id="labelescrita_2">Data Agendamento: </a>
-                             <div id="divCenter">
-                            <input type="text" name="dtcarr"class="input-estilo" /> 
-                             </div>
-                            </div>    
-                     <h5>&nbsp;</h5>  
-                    <!----- 4  --> 
-                            <div id="input">
-                            <a id="labelescrita_2">Restrição Hora: </a>
-                            <div id="divCenter">
-                            <input type="text" name="dtcarr"class="input-estilo" />
-                            </div>
-                            </div>   
-                    <h5>&nbsp;</h5>  
-                    <!----- 5  --> 
-                            <div id="input">
-                            <a id="labelescrita_2">Peso Bruto: </a>
-                            <div id="divCenter">
-                            <input type="text" name="dtcarr"class="input-estilo" />
-                            </div>
-                            </div>     
-                    <h5>&nbsp;</h5>  
-                    <!----- 6  --> 
-                            <div id="input">
-                            <a id="labelescrita_2">Tipo Carregamento: </a>
-                            <div id="divCenter">
-                            <input type="text" name="dtcarr"class="input-estilo" /> 
-                            </div>
-                            </div>       
-                    <h5>&nbsp;</h5>  
-                    <!----- 7  --> 
-                            <div id="input">
-                            <a id="labelescrita_2">Qtd Produto:</a>
-                            <div id="divCenter">
-                            <input type="text" name="dtcarr"class="input-estilo" /> 
-                            </div>
-                            </div>
-                    
-                     
-                        </div>
-                        </div>
-                        </div>
-                        </div> 
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                       
-                      
-                        
-                      
-                        
-                        
-                </div>              
-            </div>         
-           
+    
+    <div id="colunas">      
+  
+              
+        <div id="input-position_1">
+            
+              <label id="labelescrita_1">Situação da carga:</label>
+              <input type="text" name="telefone"class="input-estilo_1" size="30"/>
+              <br>
+              <br>
+              <label id="labelescrita_1">Data de Carregamento:</label>
+              <input type="text" name="nomef"class="input-estilo_1" size="30"/>
+              <br>
+              <br>
+              <label id="labelescrita_1"> Data de Agendamento no cliente:</label>
+              <input type="text" name="nomef"class="input-estilo_1" size="5"/>
+              <br>
+              <br>
+              <label id="labelescrita_1">Restrição Horario de Recebimento:</label>
+              <input type="text" name="nomef"class="input-estilo_1" size="30"/>
+              <br>
+              <br>
+              <label id="labelescrita_1">Cidade:</label>
+              <input type="text" name="nomef"class="input-estilo_1" size="30"/>
+              <br>
+              <br>
+              <label id="labelescrita_1">UF:</label>
+              <input type="text" name="nomef"class="input-estilo_1" size="30"/>
+              <br>
+              <br>
+              </div>
+
+        <div id="input-position_2">
+
+                <label id="labelescrita_1">IE:</label>
+                <input type="text" name="telefone"class="input-estilo_1" size="30"/>
+
+                  <br>
+                  <br>
+
+                <label id="labelescrita_1">Telefone:</label>
+                <input type="text" name="telefone"class="input-estilo_1" size="30"/>
+
+                  <br>
+                  <br>
+
+                <label id="labelescrita_1">Celular:</label>
+                <input type="text" name="telefone"class="input-estilo_1" size="30"/>
+
+                  <br>
+                  <br>
+
+                <label id="labelescrita_1">E-mail:</label>
+                <input type="text" name="nomef"class="input-estilo_1" size="30"/>
+
+                  <br>
+                  <br>
+
+                <label id="labelescrita_1"> Senha:</label>
+                <input type="password" name="nomef"class="input-estilo_1" size="30"/>
+
+                  <br>
+                  <br>
+
+                <label id="labelescrita_1">Confirm.senha:</label>
+                <input type="password" name="nomef"class="input-estilo_1" size="30"/>
+
+                  <br>
+                  <br>
+
+              </div>
+        
+        <div id="botoes-area">
+            <button class="botoes-estilo-cancelar">Cancelar</button>
+            <button name="cadastrar" class="botoes-estilo-ok">Cadastrar</button>
+         </div>
+
+</div>
+</div>                          
+</div>                        
+            
         
             <div id="rodape">
             <div align="center">
@@ -108,5 +115,5 @@
                       
          </div>
         
-    </body>
+    
 </html>
