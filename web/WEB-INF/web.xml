@@ -16,6 +16,26 @@
         <servlet-name>ControllerLogicCargaCadastrar</servlet-name>
         <servlet-class>com.br.cargafacil.controllerlogic.ControllerLogicCargaCadastrar</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ControllerLogicRedirect</servlet-name>
+        <servlet-class>com.br.cargafacil.controller.ControllerLogicRedirect</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControllerLogicRedirecionamento</servlet-name>
+        <servlet-class>com.br.cargafacil.controllerlogic.ControllerLogicRedirecionamento</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControllerLogicUsuarioAlterar</servlet-name>
+        <servlet-class>com.br.cargafacil.controllerlogic.ControllerLogicUsuarioAlterar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControllerLogicUsuarioListar</servlet-name>
+        <servlet-class>com.br.cargafacil.controllerlogic.ControllerLogicUsuarioListar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControllerLogicLogin</servlet-name>
+        <servlet-class>com.br.cargafacil.controllerlogic.ControllerLogicLogin</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Slogin</servlet-name>
         <url-pattern>/Slogin</url-pattern>
@@ -31,6 +51,26 @@
     <servlet-mapping>
         <servlet-name>ControllerLogicCargaCadastrar</servlet-name>
         <url-pattern>/ControllerLogicCargaCadastrar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControllerLogicRedirect</servlet-name>
+        <url-pattern>/ControllerLogicRedirect</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControllerLogicRedirecionamento</servlet-name>
+        <url-pattern>/ControllerLogicRedirecionamento</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControllerLogicUsuarioAlterar</servlet-name>
+        <url-pattern>/ControllerLogicUsuarioAlterar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControllerLogicUsuarioListar</servlet-name>
+        <url-pattern>/ControllerLogicUsuarioListar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControllerLogicLogin</servlet-name>
+        <url-pattern>/ControllerLogicLogin</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>10</session-timeout>

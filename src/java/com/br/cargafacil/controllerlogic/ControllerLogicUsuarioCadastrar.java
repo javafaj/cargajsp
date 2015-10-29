@@ -42,7 +42,7 @@ public class ControllerLogicUsuarioCadastrar implements ControllerLogic{
                 usuariodao.inserir(usuario);
                 
                 
-             //   request.getRequestDispatcher("/index.jsp").forward(request, response);
+          /* request.getRequestDispatcher("/index.jsp").forward(request, response);
         
         
          /* setando valores na sessao do usuario
