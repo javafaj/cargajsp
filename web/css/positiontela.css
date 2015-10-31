@@ -39,9 +39,9 @@ background:#eff0ef  url(icones/Logo.png) no-repeat center;
 /*define o login da pagina tamanho , cor , largura e posição*/
 #login{
 float: left;
-width: 200px;
+width: 220px;
 height: 505px;
-position: relative;top: 1px; left:5px;
+position: relative;top: -32px; left:5px;
 /*background-color: #eff0ef;*/
 background: url(../css/icones/bgflogin3.png) no-repeat 100% 0%;
 background-size: 100%;
@@ -73,16 +73,16 @@ width: auto;
 height: 480px;
 position: static; top: 35px;
 
-/*background-color: #FFFF00;*/
+/*background-color: #f4d00b;*/
 }
 /*utilizado para quando tiver somente menu e inputs na tela */
 
 /*utilizado somente quando houver slide na pagina */
 #conteudo-slide{
 width: auto;
-height: 800px;
-position: relative; top: 4px; 
-/*background-color:#ff0033; */
+height: 600px;
+position: relative; top: 75px; 
+/*background-color:#ff0033;*/   
 }/*utilizado somente quando houver slide na pagina */
 
 /*define o rodapé da pagina tamanho , cor , largura e posição*/
@@ -92,7 +92,7 @@ position: relative; top: 4px;
     clear: both;
     height: 65px;
     width: auto;
-    position: relative; 
+    position: relative; top: 145px;   
     background:url("icones/rodapé background.png") top left repeat-x ;
 }
 

@@ -21,7 +21,7 @@
             <h1>Login</h1>
           
                 <li>
-                    <input type="text" name="usuario"   value="usuario" onfocus="this.value = '';" onblur="if (this.value === '') {this.value = 'Usuário';}" > <a href="#" class=" icon user"></a>
+                    <input type="text" name="usuario" value="usuario" onfocus="this.value = '';" onblur="if (this.value === '') {this.value = 'Usuário';}" > <a href="#" class="icon user"></a>
                     </li>
                 <li>
                     <input type="password" name="senha" value="senha" onfocus="this.value = '';" onblur="if (this.value === '') {this.value = 'Senha';}"> <a href="#" class=" icon lock"></a>

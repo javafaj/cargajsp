@@ -55,8 +55,10 @@ public class ControllerLogicLogin implements ControllerLogic {
         /*via sessao consegue funcionar , JSP ->SERVLET -> JDBC -> BD -> JDBC->VALIDAÇÃO -> JDBC SETANDO SOMENTE O NUMERO DO ID E RETORNANDO PARA O
         -> SERVLET -> SETANDO O NUMERO DE ID NA SESSAO - > REDIRECIONANDO PARA PAGINA DE LOGADO EXIBINDO EM UM INPUT O NUMERO DO ID DO USER
         ** NAO FUNCIONOU DIRETO SEM PASSAR PELA SESSAO PERGUNTAR AO CALDERONI*/
-        request.getSession().setAttribute("login", login);
-        //request.setAttribute("login", login);
+        
+        //setando valor O LOGIN NA SESSAO
+        //request.getSession().setAttribute("login", login);
+        request.setAttribute("login", login);
         
         request.getRequestDispatcher("logado.jsp").forward(request, response);
     }

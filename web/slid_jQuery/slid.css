@@ -22,7 +22,7 @@ and open the template in the editor.
     overflow: hidden;
     box-shadow: #999 0 0 15px;
     margin: 50px auto;
-    position: relative;  top: 1px; right: 35px;
+    position: relative;  top: -150px; right: 35px;
 }
 
 /* 2º Aqui estou atribuindo as configurações dos botões Next/Prev*/

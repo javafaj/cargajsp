@@ -12,7 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <jsp:useBean id="login"  class="com.br.cargafacil.objetos.Login" />
+        <jsp:useBean id="login"  class="com.br.cargafacil.objetos.Login" scope="request" />
     <form name="logado" action="/ProjectCargaFacil/Controller?page=ControllerLogicLogin" method="POST">
                     <li>
                         <input type="text" name="session" value="${login.id}">

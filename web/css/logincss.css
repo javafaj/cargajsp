@@ -28,7 +28,8 @@ form li{
 	border:1px solid #f4d00b/*#66CCFF*/;
 	list-style:none;
 	margin-bottom:16px;
-	width:100%;
+	width:90%;
+        position: relative; left: 10px;
 	background: #f4d00b/*66CCFF*/;
 
 }

@@ -18,8 +18,7 @@
                  
         <div id ="tudo">  
           <jsp:include page="menu.jsp"/>
-           <h5>&nbsp;</h5>
-           <h5>&nbsp;</h5>
+        
             <div id="conteudo-slide">
                 <jsp:include page="login.jsp"/>
                 <jsp:include page="slid.jsp"/>          
@@ -29,12 +28,8 @@
             <div id="rodape">
             <div align="center">
             <h5>&nbsp;</h5>       
-            <h5>&nbsp;</h5> 
-           
-            Coptyright © 2015 - Carga Fácil. Todos os direitos reservados. </div> <h5>&nbsp;</h5> 
-            <div align="center">
-               
-           </div>
+            <h5>&nbsp;</h5>            
+            Coptyright © 2015 - Carga Fácil. Todos os direitos reservados. </div>            
            </div>
                   
 </body>
