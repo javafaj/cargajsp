@@ -36,6 +36,10 @@
         <servlet-name>ControllerLogicLogin</servlet-name>
         <servlet-class>com.br.cargafacil.controllerlogic.ControllerLogicLogin</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ControllerLogicLogout</servlet-name>
+        <servlet-class>com.br.cargafacil.controllerlogic.ControllerLogicLogout</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Slogin</servlet-name>
         <url-pattern>/Slogin</url-pattern>
@@ -71,6 +75,10 @@
     <servlet-mapping>
         <servlet-name>ControllerLogicLogin</servlet-name>
         <url-pattern>/ControllerLogicLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControllerLogicLogout</servlet-name>
+        <url-pattern>/ControllerLogicLogout</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>10</session-timeout>

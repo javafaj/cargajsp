@@ -9,6 +9,7 @@ import com.br.cargafacil.dao.LoginDAO;
 import com.br.cargafacil.objetos.Login;
 import com.br.cargafacil.util.DAOFactory;
 import java.io.IOException;
+import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -42,24 +43,23 @@ public class ControllerLogicLogin implements ControllerLogic {
  
     @Override
     public void executar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-       
         Login login = new Login();
-        
         login.setNome(request.getParameter("usuario"));
         login.setSenha(request.getParameter("senha"));
-        
         LoginDAO logindao = new DAOFactory().createLoginDAO();
-        
         logindao.Entrada(login);
         /*via sessao consegue funcionar , JSP ->SERVLET -> JDBC -> BD -> JDBC->VALIDAÇÃO -> JDBC SETANDO SOMENTE O NUMERO DO ID E RETORNANDO PARA O
         -> SERVLET -> SETANDO O NUMERO DE ID NA SESSAO - > REDIRECIONANDO PARA PAGINA DE LOGADO EXIBINDO EM UM INPUT O NUMERO DO ID DO USER
         ** NAO FUNCIONOU DIRETO SEM PASSAR PELA SESSAO PERGUNTAR AO CALDERONI*/
-        
         //setando valor O LOGIN NA SESSAO
         request.getSession().setAttribute("login", login);
         request.setAttribute("login", login);
         
-        request.getRequestDispatcher("logado.jsp").forward(request, response);
+     /*   response.setContentType("text/html;charset=UTF-8");
+        PrintWriter out = response.getWriter();
+        out.print(" <li><a href=\"ccarga.jsp\"><img src=\"css/icones/Shipped-32.png\" class=\"icones-32\">Cadastre suas Cargas</a></li>\n" +
+"            <li><a href=\"minhascargas.jsp\"><img src=\"css/icones/Handle With Care-32.png\" class=\"icones-32\">Minhas Cargas</a></li>");*/
+        request.getRequestDispatcher("index.jsp").forward(request, response);
     }
         
     }

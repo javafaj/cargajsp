@@ -15,12 +15,18 @@
         <title>Carga Facil</title>
     </head>
     <body>
-                 
+   <jsp:useBean id="login"  class="com.br.cargafacil.objetos.Login" scope="session" />              
         <div id ="tudo">  
           <jsp:include page="menu.jsp"/>
         
             <div id="conteudo-slide">
+<%
+    if(login.getId() == ""){
+%>                
                 <jsp:include page="login.jsp"/>
+<%
+    }
+%>
                 <jsp:include page="slid.jsp"/>          
             </div>         
             

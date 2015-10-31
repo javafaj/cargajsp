@@ -14,6 +14,7 @@
         <link rel="icon" href="css/icones/carro.ico" sizes="24x24"/>
     </head>
     <body>
+   <jsp:useBean id="login"  class="com.br.cargafacil.objetos.Login" scope="session" />
         <div id="topo">
         
        
@@ -24,17 +25,26 @@
            <ul>
            <li><a href="index.jsp"><img src="css/icones/cagashome.png" class="icones-32">Inicio</a></li>
            <li><a href="vcarga.jsp"><img src="css/icones/Cargas-32.png" class="icones-32">Verificar Cargas</a></li>
+<% if(login.getId() == ""){
+
+                            
+%>
            <li><a href="cadastro.jsp"><img src="css/icones/Keyboard-32.png" class="icones-32">Cadastre-se</a></li>
-<%
-       boolean logado = true;
-       if(logado){
+<%                       }  
+%>
+           
+<%   
+    if(login.getId() != ""){       
 %>       
            <li><a href="ccarga.jsp"><img src="css/icones/Shipped-32.png" class="icones-32">Cadastre suas Cargas</a></li>
            <li><a href="minhascargas.jsp"><img src="css/icones/Handle With Care-32.png" class="icones-32">Minhas Cargas</a></li>
+           <form name="sair" class="logout" action="/ProjectCargaFacil/Controller?page=ControllerLogicLogout" method="POST">
+               <li><input type = "submit" value="Sair"/></li>  
+           </form>
 <%    
-   }
+                           }
 %> 
-           <li><a href="informacao.jsp"><img src="css/icones/Info-32.png" class="icones-32">Quem Somos</a></li>
+          <li><a href="informacao.jsp"><img src="css/icones/Info-32.png" class="icones-32">Quem Somos</a></li>
            </ul>    
         </div>
          </div>

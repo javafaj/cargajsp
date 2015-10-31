@@ -47,7 +47,7 @@ background: url(../css/icones/bgflogin3.png) no-repeat 100% 0%;
 background-size: 100%;
 }
 
-
+/*
 /*define o menu da pagina tamanho , cor , largura e posição*/
 #menu {
 position: relative;top: 215px;
@@ -115,3 +115,12 @@ padding: 30px;
 border: 5px solid ;/*aqui é a borda que ficava no cadastro*/
 }
 
+/*Botão de logout*/
+.logout{
+    position: absolute; top: 30px ; right: 80px;
+    text-decoration: blue;
+    font: bolder;
+    font-size: 20;
+    
+    
+}
