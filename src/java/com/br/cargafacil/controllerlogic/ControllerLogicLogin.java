@@ -10,7 +10,6 @@ import com.br.cargafacil.objetos.Login;
 import com.br.cargafacil.util.DAOFactory;
 import java.io.IOException;
 import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -57,7 +56,7 @@ public class ControllerLogicLogin implements ControllerLogic {
         ** NAO FUNCIONOU DIRETO SEM PASSAR PELA SESSAO PERGUNTAR AO CALDERONI*/
         
         //setando valor O LOGIN NA SESSAO
-        //request.getSession().setAttribute("login", login);
+        request.getSession().setAttribute("login", login);
         request.setAttribute("login", login);
         
         request.getRequestDispatcher("logado.jsp").forward(request, response);
