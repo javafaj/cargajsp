@@ -8,6 +8,10 @@
  */
 package com.br.cargafacil.util;
 
+import com.br.cargafacil.dao.CargasDAO;
+import com.br.cargafacil.dao.CargasJDBC;
+import com.br.cargafacil.dao.LoginDAO;
+import com.br.cargafacil.dao.LoginJDBC;
 import com.br.cargafacil.dao.UsuarioDAO;
 import com.br.cargafacil.dao.UsuarioJDBC;
 /**
@@ -22,6 +26,17 @@ public class DAOFactory {
     public static UsuarioDAO createUsuarioDAO(){
     
                 return new UsuarioJDBC();
+    }
+    
+      
+       public static CargasDAO createCargasDAO(){
+    
+                return new CargasJDBC();
+    }
+    
+       public static LoginDAO createLoginDAO(){
+    
+                return new LoginJDBC();
     }
     
 }

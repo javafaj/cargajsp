@@ -15,12 +15,11 @@
     </head>
     <body>
          <div id ="tudo">  
-             <jsp:include page="menulogado.jsp"/>            
+             <jsp:include page="menu.jsp"/>            
              
              <div id="conteudo-include">
                 <div id="cadastro"> 
-                     <!----- 1  --> 
-                     
+                     <!----- 1  -->                      
                             <div id="input">
                             <a id="labelescrita_2">Situação da Carga: </a> 
                             <div id="divCenter">

@@ -15,7 +15,7 @@
     </head>
     <body>
          <div id ="tudo">  
-             <jsp:include page="menulogado.jsp"/>
+              <jsp:include page="menu.jsp"/>            
             
            
             <div id="conteudo-include">

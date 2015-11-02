@@ -18,13 +18,14 @@ public class Login implements Serializable{
     /*Criando os atributos dos objetos para serem acessados por outras paginas*/
     
     
-    private String nome,senha;
+    private String nome,senha,id;
 
     
     /**
      * Construtor de inicialização
      */
     public Login() {
+        id ="";
         nome ="";
         senha ="";
     }
@@ -57,6 +58,20 @@ public class Login implements Serializable{
      */
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    /**
+     * @return the id
+     */
+    public String getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(String id) {
+        this.id = id;
     }
     
     

@@ -15,13 +15,18 @@
         <title>Carga Facil</title>
     </head>
     <body>
-                 
+   <jsp:useBean id="login"  class="com.br.cargafacil.objetos.Login" scope="session" />              
         <div id ="tudo">  
           <jsp:include page="menu.jsp"/>
-           <h5>&nbsp;</h5>
-           <h5>&nbsp;</h5>
+        
             <div id="conteudo-slide">
+<%
+    if(login.getId() == ""){
+%>                
                 <jsp:include page="login.jsp"/>
+<%
+    }
+%>
                 <jsp:include page="slid.jsp"/>          
             </div>         
             
@@ -29,12 +34,8 @@
             <div id="rodape">
             <div align="center">
             <h5>&nbsp;</h5>       
-            <h5>&nbsp;</h5> 
-           
-            Coptyright © 2015 - Carga Fácil. Todos os direitos reservados. </div> <h5>&nbsp;</h5> 
-            <div align="center">
-               
-           </div>
+            <h5>&nbsp;</h5>            
+            Coptyright © 2015 - Carga Fácil. Todos os direitos reservados. </div>            
            </div>
                   
 </body>
