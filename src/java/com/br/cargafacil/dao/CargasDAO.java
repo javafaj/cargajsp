@@ -22,6 +22,7 @@ public interface CargasDAO {
    public List <Cargas> buscar (Cargas cargas);
    public void editar (Cargas cargas);
     
+   
     
     
 }

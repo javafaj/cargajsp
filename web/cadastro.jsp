@@ -9,6 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
         <link rel="stylesheet" type="text/css" href="css/positiontela.css"/>
         <link rel="icon" href="css/icones/carro.ico" sizes="24x24"/>
         <link rel="stylesheet" type="text/css" href="css/cadastros.css"/>
@@ -34,11 +35,11 @@
               <br>
               <br>
               <label id="labelescrita_1">CNPJ:</label>
-              <input type="text" name="cnpj"class="input-estilo_1" size="30"/>
+              <input type="text" name="cnpj" class="input-estilo_1" size="30"/>
               <br>
               <br>
               <label id="labelescrita_1">CEP:</label>
-              <input type="text" name="cep"class="input-estilo_1" size="30"/>
+              <input type="text" name="cep" class="input-estilo_1" size="30"/>
               <br>
               <br>
               <label id="labelescrita_1">Cidade:</label>
@@ -60,25 +61,25 @@
                   <br>
 
                 <label id="labelescrita_1">Telefone:</label>
-                <input type="text" name="telefone"class="input-estilo_1" size="30"/>
+                <input type="text" name="telefone" class="input-estilo_1" size="30"/>
 
                   <br>
                   <br>
 
                 <label id="labelescrita_1">Celular:</label>
-                <input type="text" name="celular"class="input-estilo_1" size="30"/>
+                <input type="text" name="celular" class="input-estilo_1" size="30"/>
 
                   <br>
                   <br>
 
                 <label id="labelescrita_1">E-mail:</label>
-                <input type="text" name="email"class="input-estilo_1" size="30"/>
+                <input type="text" name="email" class="input-estilo_1" size="30"/>
 
                   <br>
                   <br>
 
                 <label id="labelescrita_1"> Senha:</label>
-                <input type="password" name="senha"class="input-estilo_1" size="30"/>
+                <input type="password" name="senha" class="input-estilo_1" size="30"/>
 
                   <br>
                   <br>
