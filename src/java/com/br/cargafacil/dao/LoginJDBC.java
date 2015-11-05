@@ -30,7 +30,7 @@ public class LoginJDBC implements LoginDAO{
 
     @Override
     public String Entrada(Login login) {
-
+        String id = "";
      try {
                 String SQL = "SELECT ID,NOMEFAN,SENHA FROM USUARIO" +
                              " WHERE NOMEFAN ='"+login.getNome()+"' AND SENHA ='"+login.getSenha()+"'";
@@ -51,13 +51,10 @@ public class LoginJDBC implements LoginDAO{
                     
                      if(l.getNome().equals(login.getNome())
                     && l.getSenha().equals(login.getSenha())){
+                         
                      login.setId(l.getId());                
-                     return login.getId();
-                 } else{
-                     
-                     
-                     
-                     }
+                      id= login.getId();
+                 } 
                 }            
                 
                                   
@@ -67,7 +64,7 @@ public class LoginJDBC implements LoginDAO{
                 Logger.getLogger(LoginJDBC.class.getName()).log(Level.SEVERE, null, ex);
                 throw new RuntimeException ("Problemas ao realizar a consulta do usuario : " ,ex);
                         }
-        return null;
+        return id;
     
     
     }

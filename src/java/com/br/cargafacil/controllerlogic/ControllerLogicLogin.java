@@ -46,12 +46,14 @@ public class ControllerLogicLogin implements ControllerLogic {
         Login login = new Login();
         login.setNome(request.getParameter("usuario"));
         login.setSenha(request.getParameter("senha"));
-        LoginDAO logindao = new DAOFactory().createLoginDAO();
+        LoginDAO logindao = DAOFactory.createLoginDAO();
         logindao.Entrada(login);
         /*via sessao consegue funcionar , JSP ->SERVLET -> JDBC -> BD -> JDBC->VALIDAÇÃO -> JDBC SETANDO SOMENTE O NUMERO DO ID E RETORNANDO PARA O
         -> SERVLET -> SETANDO O NUMERO DE ID NA SESSAO - > REDIRECIONANDO PARA PAGINA DE LOGADO EXIBINDO EM UM INPUT O NUMERO DO ID DO USER
         ** NAO FUNCIONOU DIRETO SEM PASSAR PELA SESSAO PERGUNTAR AO CALDERONI*/
         //setando valor O LOGIN NA SESSAO
+        
+        
         request.getSession().setAttribute("login", login);
         request.setAttribute("login", login);
         request.getRequestDispatcher("index.jsp").forward(request, response);
