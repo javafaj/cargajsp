@@ -54,11 +54,6 @@ public class ControllerLogicLogin implements ControllerLogic {
         //setando valor O LOGIN NA SESSAO
         request.getSession().setAttribute("login", login);
         request.setAttribute("login", login);
-        
-     /*   response.setContentType("text/html;charset=UTF-8");
-        PrintWriter out = response.getWriter();
-        out.print(" <li><a href=\"ccarga.jsp\"><img src=\"css/icones/Shipped-32.png\" class=\"icones-32\">Cadastre suas Cargas</a></li>\n" +
-"            <li><a href=\"minhascargas.jsp\"><img src=\"css/icones/Handle With Care-32.png\" class=\"icones-32\">Minhas Cargas</a></li>");*/
         request.getRequestDispatcher("index.jsp").forward(request, response);
     }
         

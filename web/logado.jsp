@@ -12,11 +12,13 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <jsp:useBean id="login"  class="com.br.cargafacil.objetos.Login" scope="request" />
-    <form name="logado" action="/ProjectCargaFacil/Controller?page=ControllerLogicLogin" method="POST">
+        <jsp:useBean id="login"  class="com.br.cargafacil.objetos.Login" scope="request"/>
+    <form name="logado" action="/ProjectCargaFacil/Controller?page=ControllerLogicLogin" method="GET">
                     <li>
                         <input type="text" name="session" value="${login.id}">
                     </li>
-        </form>
-        </body>
+    </form>
+                    
+                    
+    </body>
 </html>

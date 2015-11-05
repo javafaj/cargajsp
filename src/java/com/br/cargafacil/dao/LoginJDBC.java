@@ -51,12 +51,13 @@ public class LoginJDBC implements LoginDAO{
                     
                      if(l.getNome().equals(login.getNome())
                     && l.getSenha().equals(login.getSenha())){
-                     login.setId(l.getId());
-                 
+                     login.setId(l.getId());                
                      return login.getId();
-                               
-                 
-                 }
+                 } else{
+                     
+                     
+                     
+                     }
                 }            
                 
                                   
@@ -64,7 +65,7 @@ public class LoginJDBC implements LoginDAO{
                  rs.close();
             } catch (SQLException ex) {
                 Logger.getLogger(LoginJDBC.class.getName()).log(Level.SEVERE, null, ex);
-                throw new RuntimeException ("Erro ao Listar as Pessoas JDBC : " ,ex);
+                throw new RuntimeException ("Problemas ao realizar a consulta do usuario : " ,ex);
                         }
         return null;
     
