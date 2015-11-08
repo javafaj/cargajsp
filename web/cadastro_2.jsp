@@ -85,7 +85,7 @@
                         <br>	
                         
                         <li>  <label id="labelescrita_1">Telefone:</label>                            
-                    <input placeholder="Exemplo: (DDD)0000-0000" title="Telefone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$"  required="required" name="telefone" type="text" class="input-estilo_1"/>
+                    <input placeholder="Exemplo: (DDD)0000-0000" title="Telefone"   required="required" name="telefone" type="text" class="input-estilo_1"/>
                     	</li>  
         
            
@@ -93,7 +93,7 @@
                         <br>	
                         
                         <li>  <label id="labelescrita_1">Celular:</label>                            
-                    <input placeholder="Exemplo: (DDD)0000-0000" title="Celular" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$"  name="celular" required="required"  type="text" class="input-estilo_1"/>
+                    <input placeholder="Exemplo: (DDD)0000-0000" title="Celular"  name="celular" required="required"  type="text" class="input-estilo_1"/>
                     	</li>  
                         
                         <br>

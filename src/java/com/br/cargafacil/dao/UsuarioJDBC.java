@@ -36,8 +36,8 @@ public class  UsuarioJDBC  implements UsuarioDAO {
 
     @Override
     public void inserir(Usuario usuario) {
-        
-         try {
+
+        try {
                 String SQL = "INSERT INTO USUARIO (NOMEFAN,RSOCIAL,CIDADE,UF,"
                                 + "SENHA,CONFSENHA,CEL,CNPJ,TELEFONE,IE,CEP)"
                                 + " VALUES (?,?,?,?,?,?,?,?,?,?,?)";
@@ -62,6 +62,7 @@ public class  UsuarioJDBC  implements UsuarioDAO {
                      * execute update para que ele retorne somente as linhas afetadas do banco
                      */
                     pst.executeUpdate();
+                    
                     /**
                      * fecha preparedstatement e conexão com o banco
                      */
@@ -72,12 +73,10 @@ public class  UsuarioJDBC  implements UsuarioDAO {
                    */
             } catch (Exception ex) {
                 Logger.getLogger(UsuarioJDBC.class.getName()).log(Level.SEVERE, null, ex);
-                /**
-                 *quando ocorrer erro esse throw passa para a classe que invocou o metodo inserir
-                 */
-                throw new RuntimeException("Erro ao inserir pessoa:",ex);
             }
-        throw new UnsupportedOperationException("Not supported yet."); 
+   
+    
+   
     }
 
     @Override
@@ -97,6 +96,36 @@ public class  UsuarioJDBC  implements UsuarioDAO {
 
     @Override
     public void editar(Usuario usuarios) {
+        
+        String SQL = "UPDATE USUARIO SET NOMEFAN= '?',RSOCIAL= '?',CIDADE= '?'" +
+                     "UF= '?',SENHA= '?',CONFSENHA= '?',CEL= '?',TELEFONE= '?',IE= '?',\n" +
+                     "CEP= '?',CNPJ= '?' WHERE id = '?'";
+        try{
+            
+            PreparedStatement pst = connection.prepareStatement(SQL);
+                    
+                    pst.setString(1,usuarios.getNomefantasia());
+                    pst.setString(2,usuarios.getRazaosocial());
+                    pst.setString(3,usuarios.getCidade());
+                    pst.setString(4,usuarios.getUf());
+                    pst.setString(5,usuarios.getSenha());
+                    pst.setString(6,usuarios.getConfsenha());
+                    pst.setInt(7,usuarios.getCel());
+                    pst.setInt(8,usuarios.getCnpj());
+                    pst.setInt(9,usuarios.getTelefone());
+                    pst.setInt(10,usuarios.getIe());
+                    pst.setInt(11,usuarios.getCep()); 
+           pst.executeUpdate();
+            
+            
+            
+        }catch(Exception ex){
+        }
+        
+        
+        
+        
+        
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

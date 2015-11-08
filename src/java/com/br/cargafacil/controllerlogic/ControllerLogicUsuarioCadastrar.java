@@ -36,19 +36,10 @@ public class ControllerLogicUsuarioCadastrar implements ControllerLogic{
                 usuario.setCnpj(Integer.parseInt(request.getParameter("cnpj")));
                 usuario.setIe(Integer.parseInt(request.getParameter("ie")));
                 usuario.setCep(Integer.parseInt(request.getParameter("cep")));
-                
-                UsuarioDAO usuariodao = new DAOFactory().createUsuarioDAO();
-                 
+                UsuarioDAO usuariodao = DAOFactory.createUsuarioDAO();
                 usuariodao.inserir(usuario);
-                
-                
-          /* request.getRequestDispatcher("/index.jsp").forward(request, response);
-        
-        
-         /* setando valores na sessao do usuario
-                       request.getSession().setAttribute("usuario", usuario);*/
-        
-       
+    
+                request.getRequestDispatcher("index.jsp").forward(request, response);
     }
     
 }

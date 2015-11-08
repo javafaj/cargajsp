@@ -29,7 +29,7 @@
 
                             
 %>
-           <li><a href="cadastro.jsp"><img src="css/icones/Keyboard-32.png" class="icones-32">Cadastre-se</a></li>
+           <li><a href="cadastro_2.jsp"><img src="css/icones/Keyboard-32.png" class="icones-32">Cadastre-se</a></li>
 <%                       }  
 %>
            
