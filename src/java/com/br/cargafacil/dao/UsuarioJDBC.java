@@ -97,17 +97,17 @@ public class  UsuarioJDBC  implements UsuarioDAO {
             
             while(rs.next()){
                
-                usu.setNomefantasia(rs.getString("nomefan"));
-                usu.setRazaosocial(rs.getString("rsocial"));
-                usu.setCidade(rs.getString("cidade"));
-                usu.setUf(rs.getString("uf"));
-                usu.setSenha(rs.getString("senha"));
-                usu.setConfsenha(rs.getString("confsenha"));
-                usu.setCel(rs.getInt("cel"));
-                usu.setTelefone(rs.getInt("telefone"));
-                usu.setIe(rs.getInt("ie"));                
-                usu.setCep(rs.getInt("cep"));                
-                usu.setCnpj(rs.getInt("cnpj"));                
+                usuario.setNomefantasia(rs.getString("nomefan"));
+                usuario.setRazaosocial(rs.getString("rsocial"));
+                usuario.setCidade(rs.getString("cidade"));
+                usuario.setUf(rs.getString("uf"));
+                usuario.setSenha(rs.getString("senha"));
+                usuario.setConfsenha(rs.getString("confsenha"));
+                usuario.setCel(rs.getInt("cel"));
+                usuario.setTelefone(rs.getInt("telefone"));
+                usuario.setIe(rs.getInt("ie"));                
+                usuario.setCep(rs.getInt("cep"));                
+                usuario.setCnpj(rs.getInt("cnpj"));                
             }
             pst.close();
             connection.close();
@@ -117,7 +117,7 @@ public class  UsuarioJDBC  implements UsuarioDAO {
             Logger.getLogger(UsuarioJDBC.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        return usu;
+        return usuario;
     }
 
     @Override

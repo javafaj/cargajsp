@@ -115,9 +115,9 @@
                         <br>
                         <br>	
                         
-                        <li>  <label id="labelescrita_1">Confirma Senha:</label>                            
+                <%--        <li>  <label id="labelescrita_1">Confirma Senha:</label>                            
                     <input placeholder="*****" title="Confirmar Senha" name="confsenha" required="required" type="password" class="input-estilo_1"/>
-                    	</li> 
+                    	</li> --%>
                         
                           <body>   
                    </ul>       
