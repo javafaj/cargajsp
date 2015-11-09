@@ -11,7 +11,7 @@ package com.br.cargafacil.objetos;
  */
 public class Usuario {
     
-    
+    private String idusu;
     private String nomefantasia;
     private String razaosocial;
     private String cidade;
@@ -196,6 +196,20 @@ public class Usuario {
      */
     public void setCep(Integer cep) {
         this.cep = cep;
+    }
+
+    /**
+     * @return the idusu
+     */
+    public String getIdusu() {
+        return idusu;
+    }
+
+    /**
+     * @param idusu the idusu to set
+     */
+    public void setIdusu(String idusu) {
+        this.idusu = idusu;
     }
 
     

@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import com.br.cargafacil.util.ConnectionFactory;
+import java.sql.ResultSet;
 
 /**
  *
@@ -85,8 +86,38 @@ public class  UsuarioJDBC  implements UsuarioDAO {
     }
 
     @Override
-    public List<Usuario> Listar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Usuario Listar(Usuario usuario) {
+        Usuario usu = new Usuario();
+        
+        try {
+            String SQL = "SELECT nomefan,rsocial,cidade,uf,senha,confsenha,cel,telefone,ie,cep,cnpj FROM USUARIO WHERE ID = "+usuario.getIdusu();
+            
+            PreparedStatement pst = connection.prepareStatement(SQL);
+            ResultSet rs = pst.executeQuery();
+            
+            while(rs.next()){
+               
+                usu.setNomefantasia(rs.getString("nomefan"));
+                usu.setRazaosocial(rs.getString("rsocial"));
+                usu.setCidade(rs.getString("cidade"));
+                usu.setUf(rs.getString("uf"));
+                usu.setSenha(rs.getString("senha"));
+                usu.setConfsenha(rs.getString("confsenha"));
+                usu.setCel(rs.getInt("cel"));
+                usu.setTelefone(rs.getInt("telefone"));
+                usu.setIe(rs.getInt("ie"));                
+                usu.setCep(rs.getInt("cep"));                
+                usu.setCnpj(rs.getInt("cnpj"));                
+            }
+            pst.close();
+            connection.close();
+            
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(UsuarioJDBC.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        return usu;
     }
 
     @Override
@@ -115,18 +146,14 @@ public class  UsuarioJDBC  implements UsuarioDAO {
                     pst.setInt(9,usuarios.getTelefone());
                     pst.setInt(10,usuarios.getIe());
                     pst.setInt(11,usuarios.getCep()); 
-           pst.executeUpdate();
             
-            
+                    pst.executeUpdate();
+                    pst.close();
+                    connection.close();   
             
         }catch(Exception ex){
+            Logger.getLogger(UsuarioJDBC.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        
-        
-        
-        
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

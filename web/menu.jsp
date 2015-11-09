@@ -39,7 +39,10 @@
            <li><a href="ccarga.jsp"><img src="css/icones/Shipped-32.png" class="icones-32">Cadastre suas Cargas</a></li>
            <li><a href="minhascargas.jsp"><img src="css/icones/Handle With Care-32.png" class="icones-32">Minhas Cargas</a></li>
            <form name="sair" class="logout" action="/ProjectCargaFacil/Controller?page=ControllerLogicLogout" method="POST">
-               <li><input type = "submit" value="Sair"/></li>  
+               <li><input type = "submit" value="Sair"/></li>
+           </form>
+           <form name="atualizarcadastro" class="" action="/ProjectCargaFacil/Controller?page=ControllerLogicUsuarioListar" method="POST">
+               <li><input type = "submit" value="Atualizar Cadastro"/></li> 
            </form>
 <%    
                            }

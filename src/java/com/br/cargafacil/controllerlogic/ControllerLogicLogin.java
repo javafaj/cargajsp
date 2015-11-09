@@ -54,6 +54,7 @@ public class ControllerLogicLogin implements ControllerLogic {
         //setando valor O LOGIN NA SESSAO
         
         
+
         request.getSession().setAttribute("login", login);
         request.setAttribute("login", login);
         request.getRequestDispatcher("index.jsp").forward(request, response);

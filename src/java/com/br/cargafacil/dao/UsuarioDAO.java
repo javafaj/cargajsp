@@ -16,7 +16,7 @@ public interface UsuarioDAO {
     /*classe que implementa os metodos a serem executados no DAO*/
    public void inserir (Usuario usuario);
    public void remover (int id);
-   public List <Usuario> Listar();
+   public Usuario Listar(Usuario usuario);
    public List <Usuario> buscar (Usuario usuarios);
    public void editar (Usuario usuarios);
    
