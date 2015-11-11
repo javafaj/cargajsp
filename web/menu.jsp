@@ -8,19 +8,25 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
+        <link rel="stylesheet" type="text/css" href="css/perfil.css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/menucss.css"/>
         <link rel="stylesheet" type="text/css" href="css/icones/iconesmenu.css"/>
         <link rel="icon" href="css/icones/carro.ico" sizes="24x24"/>
     </head>
     <body>
+        
    <jsp:useBean id="login"  class="com.br.cargafacil.objetos.Login" scope="session" />
         <div id="topo">
+            
+      
         
        
             <div id="menu">
             <div id="menu-decorate">
             </div>
+                
         <div id="cssmenu">
            <ul>
            <li><a href="index.jsp"><img src="css/icones/cagashome.png" class="icones-32">Inicio</a></li>
@@ -33,25 +39,37 @@
 <%                       }  
 %>
            
-<%   
+<%--
     if(login.getId() != ""){       
-%>       
+--%>       
            <li><a href="ccarga.jsp"><img src="css/icones/Shipped-32.png" class="icones-32">Cadastre suas Cargas</a></li>
            <li><a href="minhascargas.jsp"><img src="css/icones/Handle With Care-32.png" class="icones-32">Minhas Cargas</a></li>
-           <form name="sair" class="logout" action="/ProjectCargaFacil/Controller?page=ControllerLogicLogout" method="POST">
-               <li><input type = "submit" value="Sair"/></li>
-           </form>
-           <form name="atualizarcadastro" class="" action="/ProjectCargaFacil/Controller?page=ControllerLogicUsuarioListar" method="POST">
-               <li><input type = "submit" value="Atualizar Cadastro"/></li> 
-           </form>
-<%    
+           
+         
+    
+           <!---Pedro sair<form name="sair" class="logout" action="/ProjectCargaFacil/Controller?page=ControllerLogicLogout" method="POST">
+               <li><input type = "submit" value="Sair"/></li>  
+           </form> --->
+<%--    
                            }
-%> 
+--%> 
           <li><a href="informacao.jsp"><img src="css/icones/Info-32.png" class="icones-32">Quem Somos</a></li>
+         
+         
+           
+           
            </ul>    
+          
         </div>
-         </div>
+           
+            <!---- Perfil aqui Lucas ---->
+      <%@include file="perfil.jsp"%>
+        <!--  fim --->
+            </div>
         </div>
        
     </body>
+   
+          
+    
 </html>
