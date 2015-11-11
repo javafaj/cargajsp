@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import com.br.cargafacil.controllerlogic.ControllerLogicLogin;
 import com.br.cargafacil.objetos.Login;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -34,10 +35,13 @@ public class ControllerLogicUsuarioAlterar implements ControllerLogic{
 
     @Override
     public void executar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-      
+            HttpSession session = request.getSession(true);
             Usuario usuario = new Usuario();
             Login login = new Login();
-                usuario.setIdusu((String) request.getSession().getAttribute(login.getId()));
+                
+                login = (Login) session.getAttribute("login");
+                
+                usuario.setIdusu(login.getId());
                 usuario.setNomefantasia(request.getParameter("nomefantasia"));
                 usuario.setRazaosocial(request.getParameter("razaosocial"));
                 usuario.setCidade(request.getParameter("cidade"));

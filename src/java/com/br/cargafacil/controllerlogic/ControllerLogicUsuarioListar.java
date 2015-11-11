@@ -34,13 +34,9 @@ public class ControllerLogicUsuarioListar implements ControllerLogic{
     @Override
     public void executar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
             HttpSession session = request.getSession(true);
-            
             Usuario usuario = new Usuario();
             Login login = new Login();
-           //login.setId((String) request.getSession().getAttribute("login");
-           //usuario.setIdusu((Integer) request.getSession().getAttribute(login.getId()));
 
-          // usuario.setIdusu((Integer) session.getServletContext().getAttribute("login"));
             login = (Login) session.getAttribute("login");
             
              UsuarioDAO usuariodao = DAOFactory.createUsuarioDAO();

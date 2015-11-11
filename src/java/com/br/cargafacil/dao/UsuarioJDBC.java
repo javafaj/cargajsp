@@ -126,26 +126,26 @@ public class  UsuarioJDBC  implements UsuarioDAO {
     }
 
     @Override
-    public void editar(Usuario usuarios) {
+    public void editar(Usuario usuario) {
         
         String SQL = "UPDATE USUARIO SET NOMEFAN= '?',RSOCIAL= '?',CIDADE= '?'" +
                      "UF= '?',SENHA= '?',CONFSENHA= '?',CEL= '?',TELEFONE= '?',IE= '?',\n" +
-                     "CEP= '?',CNPJ= '?' WHERE id = '?'";
+                     "CEP= '?',CNPJ= '?' WHERE id = "+usuario.getIdusu();
         try{
             
             PreparedStatement pst = connection.prepareStatement(SQL);
                     
-                    pst.setString(1,usuarios.getNomefantasia());
-                    pst.setString(2,usuarios.getRazaosocial());
-                    pst.setString(3,usuarios.getCidade());
-                    pst.setString(4,usuarios.getUf());
-                    pst.setString(5,usuarios.getSenha());
-                    pst.setString(6,usuarios.getConfsenha());
-                    pst.setInt(7,usuarios.getCel());
-                    pst.setInt(8,usuarios.getCnpj());
-                    pst.setInt(9,usuarios.getTelefone());
-                    pst.setInt(10,usuarios.getIe());
-                    pst.setInt(11,usuarios.getCep()); 
+                    pst.setString(1,usuario.getNomefantasia());
+                    pst.setString(2,usuario.getRazaosocial());
+                    pst.setString(3,usuario.getCidade());
+                    pst.setString(4,usuario.getUf());
+                    pst.setString(5,usuario.getSenha());
+                    pst.setString(6,usuario.getConfsenha());
+                    pst.setInt(7,usuario.getCel());
+                    pst.setInt(8,usuario.getCnpj());
+                    pst.setInt(9,usuario.getTelefone());
+                    pst.setInt(10,usuario.getIe());
+                    pst.setInt(11,usuario.getCep()); 
             
                     pst.executeUpdate();
                     pst.close();
