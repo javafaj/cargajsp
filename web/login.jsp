@@ -27,9 +27,9 @@
                     <input type="password" name="senha" value="senha" onfocus="this.value = '';" onblur="if (this.value === '') {this.value = 'Senha';}"> <a href="#" class=" icon lock"></a>
                     </li>
                     
-                <div class ="loginesqueceu">
+               <div class ="loginesqueceu">
                     <input type="submit" value="Entrar" name="entrar" > </h4>
-                    <h3><a href="#">Esqueceu sua Senha?</a></h3>
+                    <!-- <h3><a href="#">Esqueceu sua Senha?</a></h3> -->
                     </div>
             
             </div>
