@@ -51,20 +51,21 @@
 	
 </script>
 <div class="dropdown">
-	   <div class="deixabolinha"> 
-                               </div> 
           
-          	<a class="conta" ><span><div class="deixabolinha">
-                            
-                            <img src="css/icones/noia.jpg" alt="" width="90" height="90"/>
-        </div> </span></a>
+    <a class="conta" >
+        <span>
+            <div class="deixabolinha">
+                <img src="css/icones/noia.jpg" alt="" width="90" height="90"/>
+            </div> 
+        </span>
+    </a>
 	<div class="submenu" style="display:none;">
 	  <ul class="raiz">
              <div align="center"> 
                  <a><h7>Olá, Lucas</h7></h8></a>
-            <li><a href="#" >Perfil</a></li>
-	    <li><a href="#">Sair</a></li>
-            
+                 <li><a>Perfil</a></li>
+                     
+                 <li><a href="/ProjectCargaFacil/Controller?page=ControllerLogicLogout">Sair</a></li>
              </div>
 	  </ul>
 	</div>

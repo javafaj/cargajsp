@@ -39,20 +39,19 @@
 <%                       }  
 %>
            
-<%--
+<%
     if(login.getId() != ""){       
---%>       
+%>       
            <li><a href="ccarga.jsp"><img src="css/icones/Shipped-32.png" class="icones-32">Cadastre suas Cargas</a></li>
            <li><a href="minhascargas.jsp"><img src="css/icones/Handle With Care-32.png" class="icones-32">Minhas Cargas</a></li>
            
          
-    
            <!---Pedro sair<form name="sair" class="logout" action="/ProjectCargaFacil/Controller?page=ControllerLogicLogout" method="POST">
                <li><input type = "submit" value="Sair"/></li>  
            </form> --->
-<%--    
+<%    
                            }
---%> 
+%> 
           <li><a href="informacao.jsp"><img src="css/icones/Info-32.png" class="icones-32">Quem Somos</a></li>
          
          
@@ -61,10 +60,13 @@
            </ul>    
           
         </div>
-           
-            <!---- Perfil aqui Lucas ---->
-      <%@include file="perfil.jsp"%>
-        <!--  fim --->
+<%
+    if(login.getId() != ""){       
+%>       
+           <%@include file="perfil.jsp"%>
+<%    
+                           }
+%> 
             </div>
         </div>
        
