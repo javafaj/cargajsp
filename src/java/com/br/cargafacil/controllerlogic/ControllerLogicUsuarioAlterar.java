@@ -38,6 +38,7 @@ public class ControllerLogicUsuarioAlterar implements ControllerLogic{
             HttpSession session = request.getSession(true);
             Usuario usuario = new Usuario();
             Login login = new Login();
+            
                 
                 login = (Login) session.getAttribute("login");
                 
@@ -55,8 +56,16 @@ public class ControllerLogicUsuarioAlterar implements ControllerLogic{
                 usuario.setIe(Integer.parseInt(request.getParameter("ie")));
                 usuario.setCep(Integer.parseInt(request.getParameter("cep")));
                 UsuarioDAO usuariodao = DAOFactory.createUsuarioDAO();
-                
+      
                 usuariodao.editar(usuario);
+                
+                login.setId(usuario.getIdusu());
+                login.setNome(usuario.getRazaosocial());
+                login.setSenha(usuario.getSenha());
+                session.invalidate();
+                request.getSession().setAttribute("login", login);
+                
+                
         request.getRequestDispatcher("index.jsp").forward(request, response);
         
     }

@@ -50,19 +50,21 @@
 	});
 	
 </script>
+<div id="posicionamento-logout-menu">
 <div class="dropdown">
-          
     <a class="conta" >
         <span>
             <div class="deixabolinha">
-                <img src="css/icones/noia.jpg" alt="" width="90" height="90"/>
+                <img src="css/icones/noia.jpg" alt="" width="58" height="58"/>
             </div> 
         </span>
     </a>
 	<div class="submenu" style="display:none;">
 	  <ul class="raiz">
-             <div align="center"> 
-                 <a><h7>Olá, Lucas</h7></h8></a>
+             <div align="center">
+               
+                 <a><h7>Olá, ${login.nome}</h7></h8></a>
+                 
                  <li><a href="/ProjectCargaFacil/Controller?page=ControllerLogicUsuarioListar">Perfil</a></li>
                      
                  <li><a href="/ProjectCargaFacil/Controller?page=ControllerLogicLogout">Sair</a></li>
@@ -70,6 +72,6 @@
 	  </ul>
 	</div>
 </div>
-        
+</div>        
     </body>
 </html>
