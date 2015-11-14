@@ -59,7 +59,6 @@ public class ControllerLogicUsuarioAlterar implements ControllerLogic{
                 usuariodao.editar(usuario);
         request.getRequestDispatcher("index.jsp").forward(request, response);
         
-      //  throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

@@ -128,9 +128,12 @@ public class  UsuarioJDBC  implements UsuarioDAO {
     @Override
     public void editar(Usuario usuario) {
         
-        String SQL = "UPDATE USUARIO SET NOMEFAN= '?',RSOCIAL= '?',CIDADE= '?'" +
-                     "UF= '?',SENHA= '?',CONFSENHA= '?',CEL= '?',TELEFONE= '?',IE= '?',\n" +
-                     "CEP= '?',CNPJ= '?' WHERE id = "+usuario.getIdusu();
+        String SQL = "UPDATE USUARIO SET NOMEFAN= ? , "+
+                     "RSOCIAL= ? , CIDADE= ? ,UF= ?, "+
+                     "SENHA= ? , CONFSENHA= ? , CEL= ? , "+
+                     "TELEFONE= ? , IE= ? , CEP= ? ,CNPJ= ? "+
+                     "WHERE id = "+usuario.getIdusu();
+                
         try{
             
             PreparedStatement pst = connection.prepareStatement(SQL);

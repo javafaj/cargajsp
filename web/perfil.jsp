@@ -63,7 +63,7 @@
 	  <ul class="raiz">
              <div align="center"> 
                  <a><h7>Olá, Lucas</h7></h8></a>
-                 <li><a>Perfil</a></li>
+                 <li><a href="/ProjectCargaFacil/Controller?page=ControllerLogicUsuarioListar">Perfil</a></li>
                      
                  <li><a href="/ProjectCargaFacil/Controller?page=ControllerLogicLogout">Sair</a></li>
              </div>

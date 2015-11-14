@@ -32,7 +32,7 @@
               <div id="input-position_1">           
 		<ul>
                                        
-                     <li>  <label id="labelescrita_1">Nome Fantasia:</label>                            
+                        <li>  <label id="labelescrita_1">Nome Fantasia:</label>                            
                          <input value="${usuario.nomefantasia}"  placeholder="Exemplo: Agencia de cargas online LTDA" title="Razão Social" required="required" type="text" name="nomefantasia" class="input-estilo_1" pattern="[a-z\s]+$"  />
                     	</li>  
                                
@@ -40,7 +40,7 @@
                         <br>	
                         
                         <li>  <label id="labelescrita_1">Razão Social:</label>                            
-                    <input placeholder="Exemplo: Agencia de cargas online LTDA" title="Razão Social" required="required" type="text" name="razaosocial" class="input-estilo_1" pattern="[a-z\s]+$" />
+                            <input  value="${usuario.razaosocial}" placeholder="Exemplo: Agencia de cargas online LTDA" title="Razão Social" required="required" type="text" name="razaosocial" class="input-estilo_1" pattern="[a-z\s]+$" />
                     	</li>  
         
            
@@ -48,28 +48,28 @@
                         <br>	
                         
                         <li>  <label id="labelescrita_1">CNPJ:</label>                            
-                    <input placeholder="Exemplo: 00.000.00/0000-00" title="CNPJ" pattern="[0-9]+$" required="required" type="text" name="cnpj" class="input-estilo_1"/>
+                            <input value="${usuario.cnpj}" placeholder="Exemplo: 00.000.00/0000-00" title="CNPJ" pattern="[0-9]+$" required="required" type="text" name="cnpj" class="input-estilo_1"/>
                     	</li>  
                         
                         <br>
                         <br>	
                         
                         <li>  <label id="labelescrita_1">CEP:</label>                            
-                    <input placeholder="Exemplo: 11005-204 " title="CEP" type="text" pattern="[0-9]+$"  required="required" name="cep"  class="input-estilo_1"/>
+                            <input value="${usuario.cep}" placeholder="Exemplo: 11005-204 " title="CEP" type="text" pattern="[0-9]+$"  required="required" name="cep"  class="input-estilo_1"/>
                     	</li> 
                         
                         <br>
                         <br>	
                         
                         <li>  <label id="labelescrita_1">Cidade:</label>                            
-                    <input placeholder="Exemplo: São Paulo / SP " title="Cidade" pattern="[a-z\s]+$" type="text" required="required" name="cidade" class="input-estilo_1"/>
+                        <input value="${usuario.cidade}" placeholder="Exemplo: São Paulo / SP " title="Cidade" pattern="[a-z\s]+$" type="text" required="required" name="cidade" class="input-estilo_1"/>
                     	</li> 
                         
                         <br>
                         <br>	
                         
                         <li>  <label id="labelescrita_1">UF</label>                             
-                    <input placeholder="UF" title="UF" name="uf" type="text" pattern="[a-z\s]+$"  required="required" class="input-estilo_1"/>
+                            <input value="${usuario.uf}" placeholder="UF" title="UF" name="uf" type="text" pattern="[a-z\s]+$"  required="required" class="input-estilo_1"/>
                     	</li> 
                         
                         
@@ -80,14 +80,14 @@
 		<ul>
                                        
                      <li>  <label id="labelescrita_1">IE:</label>                            
-                    <input placeholder="Inscrição Estadual" title="IE" pattern="[0-9]+$"  name="ie" required="required" type="text" class="input-estilo_1"/>
+                         <input  value="${usuario.ie}" placeholder="Inscrição Estadual" title="IE" pattern="[0-9]+$"  name="ie" required="required" type="text" class="input-estilo_1"/>
                     	</li>  
                                
 			<br>
                         <br>	
                         
                         <li>  <label id="labelescrita_1">Telefone:</label>                            
-                    <input placeholder="Exemplo: (DDD)0000-0000" title="Telefone"   required="required" name="telefone" type="text" class="input-estilo_1"/>
+                            <input value="${usuario.telefone}" placeholder="Exemplo: (DDD)0000-0000" title="Telefone"   required="required" name="telefone" type="text" class="input-estilo_1"/>
                     	</li>  
         
            
@@ -95,32 +95,31 @@
                         <br>	
                         
                         <li>  <label id="labelescrita_1">Celular:</label>                            
-                    <input placeholder="Exemplo: (DDD)0000-0000" title="Celular"  name="celular" required="required"  type="text" class="input-estilo_1"/>
+                            <input value="${usuario.cel}" placeholder="Exemplo: (DDD)0000-0000" title="Celular"  name="celular" required="required"  type="text" class="input-estilo_1"/>
                     	</li>  
                         
                         <br>
                         <br>	
                         
                         <li>  <label id="labelescrita_1">E-mail:</label>                             
-                    <input placeholder="Exemplo: cargafacil@gmail.com"   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="E-mail" name="email" required="required" type="text" class="input-estilo_1"/>
+                            <input value="${usuario.email}" placeholder="Exemplo: cargafacil@gmail.com"   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="E-mail" name="email" required="required" type="text" class="input-estilo_1"/>
                     	</li>                         
                         
                         <br>
                         <br>	
                         
                         <li>  <label id="labelescrita_1">Senha:</label>                            
-                    <input placeholder="*****" title="Senha" name="senha" type="password" required="required" class="input-estilo_1"/>
+                         <input value="${usuario.senha}" placeholder="*****" title="Senha" name="senha" type="password" required="required" class="input-estilo_1"/>
                     	</li> 
                         
                         <br>
                         <br>	
                         
-                <%--        <li>  <label id="labelescrita_1">Confirma Senha:</label>                            
-                    <input placeholder="*****" title="Confirmar Senha" name="confsenha" required="required" type="password" class="input-estilo_1"/>
-                    	</li> --%>
+                        <li>  <label id="labelescrita_1">Confirma Senha:</label>                            
+                            <input value="${usuario.confsenha}" placeholder="*****" title="Confirmar Senha" name="confsenha" required="required" type="password" class="input-estilo_1"/>
+                    	</li>
                         
-                          <body>   
-                   </ul>       
+                        </ul>       
                         </div>  
       
 </body>
