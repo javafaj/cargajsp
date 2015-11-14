@@ -21,14 +21,14 @@
             <h1>Login</h1>
           
                 <li>
-                    <input type="text" name="usuario" value="usuario" onfocus="this.value = '';" onblur="if (this.value === '') {this.value = 'Usuário';}" > <a href="#" class="icon user"></a>
+                    <input  tabindex="1" type="text" name="usuario" value="usuario" onfocus="this.value = '';" onblur="if (this.value === '') {this.value = 'Usuário';}" > <a href="#" class="icon user"></a>
                     </li>
                 <li>
-                    <input type="password" name="senha" value="senha" onfocus="this.value = '';" onblur="if (this.value === '') {this.value = 'Senha';}"> <a href="#" class=" icon lock"></a>
+                    <input tabindex="2" type="password" name="senha" value="senha" onfocus="this.value = '';" onblur="if (this.value === '') {this.value = 'Senha';}"> <a href="#" class=" icon lock"></a>
                     </li>
                     
                <div class ="loginesqueceu">
-                    <input type="submit" value="Entrar" name="entrar" > </h4>
+                    <input tabindex="3" type="submit" value="Entrar" name="entrar" > </h4>
                     <!-- <h3><a href="#">Esqueceu sua Senha?</a></h3> -->
                     </div>
             

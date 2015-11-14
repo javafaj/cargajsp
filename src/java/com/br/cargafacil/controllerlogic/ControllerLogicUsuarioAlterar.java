@@ -60,7 +60,7 @@ public class ControllerLogicUsuarioAlterar implements ControllerLogic{
                 usuariodao.editar(usuario);
                 
                 login.setId(usuario.getIdusu());
-                login.setNome(usuario.getRazaosocial());
+                login.setNome(usuario.getNomefantasia());
                 login.setSenha(usuario.getSenha());
                 session.invalidate();
                 request.getSession().setAttribute("login", login);

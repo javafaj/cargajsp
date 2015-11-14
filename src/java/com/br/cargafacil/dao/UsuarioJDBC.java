@@ -40,8 +40,8 @@ public class  UsuarioJDBC  implements UsuarioDAO {
 
         try {
                 String SQL = "INSERT INTO USUARIO (NOMEFAN,RSOCIAL,CIDADE,UF,"
-                                + "SENHA,CONFSENHA,CEL,CNPJ,TELEFONE,IE,CEP)"
-                                + " VALUES (?,?,?,?,?,?,?,?,?,?,?)";
+                                + "SENHA,CONFSENHA,CEL,CNPJ,TELEFONE,IE,CEP,EMAIL)"
+                                + " VALUES (?,?,?,?,?,?,?,?,?,?,?,?)";
                 
                 PreparedStatement pst = connection.prepareStatement(SQL);
                 /**
@@ -58,7 +58,8 @@ public class  UsuarioJDBC  implements UsuarioDAO {
                     pst.setInt(8,usuario.getCnpj());
                     pst.setInt(9,usuario.getTelefone());
                     pst.setInt(10,usuario.getIe());
-                    pst.setInt(11,usuario.getCep());                  
+                    pst.setInt(11,usuario.getCep());
+                    pst.setString(12,usuario.getEmail());
                     /**
                      * execute update para que ele retorne somente as linhas afetadas do banco
                      */
@@ -90,7 +91,7 @@ public class  UsuarioJDBC  implements UsuarioDAO {
         Usuario usu = new Usuario();
         
         try {
-            String SQL = "SELECT nomefan,rsocial,cidade,uf,senha,confsenha,cel,telefone,ie,cep,cnpj FROM USUARIO WHERE ID = "+usuario.getIdusu();
+            String SQL = "SELECT nomefan,rsocial,cidade,uf,senha,confsenha,cel,telefone,ie,cep,cnpj,email FROM USUARIO WHERE ID = "+usuario.getIdusu();
             
             PreparedStatement pst = connection.prepareStatement(SQL);
             ResultSet rs = pst.executeQuery();
@@ -107,7 +108,8 @@ public class  UsuarioJDBC  implements UsuarioDAO {
                 usuario.setTelefone(rs.getInt("telefone"));
                 usuario.setIe(rs.getInt("ie"));                
                 usuario.setCep(rs.getInt("cep"));                
-                usuario.setCnpj(rs.getInt("cnpj"));                
+                usuario.setCnpj(rs.getInt("cnpj"));
+                usuario.setEmail(rs.getString("email"));
             }
             pst.close();
             connection.close();
@@ -131,7 +133,8 @@ public class  UsuarioJDBC  implements UsuarioDAO {
         String SQL = "UPDATE USUARIO SET NOMEFAN= ? , "+
                      "RSOCIAL= ? , CIDADE= ? ,UF= ?, "+
                      "SENHA= ? , CONFSENHA= ? , CEL= ? , "+
-                     "TELEFONE= ? , IE= ? , CEP= ? ,CNPJ= ? "+
+                     "TELEFONE= ? , IE= ? , CEP= ? ,CNPJ= ? ,"+
+                     "EMAIL = ?"+
                      "WHERE id = "+usuario.getIdusu();
                 
         try{
@@ -148,7 +151,8 @@ public class  UsuarioJDBC  implements UsuarioDAO {
                     pst.setInt(8,usuario.getCnpj());
                     pst.setInt(9,usuario.getTelefone());
                     pst.setInt(10,usuario.getIe());
-                    pst.setInt(11,usuario.getCep()); 
+                    pst.setInt(11,usuario.getCep());
+                    pst.setString(12,usuario.getEmail());
             
                     pst.executeUpdate();
                     pst.close();
