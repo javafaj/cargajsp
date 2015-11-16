@@ -37,7 +37,7 @@
 <%
     if(login.getId() != ""){       
 %>       
-                <li><a href="ccarga.jsp"><img src="css/icones/Shipped-32.png" class="icones-32">Cadastre suas Cargas</a></li>
+                <li><a href="ccarga_3.jsp"><img src="css/icones/Shipped-32.png" class="icones-32">Cadastre suas Cargas</a></li>
                 <li><a href="minhascargas.jsp"><img src="css/icones/Handle With Care-32.png" class="icones-32">Minhas Cargas</a></li>
 <%    
                            }

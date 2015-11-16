@@ -19,7 +19,7 @@
     </head>
     
     <body>
-        <form name="formcadastro" action="/ProjectCargaFacil/Controller?page=ControllerLogicUsuarioCadastrar" method="POST"> 
+ <form name="formcadastro" action="/ProjectCargaFacil/Controller?page=ControllerLogicUsuarioCadastrar" method="POST"> 
 
 <div id ="tudo">  
      <jsp:include page="menu.jsp"/>
@@ -158,6 +158,6 @@ Coptyright © 2015 - Carga Fácil. Todos os direitos reservados. </div>
 <div align="center">
 </div>
 </div>
-    </form>
+</form>
 </body>
 </html>
