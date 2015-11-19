@@ -52,7 +52,7 @@ public class ControllerLogicCargaCadastrar implements ControllerLogic {
         */
         login = (Login) session.getAttribute("login");
         
-        cargas.setDonocarga(login.getId());
+        cargas.setDonocarga( Integer.parseInt(login.getId()));
         
         /**
          * Obtendo os valores do jsp e passando os parametros para o meu objeto
@@ -63,13 +63,14 @@ public class ControllerLogicCargaCadastrar implements ControllerLogic {
         cargas.setDataagendamento (request.getParameter("dataagendamento"));
         cargas.setRestrihora(request.getParameter("restrihora"));
         cargas.setTipcarregamento(request.getParameter("tipocarregamento"));
-        cargas.setEstimativapreco(request.getParameter("estimativapreco"));
+        cargas.setEstimativapreco(Integer.parseInt(request.getParameter("estimativapreco")));
         cargas.setRastreamento(request.getParameter("rastreamento"));
         cargas.setTipofrete(request.getParameter("tipofrete"));
         cargas.setCidcarregamento(request.getParameter("cidcarregamento"));
         cargas.setCiddescarga(request.getParameter("ciddescarga"));
-        cargas.setQtdprodutos(request.getParameter("qtdprodutos"));
+        cargas.setQtdprodutos(Integer.parseInt(request.getParameter("qtdprodutos")));
         cargas.setTipocarga(request.getParameter("tipocarga"));
+      
         /**
          * enviando para minha classe dao persistir no banco de dados
          */

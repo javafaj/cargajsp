@@ -18,19 +18,20 @@ public class Cargas {
      * Atributos de cargas
      */
   private Integer idcarga;
-  private String sitcarga;
-  private String datacarregamento;
+  private String  sitcarga;
+  private String  datacarregamento;
   private String  dataagendamento;
   private String  restrihora;
-  private String tipcarregamento;
-  private String estimativapreco;  
-  private String rastreamento;  
-  private String Tipofrete; 
-  private String cidcarregamento; 
-  private String ciddescarga;
-  private String qtdprodutos;  
-  private String tipocarga;
-  private String donocarga;
+  private String  tipcarregamento;
+  private Integer  estimativapreco;  
+  private String  rastreamento;  
+  private String  Tipofrete; 
+  private String  cidcarregamento; 
+  private String  ciddescarga;
+  private Integer qtdprodutos;  
+  private String  tipocarga;
+  private Integer donocarga;
+  private Date insert_date;
 
           
  
@@ -125,14 +126,14 @@ public class Cargas {
     /**
      * @return the estimativapreco
      */
-    public String getEstimativapreco() {
+    public Integer getEstimativapreco() {
         return estimativapreco;
     }
 
     /**
      * @param estimativapreco the estimativapreco to set
      */
-    public void setEstimativapreco(String estimativapreco) {
+    public void setEstimativapreco(Integer estimativapreco) {
         this.estimativapreco = estimativapreco;
     }
 
@@ -192,19 +193,7 @@ public class Cargas {
         this.ciddescarga = ciddescarga;
     }
 
-    /**
-     * @return the qtdprodutos
-     */
-    public String getQtdprodutos() {
-        return qtdprodutos;
-    }
 
-    /**
-     * @param qtdprodutos the qtdprodutos to set
-     */
-    public void setQtdprodutos(String qtdprodutos) {
-        this.qtdprodutos = qtdprodutos;
-    }
 
     /**
      * @return the tipocarga
@@ -221,19 +210,48 @@ public class Cargas {
     }
 
     /**
+     * @return the qtdprodutos
+     */
+    public Integer getQtdprodutos() {
+        return qtdprodutos;
+    }
+
+    /**
+     * @param qtdprodutos the qtdprodutos to set
+     */
+    public void setQtdprodutos(Integer qtdprodutos) {
+        this.qtdprodutos = qtdprodutos;
+    }
+
+    /**
      * @return the donocarga
      */
-    public String getDonocarga() {
+    public Integer getDonocarga() {
         return donocarga;
     }
 
     /**
      * @param donocarga the donocarga to set
      */
-    public void setDonocarga(String donocarga) {
+    public void setDonocarga(Integer donocarga) {
         this.donocarga = donocarga;
     }
 
+    /**
+     * @return the insert_date
+     */
+    public Date getInsert_date() {
+        return insert_date;
+    }
+
+    /**
+     * @param insert_date the insert_date to set
+     */
+    public void setInsert_date(Date insert_date) {
+        this.insert_date = insert_date;
+    }
+
+ 
   
           
           

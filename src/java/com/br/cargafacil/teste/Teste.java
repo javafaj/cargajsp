@@ -4,8 +4,10 @@
  * and open the template in the editor.
  */
 package com.br.cargafacil.teste;
-import com.br.cargafacil.util.ConnectionFactory;
-import java.sql.Connection;
+import com.br.cargafacil.util.GetDate;
+import java.nio.channels.GatheringByteChannel;
+import java.sql.Date;
+import java.text.SimpleDateFormat;
 /**
  *
  * @author pepag
@@ -13,11 +15,11 @@ import java.sql.Connection;
 public class Teste {
     public static void main(String[] args) {
         
-     ConnectionFactory.getConnection();
+       // System.out.println(Calendar.getInstance().getTime());
      
-     
-     
-     
+        GetDate gd = new GetDate();       
+        
+        System.out.println(gd.getdate());
         
     }
 }
