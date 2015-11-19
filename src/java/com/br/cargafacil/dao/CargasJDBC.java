@@ -40,7 +40,7 @@ public class CargasJDBC  implements CargasDAO{
                    + "(SITCARGA,DATACARREGAMENTO,DATAAGENDAMENTO,RESTRIHORA," 
                    + "TIPCARREGAMENTO,QPRODUTOS,ESTIMAPRECO,TIPCARGA,RASTREAMENTO,"
                    + "TIPFRETE,CIDCARRE,CIDDESCAR,DONOCARGA,DATA_INSERT)\n" 
-                   + "  VALUES('?','?','?','?','?',?,?,'?','?','?','?','?', ?, '?');";
+                   + "  VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?);";
                 
             PreparedStatement pst = connection.prepareStatement(SQL);
             GetDate getdate = new GetDate();
