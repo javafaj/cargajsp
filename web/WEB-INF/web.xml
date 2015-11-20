@@ -40,6 +40,18 @@
         <servlet-name>ControllerLogicUsuarioListar</servlet-name>
         <servlet-class>com.br.cargafacil.controllerlogic.ControllerLogicUsuarioListar</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ControllerLogicCargaExibir</servlet-name>
+        <servlet-class>com.br.cargafacil.controllerlogic.ControllerLogicCargaExibir</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControllerLogicCargaListar</servlet-name>
+        <servlet-class>com.br.cargafacil.controllerlogic.ControllerLogicCargaListar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NewServlet</servlet-name>
+        <servlet-class>com.br.cargafacil.controllerlogic.NewServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Slogin</servlet-name>
         <url-pattern>/Slogin</url-pattern>
@@ -79,6 +91,18 @@
     <servlet-mapping>
         <servlet-name>ControllerLogicUsuarioListar</servlet-name>
         <url-pattern>/ControllerLogicUsuarioListar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControllerLogicCargaExibir</servlet-name>
+        <url-pattern>/ControllerLogicCargaExibir</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControllerLogicCargaListar</servlet-name>
+        <url-pattern>/ControllerLogicCargaListar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NewServlet</servlet-name>
+        <url-pattern>/NewServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>10</session-timeout>

@@ -15,11 +15,12 @@
         <link rel="icon" href="css/icones/carro.ico" sizes="24x24"/>
         <link rel="stylesheet" type="text/css" href="css/cadastros.css"/>
         <link rel="stylesheet" type="text/css" href="css/cadastro_2.css"/>
-        <title>Cadastrar Cargas </title>
+        <title>Alterar Carga </title>
 </head>
 
 <body>
- <form name="formcadastro" action="/ProjectCargaFacil/Controller?page=ControllerLogicCargaCadastrar" method="POST">
+ <jsp:useBean id="Cargas"  class="com.br.cargafacil.objetos.Cargas" scope="request"/>
+ <form name="formcadastro" action="/ProjectCargaFacil/Controller?page=ControllerLogicCargaAlterar" method="POST">
 <div id ="tudo">  
     <jsp:include page="menu.jsp"/>
             
@@ -32,6 +33,7 @@
                     <li>
                         <label id="labelescrita_1"> Situação Carga:</label>
                         <select name ="sitcarga" class="input-estilo_1">
+                            
                             <option> Aguardando Negociação </option>
                             <option> Aguardando Confirmação de Entrega</option>
                             <option> Carregamento Concluido</option>
