@@ -26,8 +26,8 @@ public class ControllerLogicCargaListar implements ControllerLogic {
        CargasDAO cargasdao = new DAOFactory().createCargasDAO();
        List<Cargas> cargas = cargasdao.Listar();
        
+       request.getSession().setAttribute("cargas", cargas);
        request.setAttribute("cargas", cargas);
-       
        request.getRequestDispatcher("cargaslistar.jsp").forward(request, response);
     
     

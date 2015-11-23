@@ -26,17 +26,23 @@
               <br>
               <br>
               <br>
+              <br>
+              <br>
 <div id="conteudo-include">
                
 <%   CargasDAO cargasdao = new DAOFactory().createCargasDAO();
        List<Cargas> cargas = cargasdao.Listar();
        for (Cargas carga : cargas){%>
-      
-       <%=carga.getIdcarga()%> || <a><%=carga.getSitcarga()%></a>
-       <br>
+
+       <div> 
        <a><%=carga.getTipocarga()%></a>
-       
-       
+       <a><%=carga.getSitcarga()%></a>
+       <a><%=carga.getTipofrete()%></a>
+       <a><%=carga.getDatacarregamento()%></a>
+       <a><%=carga.getDataagendamento()%></a>
+       <a><%=carga.getQtdprodutos()%>  KG</a>
+       </div>
+    
        <br>
        <br>
        

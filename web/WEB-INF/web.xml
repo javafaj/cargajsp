@@ -52,6 +52,10 @@
         <servlet-name>NewServlet</servlet-name>
         <servlet-class>com.br.cargafacil.controllerlogic.NewServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ControllerLogicMinhasCargas</servlet-name>
+        <servlet-class>com.br.cargafacil.controllerlogic.ControllerLogicMinhasCargas</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Slogin</servlet-name>
         <url-pattern>/Slogin</url-pattern>
@@ -103,6 +107,10 @@
     <servlet-mapping>
         <servlet-name>NewServlet</servlet-name>
         <url-pattern>/NewServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControllerLogicMinhasCargas</servlet-name>
+        <url-pattern>/ControllerLogicMinhasCargas</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>10</session-timeout>

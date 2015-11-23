@@ -6,6 +6,7 @@
 package com.br.cargafacil.dao;
 
 import com.br.cargafacil.objetos.Cargas;
+import com.br.cargafacil.objetos.Login;
 import com.br.cargafacil.util.ConnectionFactory;
 import com.br.cargafacil.util.GetDate;
 import java.sql.Connection;
@@ -34,8 +35,6 @@ public class CargasJDBC  implements CargasDAO{
 
     @Override
     public void inserir(Cargas cargas) {       
-         
-        
         
         try {
         String SQL = "INSERT INTO CARGAS "
@@ -48,8 +47,6 @@ public class CargasJDBC  implements CargasDAO{
             GetDate getdate = new GetDate();
             
             cargas.setInsert_date(getdate.getdate());
-            
-            
             pst.setString(1, cargas.getSitcarga());
             pst.setString(2, cargas.getDataagendamento());
             pst.setString(3, cargas.getDatacarregamento());
@@ -68,34 +65,9 @@ public class CargasJDBC  implements CargasDAO{
             pst.executeUpdate();
             pst.close();
             connection.close();
-         
-         
-         
-         
-         
-         
-         
-         
-         
          } catch (SQLException ex) {
             Logger.getLogger(CargasJDBC.class.getName()).log(Level.SEVERE, null, ex);
         }
-            
-         
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     }
 
     @Override
@@ -106,7 +78,6 @@ public class CargasJDBC  implements CargasDAO{
     @Override
     public List<Cargas> Listar() {
         List<Cargas> todascargas = new ArrayList<Cargas>();
-        
         
         try {
             String SQL = "SELECT * FROM CARGAS";
@@ -134,7 +105,6 @@ public class CargasJDBC  implements CargasDAO{
                 todascargas.add(carga);
             }
             
-            
         } catch (SQLException ex) {
             Logger.getLogger(CargasJDBC.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -143,12 +113,98 @@ public class CargasJDBC  implements CargasDAO{
 
     @Override
     public List<Cargas> buscar(Cargas cargas) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+        try {
+            String SQL = "SELECT * FROM CARGAS";
+            PreparedStatement pst = connection.prepareStatement(SQL);
+            ResultSet rs = pst.executeQuery();
+            
+            while(rs.next()){
+            
+                Cargas carga = new Cargas();
+                carga.setIdcarga (rs.getInt("idcarga"));
+                carga.setSitcarga(rs.getString("sitcarga"));
+                carga.setDataagendamento(rs.getString("dataagendamento"));
+                carga.setDatacarregamento(rs.getString("datacarregamento"));
+                carga.setRestrihora(rs.getString("restrihora"));
+                carga.setTipcarregamento(rs.getString("tipcarregamento"));
+                carga.setQtdprodutos(rs.getInt("qprodutos"));
+                carga.setRastreamento(rs.getString("rastreamento"));
+                carga.setTipofrete(rs.getString("tipfrete"));
+                carga.setTipocarga(rs.getString("tipcarga"));
+                carga.setEstimativapreco(rs.getInt("estimapreco"));
+                carga.setCidcarregamento(rs.getString("cidcarre"));
+                carga.setCiddescarga(rs.getString("ciddescar"));
+                carga.setDonocarga(rs.getInt("donocarga"));
+                carga.setInsert_date(rs.getDate("data_insert"));
+               // todascargas.add(carga);
+            }
+            
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(CargasJDBC.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return null;
+
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     }
 
     @Override
     public void editar(Cargas cargas) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public List<Cargas> MinhasCargas(Login login) {
+        List<Cargas> minhascargas = new ArrayList<Cargas>();
+        
+        
+        try {
+            String SQL = "SELECT * FROM CARGAS WHERE DONOCARGA = "+login.getId();
+            PreparedStatement pst = connection.prepareStatement(SQL);
+            ResultSet rs = pst.executeQuery();
+            
+            while(rs.next()){
+            
+                Cargas carga = new Cargas();
+                carga.setIdcarga (rs.getInt("idcarga"));
+                carga.setSitcarga(rs.getString("sitcarga"));
+                carga.setDataagendamento(rs.getString("dataagendamento"));
+                carga.setDatacarregamento(rs.getString("datacarregamento"));
+                carga.setRestrihora(rs.getString("restrihora"));
+                carga.setTipcarregamento(rs.getString("tipcarregamento"));
+                carga.setQtdprodutos(rs.getInt("qprodutos"));
+                carga.setRastreamento(rs.getString("rastreamento"));
+                carga.setTipofrete(rs.getString("tipfrete"));
+                carga.setTipocarga(rs.getString("tipcarga"));
+                carga.setEstimativapreco(rs.getInt("estimapreco"));
+                carga.setCidcarregamento(rs.getString("cidcarre"));
+                carga.setCiddescarga(rs.getString("ciddescar"));
+                carga.setDonocarga(rs.getInt("donocarga"));
+                carga.setInsert_date(rs.getDate("data_insert"));
+                minhascargas.add(carga);
+            }
+            
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(CargasJDBC.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return minhascargas;
+
+    
+    
+        
+    
     }
     
     

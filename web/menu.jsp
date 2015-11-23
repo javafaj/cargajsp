@@ -26,7 +26,7 @@
             <div id="cssmenu">
                 <ul>
                 <li><a href="index.jsp"><img src="css/icones/cagashome.png" class="icones-32">Inicio</a></li>
-                <li><a href="vcarga.jsp"><img src="css/icones/Cargas-32.png" class="icones-32">Verificar Cargas</a></li>
+                <li><a href="cargaslistar.jsp"><img src="css/icones/Cargas-32.png" class="icones-32">Verificar Cargas</a></li>
 <% if(login.getId() == ""){
 
                             
@@ -38,7 +38,7 @@
     if(login.getId() != ""){       
 %>       
                 <li><a href="ccarga_3.jsp"><img src="css/icones/Shipped-32.png" class="icones-32">Cadastre suas Cargas</a></li>
-                <li><a href="minhascargas.jsp"><img src="css/icones/Handle With Care-32.png" class="icones-32">Minhas Cargas</a></li>
+                <li><a href="Controller?page=ControllerLogicMinhasCargas"><img src="css/icones/Handle With Care-32.png" class="icones-32">Minhas Cargas</a></li>
 <%    
                            }
 %> 

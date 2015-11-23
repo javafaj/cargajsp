@@ -23,7 +23,7 @@ public class Cargas {
   private String  dataagendamento;
   private String  restrihora;
   private String  tipcarregamento;
-  private Integer  estimativapreco;  
+  private Integer estimativapreco;  
   private String  rastreamento;  
   private String  Tipofrete; 
   private String  cidcarregamento; 

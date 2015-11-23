@@ -6,6 +6,7 @@
 package com.br.cargafacil.dao;
 
 import com.br.cargafacil.objetos.Cargas;
+import com.br.cargafacil.objetos.Login;
 import java.util.List;
 
 /**
@@ -19,6 +20,7 @@ public interface CargasDAO {
    public void inserir (Cargas cargas);
    public void remover (int id);
    public List <Cargas> Listar();
+   public List <Cargas> MinhasCargas(Login login);
    public List <Cargas> buscar (Cargas cargas);
    public void editar (Cargas cargas);
     
