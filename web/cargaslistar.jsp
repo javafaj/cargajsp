@@ -15,7 +15,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/positiontela.css"/>
         <link rel="icon" href="css/icones/carro.ico" sizes="24x24"/>
-        <title>Minhas Cargas</title>
+        <link rel="stylesheet" type="text/css" href="css/cargas.css"/>
+
+
+        <title>Todas as Cargas</title>
     </head>
     <body>
 <jsp:useBean id="cargas_2"  class="com.br.cargafacil.objetos.Cargas" scope="request"/>
@@ -34,30 +37,44 @@
        List<Cargas> cargas = cargasdao.Listar();
        for (Cargas carga : cargas){%>
 
-       <div> 
-       <a><%=carga.getTipocarga()%></a>
-       <a><%=carga.getSitcarga()%></a>
-       <a><%=carga.getTipofrete()%></a>
-       <a><%=carga.getDatacarregamento()%></a>
-       <a><%=carga.getDataagendamento()%></a>
-       <a><%=carga.getQtdprodutos()%>  KG</a>
-       </div>
-    
-       <br>
-       <br>
+       <form>
+       <p style="outline-style: none;" class="borda" >
+           <label class="linha-1">Tipo Carga:</label>
+           <a class="linha-1"><%=carga.getTipocarga()%></a>
+           <br>
+           <br>
+           <label class="linha-2">Situação Carga:</label>
+           <a class="linha-2"><%=carga.getSitcarga()%></a>
+           <br>
+           <br>
+           <label class="linha-3">Tipo Frete:</label>
+           <a class="linha-3"><%=carga.getTipofrete()%></a>
+           <br>
+           <br>
+           <label class="linha-2-1">Data Carregamento:</label>
+           <a class="linha-2-1"><%=carga.getDatacarregamento()%></a
+           <br>
+           <br>
+           <label class="linha-2-2">Data Agendamento:</label>
+           <a class="linha-2-2"><%=carga.getDataagendamento()%></a>
+           <br>
+           <br>
+           <label class="linha-2-3">Qtd.Produtos:</label>
+           <a class="linha-2-3"><%=carga.getQtdprodutos()%>  KG</a>
        
+       <br>
+       <input type="submit" value="Detalhes" name="detalhes" class="btn-detalhes" />
+       </p>
+       </form>
+       <br>
+       <br>
   
 <%  
   }
 %>
-                
-                
-                
-                
-                
 </div>         
            
-            <div id="rodape">
+<!--            <div id="rodape">
             <div align="center">
             <h5>&nbsp;</h5>         
            
@@ -67,7 +84,7 @@
            </div>
            </div>
                          
-         </div>
+         </div> !-->
         
     </body>
 </html>

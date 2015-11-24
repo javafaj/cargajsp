@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23/11/2015, 23:09:19
+    Author     : pepag
+*/
+
+
+
+
+
+.borda {
+        border: 2px solid orange;
+        width: 1000px;
+        height: 100px;
+        position: relative; left: 200px;
+}
+
+.btn-detalhes{
+    border:0;
+    position: absolute; top: 75px; left: 900px ;
+}
+
+.linha-1{
+    position: relative;top: 5px; right: 350px;
+}
+.linha-2{
+    position: relative;top: 5px; right: 285px;
+}
+.linha-3{
+    position: relative;top: 5px; right: 375px;
+}
+.linha-2-1{
+    position: relative;top: -105px; left: 80px;
+}
+.linha-2-2{
+    position: relative;top: -87px; left: 80px;
+}
+.linha-2-3{
+    position: relative;top: -85px; left: 80px;
+}
