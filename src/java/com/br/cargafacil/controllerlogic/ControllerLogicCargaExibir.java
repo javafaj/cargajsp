@@ -38,8 +38,15 @@ public class ControllerLogicCargaExibir implements ControllerLogic {
             Cargas cargas = new Cargas();
             Login login  = new Login();
             HttpSession session = request.getSession(true);
+        
+          login =  (Login) session.getAttribute("login");
+          
             
-            
+          
+          
+          
+          
+      
             
             
             

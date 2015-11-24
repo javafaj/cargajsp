@@ -21,7 +21,6 @@
         <title>Todas as Cargas</title>
     </head>
     <body>
-<jsp:useBean id="cargas_2"  class="com.br.cargafacil.objetos.Cargas" scope="request"/>
  
         <div id ="tudo">  
               <jsp:include page="menu.jsp"/>            
@@ -37,8 +36,9 @@
        List<Cargas> cargas = cargasdao.Listar();
        for (Cargas carga : cargas){%>
 
-       <form>
-       <p style="outline-style: none;" class="borda" >
+       <form name="exibirdetalhes" action="/ProjectCargaFacil/Controller?page=ControllerLogicCargaExibir" method="POST">
+       
+           <p style="outline-style: none;" class="borda" >
            <label class="linha-1">Tipo Carga:</label>
            <a class="linha-1"><%=carga.getTipocarga()%></a>
            <br>
@@ -63,6 +63,7 @@
            <a class="linha-2-3"><%=carga.getQtdprodutos()%>  KG</a>
        
        <br>
+      
        <input type="submit" value="Detalhes" name="detalhes" class="btn-detalhes" />
        </p>
        </form>

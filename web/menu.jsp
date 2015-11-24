@@ -19,6 +19,7 @@
         
    <jsp:useBean id="login"  class="com.br.cargafacil.objetos.Login" scope="session" />
         <div id="topo">
+            </div>
             <div id="menu">
             <div id="menu-decorate">
             </div>
@@ -53,6 +54,6 @@
                            }
 %> 
             </div>
-            </div>
+            
 </body>
 </html>

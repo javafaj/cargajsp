@@ -29,8 +29,8 @@ width: auto;
 
 #topo {
 width: auto;
-height: 180px;
-margin-top: -25px;
+height: 120px;
+margin-top: 25px;
 /*background:#FFF url(icones/LG.PNG) no-repeat center;*/
 background:#FFF url(icones/LG.png) no-repeat center; 
 
@@ -42,7 +42,7 @@ background:#FFF url(icones/LG.png) no-repeat center;
 float: left;
 width: 220px;
 height: 505px;
-position: relative;top: -32px; left:5px;
+position: relative;top: -15px; right: 95px;
 /*background-color: #eff0ef;*/
 background: url(../css/icones/bgflogin3.png) no-repeat 100% 0%;
 background-size: 100%;
@@ -51,7 +51,7 @@ background-size: 100%;
 /*
 /*define o menu da pagina tamanho , cor , largura e posição*/
 #menu {
-position: relative;top: 215px;
+position: relative;top: 15px;
 width: auto;
 height: 5px;
 /*background: #66ccff;*/
@@ -82,7 +82,7 @@ position: static; top: 35px;
 #conteudo-slide{
 width: auto;
 height: 600px;
-position: relative; top: 75px; 
+position: relative; top: 72px; 
 /*background-color:#ff0033;*/   
 }/*utilizado somente quando houver slide na pagina */
 
