@@ -24,10 +24,10 @@ public class ControllerLogicCargaListar implements ControllerLogic {
     public void executar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
        CargasDAO cargasdao = new DAOFactory().createCargasDAO();
-       List<Cargas> cargas = cargasdao.Listar();
+       List<Cargas> lcargas = cargasdao.Listar();
        
-       request.getSession().setAttribute("cargas", cargas);
-       request.setAttribute("cargas", cargas);
+     //  request.getSession().setAttribute("cargas", cargas);
+       request.setAttribute("lcargas", lcargas);
        request.getRequestDispatcher("cargaslistar.jsp").forward(request, response);
     
     

@@ -40,6 +40,7 @@ public class ControllerLogicCargaExibir implements ControllerLogic {
             HttpSession session = request.getSession(true);
         
           login =  (Login) session.getAttribute("login");
+          cargas.setIdcarga(Integer.parseInt(request.getParameter("idcarga")));
           
             
           

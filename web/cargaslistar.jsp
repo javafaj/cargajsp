@@ -7,8 +7,10 @@
 <%@page import="com.br.cargafacil.util.DAOFactory"%>
 <%@page import="com.br.cargafacil.dao.CargasDAO"%>
 <%@page import="com.br.cargafacil.objetos.Cargas"%>
+<%@page import="com.br.cargafacil.controllerlogic.ControllerLogicCargaListar"%>
 <%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
      <head>
@@ -17,12 +19,11 @@
         <link rel="icon" href="css/icones/carro.ico" sizes="24x24"/>
         <link rel="stylesheet" type="text/css" href="css/cargas.css"/>
 
-
         <title>Todas as Cargas</title>
     </head>
     <body>
- 
-        <div id ="tudo">  
+  
+<div id ="tudo">  
               <jsp:include page="menu.jsp"/>            
               <br>
               <br>
@@ -31,19 +32,63 @@
               <br>
               <br>
 <div id="conteudo-include">
-               
-<%   CargasDAO cargasdao = new DAOFactory().createCargasDAO();
-       List<Cargas> cargas = cargasdao.Listar();
-       for (Cargas carga : cargas){%>
 
-       <form name="exibirdetalhes" action="/ProjectCargaFacil/Controller?page=ControllerLogicCargaExibir" method="POST">
-       
+<% 
+  List<Cargas> cargas = (List <Cargas>)request.getAttribute("lcargas");
+       for (Cargas carga : cargas){
+
+%> 
+<form name="detalhes<%=carga.getIdcarga()%>" action="/ProjectCargaFacil/Controller?page=ControllerLogicCargaExibir" method="POST"> 
+    <input type="text" name="idcarga" value = "<%=carga.getIdcarga()%>"/>
+  <input type="submit" name="detalhes" value="detalhes">
+</form>
+<%
+}
+%>
+ 
+ 
+
+
+
+</div>         
+</div>           
+</body>
+</html>
+
+
+    <%--
+    
+    <div id="rodape">
+            <div align="center">
+            <h5>&nbsp;</h5>         
+            Coptyright © 2015 - Carga Fácil. Todos os direitos reservados. </div> 
+            <div align="center">
+           </div>
+           </div>
+           
+ <form name="lcargas" action="/ProjectCargaFacil/Controller?page=ControllerLogicCargaListar" method="GET">
+     
+           
            <p style="outline-style: none;" class="borda" >
-           <label class="linha-1">Tipo Carga:</label>
-           <a class="linha-1"><%=carga.getTipocarga()%></a>
+                  
+      <input type="text" value="${lcargas.getIdcarga()}" name="idcarga"/>
+ <form name="exibirdetalhes" action="/ProjectCargaFacil/Controller?page=ControllerLogicCargaExibir" method="POST">
+      <input type="submit" value="Detalhes" name="detalhes" class="btn-detalhes" />
+ </form>
+           <br>
+       </p>
+       </form>
+       <br>
+       <br>
+
+
+
+
+
+<a class="linha-1"></a>
            <br>
            <br>
-           <label class="linha-2">Situação Carga:</label>
+           <%--          <label class="linha-2">Situação Carga:</label>
            <a class="linha-2"><%=carga.getSitcarga()%></a>
            <br>
            <br>
@@ -60,32 +105,13 @@
            <br>
            <br>
            <label class="linha-2-3">Qtd.Produtos:</label>
-           <a class="linha-2-3"><%=carga.getQtdprodutos()%>  KG</a>
-       
-       <br>
-      
-       <input type="submit" value="Detalhes" name="detalhes" class="btn-detalhes" />
-       </p>
-       </form>
-       <br>
-       <br>
-  
-<%  
+           <a class="linha-2-3"><%=carga.getQtdprodutos()%>  KG</a> --%>
+           
+           
+           <%--
   }
-%>
-</div>         
-           
-<!--            <div id="rodape">
-            <div align="center">
-            <h5>&nbsp;</h5>         
-           
-            Coptyright © 2015 - Carga Fácil. Todos os direitos reservados. </div> 
-            <div align="center">
-               
-           </div>
-           </div>
-                         
-         </div> !-->
-        
-    </body>
-</html>
+--%>
+
+<%--   //CargasDAO cargasdao = new DAOFactory().createCargasDAO();
+      // List<Cargas> cargas = cargasdao.Listar();
+       ${cargas.executar(request, response);--%>
