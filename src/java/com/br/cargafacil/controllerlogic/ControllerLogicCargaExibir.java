@@ -5,14 +5,15 @@
  */
 package com.br.cargafacil.controllerlogic;
 
+import com.br.cargafacil.dao.CargasDAO;
 import com.br.cargafacil.objetos.Cargas;
 import com.br.cargafacil.objetos.Login;
+import com.br.cargafacil.util.DAOFactory;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import javax.websocket.Session;
 
 /**
  *
@@ -38,9 +39,14 @@ public class ControllerLogicCargaExibir implements ControllerLogic {
             Cargas cargas = new Cargas();
             Login login  = new Login();
             HttpSession session = request.getSession(true);
+            CargasDAO cargasdao = new DAOFactory().createCargasDAO();
         
           login =  (Login) session.getAttribute("login");
           cargas.setIdcarga(Integer.parseInt(request.getParameter("idcarga")));
+          
+          cargasdao.buscar(cargas);
+          request.setAttribute("cargadetalhes", cargas);
+          request.getRequestDispatcher("cargadetalhes.jsp").forward(request, response);
           
             
           

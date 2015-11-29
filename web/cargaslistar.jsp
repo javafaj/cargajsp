@@ -13,6 +13,16 @@
 
 <!DOCTYPE html>
 <html>
+    <script>
+    function target_popup(form) {
+    window.open('', 'formpopup', 'width=900,height=600,scrollbars=yes,resizable=yes');
+  form.target = 'formpopup';
+  setTimeout(function(){form.reset();},2000);
+}
+    
+    
+    </script>
+        
      <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/positiontela.css"/>
@@ -32,63 +42,17 @@
               <br>
               <br>
 <div id="conteudo-include">
-
-<% 
-  List<Cargas> cargas = (List <Cargas>)request.getAttribute("lcargas");
+<%List<Cargas> cargas = (List <Cargas>)request.getAttribute("lcargas");
        for (Cargas carga : cargas){
-
 %> 
 <form name="detalhes<%=carga.getIdcarga()%>" action="/ProjectCargaFacil/Controller?page=ControllerLogicCargaExibir" method="POST"> 
-    <input type="text" name="idcarga" value = "<%=carga.getIdcarga()%>"/>
-  <input type="submit" name="detalhes" value="detalhes">
-</form>
-<%
-}
-%>
- 
- 
-
-
-
-</div>         
-</div>           
-</body>
-</html>
-
-
-    <%--
-    
-    <div id="rodape">
-            <div align="center">
-            <h5>&nbsp;</h5>         
-            Coptyright © 2015 - Carga Fácil. Todos os direitos reservados. </div> 
-            <div align="center">
-           </div>
-           </div>
-           
- <form name="lcargas" action="/ProjectCargaFacil/Controller?page=ControllerLogicCargaListar" method="GET">
-     
-           
-           <p style="outline-style: none;" class="borda" >
-                  
-      <input type="text" value="${lcargas.getIdcarga()}" name="idcarga"/>
- <form name="exibirdetalhes" action="/ProjectCargaFacil/Controller?page=ControllerLogicCargaExibir" method="POST">
-      <input type="submit" value="Detalhes" name="detalhes" class="btn-detalhes" />
- </form>
-           <br>
-       </p>
-       </form>
-       <br>
-       <br>
-
-
-
-
-
-<a class="linha-1"></a>
+      <p style="outline-style: none;" class="borda" >
+          <input type="hidden" name="idcarga" value = "<%=carga.getIdcarga()%>"/>
+          <label class="linha-1">Tipo Carga:</label>
+           <a class="linha-1"><%=carga.getTipocarga()%></a>
            <br>
            <br>
-           <%--          <label class="linha-2">Situação Carga:</label>
+           <label class="linha-2">Situação Carga:</label>
            <a class="linha-2"><%=carga.getSitcarga()%></a>
            <br>
            <br>
@@ -105,13 +69,25 @@
            <br>
            <br>
            <label class="linha-2-3">Qtd.Produtos:</label>
-           <a class="linha-2-3"><%=carga.getQtdprodutos()%>  KG</a> --%>
-           
-           
-           <%--
-  }
---%>
+           <a class="linha-2-3"><%=carga.getQtdprodutos()%>  KG</a>
+       
+       <br>
+       <input type="submit" value="Detalhes" name="detalhes" class="btn-detalhes" />
+       </p>
+</form>
+<%
+}
+%>
+<div id="rodape">
+        
+        <div align="center">
+            <h5>&nbsp;</h5>         
+            Coptyright © 2015 - Carga Fácil. Todos os direitos reservados.
+         </div> 
+       
+</div>
 
-<%--   //CargasDAO cargasdao = new DAOFactory().createCargasDAO();
-      // List<Cargas> cargas = cargasdao.Listar();
-       ${cargas.executar(request, response);--%>
+</div>         
+</div>           
+</body>
+</html>

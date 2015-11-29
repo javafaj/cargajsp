@@ -21,7 +21,7 @@ public interface CargasDAO {
    public void remover (int id);
    public List <Cargas> Listar();
    public List <Cargas> MinhasCargas(Login login);
-   public List <Cargas> buscar (Cargas cargas);
+   public Cargas buscar (Cargas cargas);
    public void editar (Cargas cargas);
     
    

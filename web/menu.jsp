@@ -27,7 +27,7 @@
             <div id="cssmenu">
                 <ul>
                 <li><a href="index.jsp"><img src="css/icones/cagashome.png" class="icones-32">Inicio</a></li>
-                <li><a href="cargaslistar.jsp"><img src="css/icones/Cargas-32.png" class="icones-32">Verificar Cargas</a></li>
+                <li><a href="Controller?page=ControllerLogicCargaListar"><img src="css/icones/Cargas-32.png" class="icones-32">Verificar Cargas</a></li>
 <% if(login.getId() == ""){
 
                             
