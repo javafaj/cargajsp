@@ -22,6 +22,7 @@ public interface CargasDAO {
    public List <Cargas> Listar();
    public List <Cargas> MinhasCargas(Login login);
    public Cargas buscar (Cargas cargas);
+   public Cargas buscaalterar (Cargas cargas);
    public void editar (Cargas cargas);
     
    

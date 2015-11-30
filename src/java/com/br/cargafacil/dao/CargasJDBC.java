@@ -176,7 +176,9 @@ public class CargasJDBC  implements CargasDAO{
         
         
         try {
-            String SQL = "SELECT * FROM CARGAS WHERE DONOCARGA = "+login.getId();
+            String SQL = "SELECT CG.* , USU.NOMEFAN FROM USUARIO USU , CARGAS CG"
+                    +" WHERE USU.ID = CG.DONOCARGA"
+                    +" AND CG.DONOCARGA = "+login.getId();
             PreparedStatement pst = connection.prepareStatement(SQL);
             ResultSet rs = pst.executeQuery();
             
@@ -198,6 +200,7 @@ public class CargasJDBC  implements CargasDAO{
                 carga.setCiddescarga(rs.getString("ciddescar"));
                 carga.setDonocarga(rs.getInt("donocarga"));
                 carga.setInsert_date(rs.getDate("data_insert"));
+                carga.setDononomefan(rs.getString("nomefan"));
                 minhascargas.add(carga);
             }
             
@@ -211,6 +214,41 @@ public class CargasJDBC  implements CargasDAO{
     
         
     
+    }
+
+    @Override
+    public Cargas buscaalterar(Cargas cargas) {
+         try {
+            String SQL = "SELECT * "+
+                         "FROM CARGAS "+
+                         "WHERE IDCARGA = "+cargas.getIdcarga();
+            PreparedStatement pst = connection.prepareStatement(SQL);
+            ResultSet rs = pst.executeQuery();
+             
+            while(rs.next()){
+                
+                
+                cargas.setSitcarga(rs.getString("sitcarga"));
+                cargas.setDataagendamento(rs.getString("dataagendamento"));
+                cargas.setDatacarregamento(rs.getString("datacarregamento"));
+                cargas.setRestrihora(rs.getString("restrihora"));
+                cargas.setTipcarregamento(rs.getString("tipcarregamento"));
+                cargas.setQtdprodutos(rs.getInt("qprodutos"));
+                cargas.setRastreamento(rs.getString("rastreamento"));
+                cargas.setTipofrete(rs.getString("tipfrete"));
+                cargas.setTipocarga(rs.getString("tipcarga"));
+                cargas.setEstimativapreco(rs.getInt("estimapreco"));
+                cargas.setCidcarregamento(rs.getString("cidcarre"));
+                cargas.setCiddescarga(rs.getString("ciddescar"));
+                cargas.setDonocarga(rs.getInt("donocarga"));
+                cargas.setInsert_date(rs.getDate("data_insert"));
+                
+            }                
+        
+        }catch (SQLException ex) {
+            Logger.getLogger(CargasJDBC.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return cargas;
     }
     
     

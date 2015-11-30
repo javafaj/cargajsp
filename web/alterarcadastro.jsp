@@ -132,7 +132,7 @@
      <h5>&nbsp;</h5>
         <div align="center">                      
         <div class="content">  
-    <input type="submit" name="enviar" value="Cadastrar" class="botao01" ></input> 
+    <input type="submit" name="enviar" value="Alterar" class="botao01" ></input> 
     
      <h5>&nbsp;</h5>
         </div>

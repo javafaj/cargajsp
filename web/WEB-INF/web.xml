@@ -44,6 +44,10 @@
         <servlet-name>ControllerLogicMinhasCargas</servlet-name>
         <servlet-class>com.br.cargafacil.controllerlogic.ControllerLogicMinhasCargas</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ControllerLogicCargaAlterar</servlet-name>
+        <servlet-class>com.br.cargafacil.controllerlogic.ControllerLogicCargaBuscaAlterar</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Controller</servlet-name>
         <url-pattern>/Controller</url-pattern>
@@ -87,6 +91,10 @@
     <servlet-mapping>
         <servlet-name>ControllerLogicMinhasCargas</servlet-name>
         <url-pattern>/ControllerLogicMinhasCargas</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControllerLogicCargaAlterar</servlet-name>
+        <url-pattern>/ControllerLogicCargaAlterar</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>10</session-timeout>

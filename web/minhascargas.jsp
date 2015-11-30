@@ -36,8 +36,10 @@
  <% CargasDAO cargasdao = new DAOFactory().createCargasDAO();
        List<Cargas> cargas = (List <Cargas>)request.getAttribute("minhascargas");
        for (Cargas carga : cargas){%>
-       <form>
+       <form name ="alterarcarga<%=carga.getIdcarga()%>" action="/ProjectCargaFacil/Controller?page=ControllerLogicCargaBuscaAlterar" method="POST">
+           
        <p style="outline-style: none;" class="borda" >
+           <input type="hidden" name="idcarga" value = "<%=carga.getIdcarga()%>"/>
            <label class="linha-1">Tipo Carga:</label>
            <a class="linha-1"><%=carga.getTipocarga()%></a>
            <br>
@@ -60,9 +62,14 @@
            <br>
            <label class="linha-2-3">Qtd.Produtos:</label>
            <a class="linha-2-3"><%=carga.getQtdprodutos()%>  KG</a>
+           <br>
+           <br>
+           <label class="linha-1-3">Lançado Por:</label>
+           <a class="linha-1-3"><%=carga.getDononomefan()%></a>
+          
        
        <br>
-       <input type="submit" value="Detalhes" name="detalhes" class="btn-detalhes" />
+       <input type="submit" value="Alterar" name="alterar" class="btn-detalhes" />
        </p>
        </form>
        <br>
