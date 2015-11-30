@@ -38,14 +38,16 @@ public class ControllerLogicUsuarioListar implements ControllerLogic{
             Login login = new Login();
 
             login = (Login) session.getAttribute("login");
-            
+            if(login.getId() != ""){
              UsuarioDAO usuariodao = DAOFactory.createUsuarioDAO();
              usuario.setIdusu(login.getId());
              usuariodao.Listar(usuario);
              request.setAttribute("usuario", usuario);
 
              request.getRequestDispatcher("alterarcadastro.jsp").forward(request, response);
-             
+             }else{
+                  request.getRequestDispatcher("errospage/erro.jsp").forward(request, response);
+                }
     
     }
 

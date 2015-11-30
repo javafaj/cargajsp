@@ -21,7 +21,8 @@
         <title>Minhas Cargas</title>
     </head>
     <body>
-        <jsp:useBean id= "mcargas"  class="com.br.cargafacil.objetos.Cargas" scope="session"/>
+    <jsp:useBean id= "login"  class="com.br.cargafacil.objetos.Login" scope="session"/>
+    <jsp:useBean id= "mcargas"  class="com.br.cargafacil.objetos.Cargas" scope="session"/>
          <div id ="tudo">  
               <jsp:include page="menu.jsp"/>            
                           <br>
@@ -30,8 +31,11 @@
               <br>
               <br>
               <br>
-<div id="conteudo-include">
-               
+<%
+    if(login.getId() != ""){
+%>
+
+ <div id="conteudo-include">             
 
  <% CargasDAO cargasdao = new DAOFactory().createCargasDAO();
        List<Cargas> cargas = (List <Cargas>)request.getAttribute("minhascargas");
@@ -76,6 +80,13 @@
        <br>
 <%  
   }
+%>
+<%
+ } else{
+    
+    request.getRequestDispatcher("errospage/erro.jsp").forward(request, response);
+    
+    }
 %>
  <div id="rodape">
             <div align="center">

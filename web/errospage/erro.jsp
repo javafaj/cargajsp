@@ -5,13 +5,21 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8" isErrorPage="true"%>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/positiontela.css"/>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>!!!Violação de Acesso!!!</title>
     </head>
     <body>
-        <h1> erro 404</h1>
+        <br>
+        
+        <br>
+        <h1>VOCE SO PODE ENTRAR SE ESTIVER LOGADO EM NOSSO SISTEMA!</h1>
+        <div id="error-page">
+            
+        </div>
     </body>
 </html>

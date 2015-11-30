@@ -41,7 +41,8 @@ public class ControllerLogicUsuarioAlterar implements ControllerLogic{
             
                 
                 login = (Login) session.getAttribute("login");
-                
+                if(login.getId() != ""){
+                    
                 usuario.setIdusu(login.getId());
                 usuario.setNomefantasia(request.getParameter("nomefantasia"));
                 usuario.setRazaosocial(request.getParameter("razaosocial"));
@@ -66,8 +67,10 @@ public class ControllerLogicUsuarioAlterar implements ControllerLogic{
                 request.getSession().setAttribute("login", login);
                 
                 
-        request.getRequestDispatcher("index.jsp").forward(request, response);
-        
+                request.getRequestDispatcher("index.jsp").forward(request, response);
+             }else{
+                  request.getRequestDispatcher("errospage/erro.jsp").forward(request, response);
+                }
     }
 
 }

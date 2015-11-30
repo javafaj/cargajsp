@@ -51,9 +51,9 @@ public class ControllerLogicCargaCadastrar implements ControllerLogic {
         * e preenchendo o dono da carga
         */
         login = (Login) session.getAttribute("login");
-        
+           if(login.getId() != ""){
         cargas.setDonocarga( Integer.parseInt(login.getId()));
-        
+     
         /**
          * Obtendo os valores do jsp e passando os parametros para o meu objeto
          * cargas
@@ -81,7 +81,9 @@ public class ControllerLogicCargaCadastrar implements ControllerLogic {
          */
         request.getRequestDispatcher("minhascargas.jsp").forward(request, response);
         
-        
+        }else{
+                  request.getRequestDispatcher("errospage/erro.jsp").forward(request, response);
+                }
         
         
    

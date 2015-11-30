@@ -21,10 +21,15 @@
     <body>
       
 <jsp:useBean id="usuario"  class="com.br.cargafacil.objetos.Usuario" scope="request"/>
-        
+<jsp:useBean id= "login"  class="com.br.cargafacil.objetos.Login" scope="session"/>        
+
+ <%
+    if(login.getId() != ""){
+%>   
+
 <div id ="tudo">  
      <jsp:include page="menu.jsp"/>
-            
+        
  <form name="formalterar" action="/ProjectCargaFacil/Controller?page=ControllerLogicUsuarioAlterar" method="POST"> 
      <div id="conteudo-include">
 
@@ -159,6 +164,14 @@ Coptyright © 2015 - Carga Fácil. Todos os direitos reservados. </div>
 <div align="center">
 </div>
 </div>
-    </form>
+</form>
+</div>
+<%
+ } else{
+    
+    request.getRequestDispatcher("errospage/erro.jsp").forward(request, response);
+    
+    }
+%>
 </body>
 </html>
