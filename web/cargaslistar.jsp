@@ -14,11 +14,7 @@
 <!DOCTYPE html>
 <html>
     <script>
-    function target_popup(form) {
-    window.open('', 'formpopup', 'width=900,height=600,scrollbars=yes,resizable=yes');
-  form.target = 'formpopup';
-  setTimeout(function(){form.reset();},2000);
-}
+  
     
     
     </script>
