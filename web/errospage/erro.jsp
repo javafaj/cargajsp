@@ -17,7 +17,7 @@
         <br>
         
         <br>
-        <h1>VOCE SO PODE ENTRAR SE ESTIVER LOGADO EM NOSSO SISTEMA!</h1>
+        <h1>VOCE SO PODE ENTRAR NESTA PAGINA SE ESTIVER LOGADO EM NOSSO SISTEMA!</h1>
         <div id="error-page">
             
         </div>
