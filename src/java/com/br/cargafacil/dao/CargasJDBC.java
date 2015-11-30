@@ -140,8 +140,13 @@ public class CargasJDBC  implements CargasDAO{
                 cargas.setCiddescarga(rs.getString("ciddescar"));
                 cargas.setDonocarga(rs.getInt("donocarga"));
                 cargas.setInsert_date(rs.getDate("data_insert"));
-               // todascargas.add(carga)
-             }                
+                cargas.setDononomefan(rs.getString("nomefan"));
+                cargas.setDonoemail(rs.getString("email"));
+                cargas.setDonocel(rs.getInt("cel"));
+                cargas.setDonotel(rs.getInt("telefone"));
+                cargas.setDonocnpj(rs.getInt("cnpj"));
+            
+            }                
         
         }catch (SQLException ex) {
             Logger.getLogger(CargasJDBC.class.getName()).log(Level.SEVERE, null, ex);

@@ -32,10 +32,13 @@ public class Cargas {
   private String  tipocarga;
   private Integer donocarga;
   private Date insert_date;
-
+  private String dononomefan;
+  private Integer donocel;
+  private Integer donotel;
+  private String donoemail;
+  private Integer donocnpj;
           
- 
- public Cargas(){
+public Cargas(){
  
  }
 
@@ -249,6 +252,76 @@ public class Cargas {
      */
     public void setInsert_date(Date insert_date) {
         this.insert_date = insert_date;
+    }
+
+    /**
+     * @return the dononomefan
+     */
+    public String getDononomefan() {
+        return dononomefan;
+    }
+
+    /**
+     * @param dononomefan the dononomefan to set
+     */
+    public void setDononomefan(String dononomefan) {
+        this.dononomefan = dononomefan;
+    }
+
+    /**
+     * @return the donocel
+     */
+    public Integer getDonocel() {
+        return donocel;
+    }
+
+    /**
+     * @param donocel the donocel to set
+     */
+    public void setDonocel(Integer donocel) {
+        this.donocel = donocel;
+    }
+
+    /**
+     * @return the donotel
+     */
+    public Integer getDonotel() {
+        return donotel;
+    }
+
+    /**
+     * @param donotel the donotel to set
+     */
+    public void setDonotel(Integer donotel) {
+        this.donotel = donotel;
+    }
+
+    /**
+     * @return the donoemail
+     */
+    public String getDonoemail() {
+        return donoemail;
+    }
+
+    /**
+     * @param donoemail the donoemail to set
+     */
+    public void setDonoemail(String donoemail) {
+        this.donoemail = donoemail;
+    }
+
+    /**
+     * @return the donocnpj
+     */
+    public Integer getDonocnpj() {
+        return donocnpj;
+    }
+
+    /**
+     * @param donocnpj the donocnpj to set
+     */
+    public void setDonocnpj(Integer donocnpj) {
+        this.donocnpj = donocnpj;
     }
 
  

@@ -9,9 +9,33 @@ and open the template in the editor.
 */
 
 
+/*Exibir detalhes da carga*/
+.borda-detalhescarga{
+        border: 2px solid orange;
+        width: 700px;
+        height: 100px;
+        position: relative; left: 350px; top: 100px;
+}
+
+
+.linhad-1{
+    position: relative;top: 10px; right:320px;
+}
+.linhad-2{
+    position: relative;top: 5px; right: 285px;
+}
+.linhad-3{
+    position: relative;top: -100px; left: 65px;
+}
 
 
 
+
+
+
+
+
+/*Listar Cargas*/
 .borda {
         border: 2px solid orange;
         width: 1000px;
