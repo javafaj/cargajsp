@@ -20,23 +20,24 @@
 
 <body>
  <jsp:useBean id="minhascargadetalhes"  class="com.br.cargafacil.objetos.Cargas" scope="request"/>
- <form name="formcadastro" action="/ProjectCargaFacil/Controller?page=ControllerLogicCargaAlterar" method="POST">
+ <form name="formcadastro" action="/ProjectCargaFacil/Controller?page=ControllerLogicAlterarCarga" method="POST">
 <div id ="tudo">  
     <jsp:include page="menu.jsp"/>
             
 <div id="conteudo-include">
                      
                  <div id="colunas">         
-              <div id="input-position_1">           
+              <div id="input-position_1">
+                  <input type="hidden" name="idcarga" value = "${minhascargadetalhes.idcarga}"/>
 		<ul>
-
+                        
 
                     <li>
                         <label id="labelescrita_1"> Situação Carga:</label>
                             <select name ="sitcarga" class="input-estilo_1" >
                             <option hidden="">${minhascargadetalhes.sitcarga}</option>
-                            <option> Aguardando Negociação </option>
-                            <option> Aguardando Confirmação de Entrega</option>
+                            <option> Aguardando Negociacao </option>
+                            <option> Aguard.Confirm.Entrega</option>
                             <option> Carregamento Concluido</option>
                             </select>
                     </li>             
@@ -163,8 +164,7 @@
         <div align="center">                      
         <div class="content"> 
             
-            <input TYPE="reset" name="cancelar" VALUE="Limpar Campos" class="botao01"></input>
-     <h5>&nbsp;</h5>
+            <a name="cancelar" VALUE="Cancelar" class="botao01" href="Controller?page=ControllerLogicMinhasCargas">Cancelar</a>     <h5>&nbsp;</h5>
         </div>
         </div>
      </div>

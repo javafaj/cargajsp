@@ -32,8 +32,8 @@
                     <li>
                         <label id="labelescrita_1"> Situação Carga:</label>
                         <select name ="sitcarga" class="input-estilo_1">
-                            <option> Aguardando Negociação </option>
-                            <option> Aguardando Confirmação de Entrega</option>
+                            <option> Aguardando Negociacao </option>
+                            <option> Aguard.Confirm.Entrega</option>
                             <option> Carregamento Concluido</option>
                         </select>
                     </li>             

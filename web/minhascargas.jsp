@@ -71,15 +71,16 @@
            <label class="linha-1-3">Lançado Por:</label>
            <a class="linha-1-3"><%=carga.getDononomefan()%></a>
           
-       
+
        <br>
        <input type="submit" value="Alterar" name="alterar" class="btn-detalhes" />
        </p>
        </form>
        <br>
        <br>
+       
 <%  
-  }
+}
 %>
 <%
  } else{

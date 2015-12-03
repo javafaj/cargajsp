@@ -32,7 +32,7 @@ width: auto;
 height: 120px;
 margin-top: 25px;
 /*background:#FFF url(icones/LG.PNG) no-repeat center;*/
-background:#FFF url(icones/LG.png) no-repeat center; 
+background: url(icones/LG.png) no-repeat center; 
 
 }
 

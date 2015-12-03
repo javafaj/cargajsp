@@ -48,8 +48,8 @@ public class CargasJDBC  implements CargasDAO{
             
             cargas.setInsert_date(getdate.getdate());
             pst.setString(1, cargas.getSitcarga());
-            pst.setString(2, cargas.getDataagendamento());
-            pst.setString(3, cargas.getDatacarregamento());
+            pst.setString(2, cargas.getDatacarregamento());
+            pst.setString(3, cargas.getDataagendamento());
             pst.setString(4, cargas.getRestrihora());
             pst.setString(5, cargas.getTipcarregamento());
             pst.setInt(6, cargas.getQtdprodutos());
@@ -125,7 +125,6 @@ public class CargasJDBC  implements CargasDAO{
              
             while(rs.next()){
                 
-                
                 cargas.setSitcarga(rs.getString("sitcarga"));
                 cargas.setDataagendamento(rs.getString("dataagendamento"));
                 cargas.setDatacarregamento(rs.getString("datacarregamento"));
@@ -156,14 +155,47 @@ public class CargasJDBC  implements CargasDAO{
 
     
     
-    
-    
-    
-    
-    
     @Override
     public void editar(Cargas cargas) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+     try {
+                    
+            String SQL = "UPDATE cargas SET SITCARGA = ? , DATACARREGAMENTO = ? , DATAAGENDAMENTO = ? , "
+                        + " RESTRIHORA = ? , TIPCARREGAMENTO = ? , QPRODUTOS = ? ,ESTIMAPRECO = ? ,"
+                        + " TIPCARGA = ? ,RASTREAMENTO = ? , TIPFRETE = ? , CIDCARRE = ? , CIDDESCAR = ? ,"
+                        + " DONOCARGA = ? , DATA_INSERT = ? WHERE IDCARGA = "+ cargas.getIdcarga();
+
+            /*instanciando o preparedstatement*/
+            PreparedStatement pst = connection.prepareStatement(SQL);
+            /*COLETA DATA E HORA DA ALTERAÇÃO*/
+            GetDate getdate = new GetDate();
+            cargas.setInsert_date(getdate.getdate());
+
+            /*passando dados para o pst para que o mesmo realize a persistencia no db*/
+            pst.setString(1, cargas.getSitcarga());
+            pst.setString(2, cargas.getDatacarregamento());
+            pst.setString(3, cargas.getDataagendamento());
+            pst.setString(4, cargas.getRestrihora());
+            pst.setString(5, cargas.getTipcarregamento());
+            pst.setInt(6, cargas.getQtdprodutos());
+            pst.setInt(7, cargas.getEstimativapreco());
+            pst.setString(8, cargas.getTipocarga());
+            pst.setString(9, cargas.getRastreamento());
+            pst.setString(10, cargas.getTipofrete());
+            pst.setString(11, cargas.getCidcarregamento());
+            pst.setString(12, cargas.getCiddescarga());
+            pst.setInt(13, cargas.getDonocarga());
+            pst.setDate(14, cargas.getInsert_date());
+            
+            /*executando o comando SQL no db , e logo apos encerrando a conexao*/
+            pst.executeUpdate();
+            pst.close();
+            connection.close();
+         } catch (SQLException ex) {
+            Logger.getLogger(CargasJDBC.class.getName()).log(Level.SEVERE, null, ex);
+        }      
+        
+        
     }
 
 
@@ -250,11 +282,6 @@ public class CargasJDBC  implements CargasDAO{
         }
         return cargas;
     }
-    
-    
-    
-    
-    
     
     
 }
